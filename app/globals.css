@@ -8,12 +8,27 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
+  font-feature-settings: "ss01", "ss03", "cv01", "cv11";
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  html {
+    @apply antialiased;
   }
+}
+
+/* Scrollbar técnica */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f1f1f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #008ed6;
 }
