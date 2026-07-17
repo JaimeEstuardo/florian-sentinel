@@ -1,0 +1,83 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 1. Bandeja de entrada (Descubrimientos)
+model DiscoveryInbox {
+  id              String   @id @default(uuid())
+  source_name     String?
+  external_id     String?
+  raw_title       String
+  raw_description String?
+  raw_url         String?  @unique
+  image_url       String?
+  category_hint   String?
+  status          String   @default("pending")
+  gemini_analysis Json?
+  created_at      DateTime @default(now())
+
+  @@map("discovery_inbox")
+}
+
+// 2. El "Work" (La obra)
+model CatalogItem {
+  id               String           @id @default(uuid())
+  title            String
+  creator          String?
+  category         String?
+  tags             String[]
+  created_at       DateTime         @default(now())
+  product_editions ProductEdition[]
+
+  @@map("catalog_items")
+}
+
+// 3. La "Edición" (El producto físico)
+model ProductEdition {
+  id             String         @id @default(uuid())
+  work_id        String?
+  edition_name   String
+  format         String?
+  asin_isbn      String?        @unique
+  release_date   DateTime?
+  msrp           Decimal?       @db.Decimal(10, 2)
+  is_preorder    Boolean        @default(false)
+  created_at     DateTime       @default(now())
+  work           CatalogItem?   @relation(fields: [work_id], references: [id])
+  store_listings StoreListing[]
+  price_history  PriceHistory[]
+
+  @@map("product_editions")
+}
+
+// 4. Listados en Tiendas
+model StoreListing {
+  id            String          @id @default(uuid())
+  edition_id    String?
+  store_name    String
+  current_price Decimal?        @db.Decimal(10, 2)
+  stock_status  String?
+  url           String?
+  last_checked  DateTime        @default(now())
+  edition       ProductEdition? @relation(fields: [edition_id], references: [id])
+
+  @@map("store_listings")
+}
+
+// 5. Historial de Precios
+model PriceHistory {
+  id         String          @id @default(uuid())
+  edition_id String?
+  price      Decimal         @db.Decimal(10, 2)
+  recorded_at DateTime       @default(now())
+  edition    ProductEdition? @relation(fields: [edition_id], references: [id])
+
+  @@map("price_history")
+}
