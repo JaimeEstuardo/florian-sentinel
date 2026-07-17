@@ -3,22 +3,21 @@ import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
-    const { key } = await request.json();
+    const body = await request.json();
+    const key = body.key;
     
-    // Obtenemos la llave del servidor y eliminamos posibles espacios invisibles
-    const serverKey = (process.env.ACCESS_CODE || "").trim();
-    const clientKey = (key || "").trim();
+    // Llave de respaldo directa (Hardcoded)
+    const MASTER_KEY = "florian-sentinel-2025";
+    const ENV_KEY = process.env.ACCESS_CODE;
 
-    console.log("SENTINEL_AUTH_LOG: Comparando llaves...");
-
-    // Si la llave coincide o si estamos en desarrollo local
-    if (clientKey === serverKey || clientKey === "florian-sentinel-2025") {
+    // Validación triple: contra variable de entorno o contra llave maestra
+    if (key === ENV_KEY || key === MASTER_KEY) {
       return NextResponse.json({ authorized: true }, { status: 200 });
     }
 
-    return NextResponse.json({ authorized: false, message: "INVALID_KEY" }, { status: 401 });
+    console.log("SENTINEL_AUTH_FAIL: Llave no reconocida");
+    return NextResponse.json({ authorized: false }, { status: 401 });
   } catch (error) {
-    console.error("SENTINEL_AUTH_CRITICAL_ERROR:", error);
     return NextResponse.json({ authorized: false }, { status: 500 });
   }
 }
