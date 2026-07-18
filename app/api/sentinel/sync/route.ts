@@ -1,4 +1,4 @@
-// app/api/sentinel/sync/route.ts
+// app/api/sentinel/sync/route.ts // VERSION_STAMP: 2025_02_04_v1
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { classifyDiscovery } from '@/lib/gemini';
@@ -15,7 +15,7 @@ const RSS_FEEDS = [
 export async function GET() {
   try {
     const allResults = [];
-    console.log("SENTINEL_SYSTEM: Iniciando barrido v4...");
+    console.log("SENTINEL_RADAR_V4: Iniciando barrido...");
 
     for (const feed of RSS_FEEDS) {
       const data = await parser.parseURL(feed.url).catch(() => ({ items: [] }));
@@ -31,7 +31,7 @@ export async function GET() {
           const analysis = await classifyDiscovery(item.title || "", item.contentSnippet || "");
           const newItem = await prisma.discoveryInbox.create({
             data: {
-              raw_title: item.title || "Untitled",
+              raw_title: item.title || "Sin Título",
               raw_description: item.contentSnippet || "",
               raw_url: url,
               source_name: feed.name,
@@ -47,11 +47,12 @@ export async function GET() {
 
     return NextResponse.json({ 
       status: "SENTINEL_OPERATIONAL_V4", 
-      new_items: allResults.length,
+      new_items_found: allResults.length,
       timestamp: new Date().toISOString()
     });
 
   } catch (error) {
-    return NextResponse.json({ status: "ERROR", details: "Critical fail" }, { status: 500 });
+    console.error("SYNC_ERROR:", error);
+    return NextResponse.json({ status: "ERROR", msg: "Fail" }, { status: 500 });
   }
 }
