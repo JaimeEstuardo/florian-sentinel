@@ -1,5 +1,4 @@
 // app/api/sentinel/sync/route.ts
-// PROTOCOLO_SENTINEL_V7_FINAL_FORCE
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { classifyDiscovery } from '@/lib/gemini';
@@ -8,31 +7,26 @@ import Parser from 'rss-parser';
 export const dynamic = 'force-dynamic';
 const parser = new Parser();
 
-const RSS_FEEDS = [
-  { name: "Blu-ray_Releases", url: "https://www.blu-ray.com/rss/newreleasesfeed.xml" },
-  { name: "CheapAssGamer_Deals", url: "https://www.cheapassgamer.com/forum/24-video-game-deals/index.rss" }
-];
-
 export async function GET() {
   try {
+    const RSS_FEEDS = [
+      { name: "Blu-ray_Latest", url: "https://www.blu-ray.com/rss/newreleasesfeed.xml" },
+      { name: "Games_Deals", url: "https://www.cheapassgamer.com/forum/24-video-game-deals/index.rss" }
+    ];
+
     const allResults = [];
-    console.log("INICIANDO_BARRIDO_V7");
 
     for (const feed of RSS_FEEDS) {
       const data = await parser.parseURL(feed.url).catch(() => ({ items: [] }));
-      const latestItems = data.items.slice(0, 5);
-
-      for (const item of latestItems) {
+      for (const item of data.items.slice(0, 3)) {
         const url = item.link || "";
-        if (!url) continue;
-
         const existing = await prisma.discoveryInbox.findUnique({ where: { raw_url: url } });
-
+        
         if (!existing) {
           const analysis = await classifyDiscovery(item.title || "", item.contentSnippet || "");
           const newItem = await prisma.discoveryInbox.create({
             data: {
-              raw_title: item.title || "Sin Título",
+              raw_title: item.title || "Untitled",
               raw_description: item.contentSnippet || "",
               raw_url: url,
               source_name: feed.name,
@@ -47,12 +41,12 @@ export async function GET() {
     }
 
     return NextResponse.json({ 
-      status: "SISTEMA_REESTABLECIDO_V7", 
+      status: "SENTINEL_V7_ONLINE", 
       new_items: allResults.length,
       timestamp: new Date().toISOString()
     });
 
   } catch (error) {
-    return NextResponse.json({ status: "ERROR_V7" }, { status: 500 });
+    return NextResponse.json({ status: "ERROR_V7", details: "Check Logs" }, { status: 500 });
   }
 }
