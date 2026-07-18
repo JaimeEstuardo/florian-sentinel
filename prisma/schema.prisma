@@ -6,8 +6,8 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
-}
+  // OPCIÓN NUCLEAR: Ponemos el link directo para que Windows no lo bloquee
+  url      = "postgresql://neondb_owner:npg_Altd1IGW0pVC@ep-green-dawn-am60df90-pooler.c-5.us-east-1.aws.neon.tech/neondb?channel_binding=require&sslmode=require"
 
 // 1. Bandeja de entrada (Descubrimientos)
 model DiscoveryInbox {
