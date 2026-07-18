@@ -1,4 +1,5 @@
 // prisma/schema.prisma
+// PROTOCOLO_ESTRUCTURA_REPARADA_SENTINEL_V8
 
 generator client {
   provider = "prisma-client-js"
@@ -6,10 +7,10 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  // OPCIÓN NUCLEAR: Ponemos el link directo para que Windows no lo bloquee
-  url      = "postgresql://neondb_owner:npg_Altd1IGW0pVC@ep-green-dawn-am60df90-pooler.c-5.us-east-1.aws.neon.tech/neondb?channel_binding=require&sslmode=require"
+  url      = env("DATABASE_URL")
+}
 
-// 1. Bandeja de entrada (Descubrimientos)
+// 1. Bandeja de entrada (Descubrimientos de RSS/APIs)
 model DiscoveryInbox {
   id              String   @id @default(uuid())
   source_name     String?
@@ -26,7 +27,7 @@ model DiscoveryInbox {
   @@map("discovery_inbox")
 }
 
-// 2. El "Work" (La obra)
+// 2. El "Work" (La obra intelectual)
 model CatalogItem {
   id               String           @id @default(uuid())
   title            String
