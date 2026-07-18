@@ -6,41 +6,44 @@ import Parser from 'rss-parser';
 
 const parser = new Parser();
 
-// FUENTES ESTRATÉGICAS DE COLECCIONISMO
+// FUENTES REALES DE ALTA FRECUENCIA
 const RSS_FEEDS = [
-  { name: "Blu-ray.com Releases", url: "https://www.blu-ray.com/rss/newreleasesfeed.xml" },
-  { name: "CheapAssGamer_VideoGames", url: "https://www.cheapassgamer.com/forum/24-video-game-deals/index.rss" }
+  { name: "Blu-ray_Releases", url: "https://www.blu-ray.com/rss/newreleasesfeed.xml" },
+  { name: "CheapAssGamer_Deals", url: "https://www.cheapassgamer.com/forum/24-video-game-deals/index.rss" }
 ];
 
 export async function GET() {
   try {
-    console.log("SENTINEL_RADAR: Iniciando barrido de frecuencias...");
     const allResults = [];
+    console.log("SENTINEL_RADAR: Iniciando barrido...");
 
     for (const feed of RSS_FEEDS) {
-      const data = await parser.parseURL(feed.url);
+      // Intentamos leer la fuente
+      const data = await parser.parseURL(feed.url).catch(e => {
+        console.error(`Error en fuente ${feed.name}:`, e);
+        return { items: [] };
+      });
       
-      // Tomamos los últimos 5 ítems de cada fuente para no saturar la API de Gemini
+      // Procesamos los 5 más recientes de cada uno
       const latestItems = data.items.slice(0, 5);
 
       for (const item of latestItems) {
         const url = item.link || "";
-        
-        // 1. Evitar duplicados (Si ya existe en la DB, saltar)
+        if (!url) continue;
+
+        // 1. Verificamos si ya lo conocemos
         const existing = await prisma.discoveryInbox.findUnique({
           where: { raw_url: url }
         });
 
         if (!existing) {
-          console.log(`SENTINEL_DETECTED: Nuevo activo encontrado: ${item.title}`);
-
-          // 2. IA: Gemini analiza el hallazgo al vuelo
+          // 2. IA: Gemini analiza el activo
           const analysis = await classifyDiscovery(
             item.title || "", 
             item.contentSnippet || item.content || ""
           );
 
-          // 3. Guardar solo si Gemini lo considera interesante (o dejarlo como pendiente)
+          // 3. Registro en la base de datos
           const newItem = await prisma.discoveryInbox.create({
             data: {
               raw_title: item.title || "Sin Título",
@@ -52,20 +55,21 @@ export async function GET() {
               gemini_analysis: analysis || {}
             }
           });
-          
-          allResults.push(newItem);
+          allResults.push(newItem.raw_title);
         }
       }
     }
 
+    // RESPUESTA ACTUALIZADA PARA CONFIRMAR VERSIÓN
     return NextResponse.json({ 
-      status: "SUCCESS", 
-      scan_count: allResults.length,
-      new_items: allResults.map(i => i.raw_title)
+      status: "RADAR_OPERATIONAL", 
+      new_items_found: allResults.length,
+      titles: allResults,
+      timestamp: new Date().toISOString()
     });
 
   } catch (error) {
-    console.error("SENTINEL_SCAN_CRITICAL_ERROR:", error);
-    return NextResponse.json({ error: "SCAN_FAILED" }, { status: 500 });
+    console.error("CRITICAL_SYNC_ERROR:", error);
+    return NextResponse.json({ status: "ERROR", message: "Fallo en el barrido" }, { status: 500 });
   }
 }
