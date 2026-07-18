@@ -7,6 +7,7 @@ import "./globals.css";
 function AuthWrapper({ children }: { children: React.ReactNode }) {
   const [authorized, setAuthorized] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [verifying, setVerifying] = useState(false);
   const searchParams = useSearchParams();
 
   useEffect(() => {
@@ -19,6 +20,7 @@ function AuthWrapper({ children }: { children: React.ReactNode }) {
       
       if (!keyToTest) return;
 
+      setVerifying(true);
       try {
         const res = await fetch('/api/verify', {
           method: 'POST',
@@ -30,21 +32,28 @@ function AuthWrapper({ children }: { children: React.ReactNode }) {
           localStorage.setItem('sentinel_access_key', keyToTest);
           setAuthorized(true);
         } else {
-          // Si la llave de la URL era mala, la borramos
           if (urlKey) localStorage.removeItem('sentinel_access_key');
         }
       } catch (err) {
-        console.error("AUTH_SYSTEM_CRITICAL_ERROR");
+        console.error("AUTH_SYSTEM_ERROR");
+      } finally {
+        setVerifying(false);
       }
     };
 
     verifyAccess();
   }, [searchParams]);
 
-  // Mientras el sistema arranca, fondo negro total
-  if (!mounted) return <div className="bg-black h-screen w-full" />;
+  if (!mounted) return <div className="bg-black min-h-screen w-full" />;
 
-  // Si no está autorizado, mostramos el bloqueo con instrucciones claras
+  if (verifying) {
+    return (
+      <div className="bg-[#050505] text-[#008ed6] flex items-center justify-center h-screen font-mono text-[10px] uppercase tracking-[0.3em]">
+        [ SINCRONIZANDO_LLAVE_MAESTRA... ]
+      </div>
+    );
+  }
+
   if (!authorized) {
     return (
       <div className="bg-[#050505] text-zinc-600 flex flex-col items-center justify-center h-screen font-mono text-[10px] tracking-[0.3em] uppercase">
@@ -60,7 +69,6 @@ function AuthWrapper({ children }: { children: React.ReactNode }) {
     );
   }
 
-  // Interfaz autorizada
   return (
     <div className="min-h-screen flex flex-col bg-[#050505] text-[#ececec]">
       <header className="border-b border-zinc-800 p-4 bg-black/60 backdrop-blur-xl sticky top-0 z-50">
@@ -74,4 +82,30 @@ function AuthWrapper({ children }: { children: React.ReactNode }) {
              <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-widest">Active</span>
           </div>
         </div>
-      </he
+      </header>
+      <main className="max-w-7xl mx-auto p-6 w-full flex-1">
+        {children}
+      </main>
+      <footer className="border-t border-zinc-900 p-8 bg-black/20 text-center">
+        <p className="font-mono text-[9px] text-zinc-800 uppercase tracking-[0.3em]">
+          Unidad de Adquisición Sentinel // Hub Central 2025
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="es">
+      <head>
+        <title>Sentinel Hub</title>
+      </head>
+      <body className="bg-black m-0 p-0 antialiased overflow-x-hidden">
+        <Suspense fallback={<div className="bg-black min-h-screen w-full" />}>
+          <AuthWrapper>{children}</AuthWrapper>
+        </Suspense>
+      </body>
+    </html>
+  );
+}
