@@ -2,8 +2,7 @@
 
 @theme {
   --color-sentinel: #008ed6;
-  --color-background: #050505;
-  --color-foreground: #ececec;
+  --color-zinc-950: #050505;
 }
 
 :root {
@@ -11,14 +10,22 @@
   --foreground: #ececec;
 }
 
-body {
-  background-color: #050505;
-  color: #ececec;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+/* Forzar estilos base */
+@layer base {
+  html, body {
+    background-color: #050505 !important;
+    color: #ececec !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-@layer base {
-  body {
-    @apply antialiased bg-[#050505] text-[#ececec];
-  }
+/* Utilidades de Sentinel */
+.border-technical {
+  border: 1px solid #1f1f1f;
+}
+
+.text-sentinel {
+  color: #008ed6;
 }
