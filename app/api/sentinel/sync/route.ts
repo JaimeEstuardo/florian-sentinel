@@ -1,5 +1,5 @@
 // app/api/sentinel/sync/route.ts
-// VERSION_STAMP: 2025_02_04_v1
+// PROTOCOLO_SENTINEL_V7_FINAL_FORCE
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { classifyDiscovery } from '@/lib/gemini';
@@ -16,7 +16,7 @@ const RSS_FEEDS = [
 export async function GET() {
   try {
     const allResults = [];
-    console.log("SENTINEL_RADAR_ACTIVE: Iniciando barrido...");
+    console.log("INICIANDO_BARRIDO_V7");
 
     for (const feed of RSS_FEEDS) {
       const data = await parser.parseURL(feed.url).catch(() => ({ items: [] }));
@@ -47,12 +47,12 @@ export async function GET() {
     }
 
     return NextResponse.json({ 
-      status: "SENTINEL_OPERATIONAL_V4", 
-      new_items_found: allResults.length,
+      status: "SISTEMA_REESTABLECIDO_V7", 
+      new_items: allResults.length,
       timestamp: new Date().toISOString()
     });
 
   } catch (error) {
-    return NextResponse.json({ status: "ERROR", msg: "Fail" }, { status: 500 });
+    return NextResponse.json({ status: "ERROR_V7" }, { status: 500 });
   }
 }
