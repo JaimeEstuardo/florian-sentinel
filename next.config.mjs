@@ -6,7 +6,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Nombre corregido según los logs de Vercel
+  // Configuración de paquetes externos para Next.js 15
   serverExternalPackages: ["@prisma/client"],
 };
 
