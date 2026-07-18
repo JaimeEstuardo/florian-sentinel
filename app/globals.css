@@ -1,17 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html, body {
-  background-color: #050505 !important;
-  color: #ececec !important;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --background: #050505;
+  --foreground: #ececec;
 }
 
-@layer base {
-  body {
-    @apply bg-[#050505] text-[#ececec] antialiased min-h-screen;
-  }
+@theme {
+  --color-sentinel: #008ed6;
+}
+
+body {
+  background-color: #050505;
+  color: #ececec;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
