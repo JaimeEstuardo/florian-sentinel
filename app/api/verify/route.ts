@@ -11,7 +11,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ authorized: true }, { status: 200 });
     }
     return NextResponse.json({ authorized: false }, { status: 401 });
-  } catch (_error) {
+  } catch {
     return NextResponse.json({ authorized: false }, { status: 500 });
   }
 }

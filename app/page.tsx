@@ -11,7 +11,9 @@ export default async function Dashboard() {
     const p = await prisma.productEdition.count({ where: { is_preorder: true } });
     dCount = d.toString().padStart(2, '0');
     pCount = p.toString().padStart(2, '0');
-  } catch (_e) { /* Error silenciado para build */ }
+  } catch {
+    // Fail silently for build
+  }
 
   const stats = [
     { label: "Hallazgos Hoy", value: dCount, icon: Radio, color: "text-sentinel" },
@@ -32,8 +34,14 @@ export default async function Dashboard() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 border border-neutral-800 bg-neutral-950/20">
-          <div className="flex justify-between p-4 border-b border-neutral-800 bg-neutral-900/40"><h2 className="text-[10px] font-bold text-white tracking-widest uppercase">Radar // Señal_Neon</h2><Search size={14} className="text-zinc-600" /></div>
-          <div className="py-24 flex flex-col items-center"><Database size={48} className="text-zinc-900 mb-4" /><p className="text-[10px] font-mono text-zinc-600 uppercase">Sincronizado con Neon DB.</p></div>
+          <div className="flex justify-between p-4 border-b border-neutral-800 bg-neutral-900/40">
+            <h2 className="text-[10px] font-bold text-white tracking-widest uppercase">Radar // Señal_Neon</h2>
+            <Search size={14} className="text-zinc-600" />
+          </div>
+          <div className="py-24 flex flex-col items-center">
+            <Database size={48} className="text-zinc-900 mb-4" />
+            <p className="text-[10px] font-mono text-zinc-600 uppercase">Sincronizado con Neon DB.</p>
+          </div>
         </div>
         <div className="border border-neutral-800 bg-black p-8 flex flex-col gap-6">
           <h2 className="text-[10px] font-bold text-zinc-500 uppercase border-b border-zinc-800 pb-2">Status_Report</h2>

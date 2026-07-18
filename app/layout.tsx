@@ -27,8 +27,8 @@ function AuthWrapper({ children }: { children: React.ReactNode }) {
           localStorage.setItem('sentinel_access_key', keyToTest);
           setAuthorized(true);
         }
-      } catch (_err) {
-        console.error("AUTH_SYSTEM_ERROR");
+      } catch {
+        console.error("AUTH_ERROR");
       }
     };
     verifyAccess();
@@ -38,10 +38,10 @@ function AuthWrapper({ children }: { children: React.ReactNode }) {
 
   if (!authorized) {
     return (
-      <div className="bg-[#050505] text-zinc-600 flex flex-col items-center justify-center h-screen font-mono text-[10px] tracking-[0.3em] uppercase">
-        <div className="border border-zinc-900 p-10 bg-black/40 text-center space-y-6 max-w-sm">
+      <div className="bg-[#050505] text-zinc-600 flex flex-col items-center justify-center h-screen font-mono text-[10px] tracking-[0.3em] uppercase text-center">
+        <div className="border border-zinc-900 p-10 bg-black/40 space-y-6 max-w-sm">
           <p>[ SYSTEM_LOCKED ]</p>
-          <p className="text-zinc-800 italic text-[9px] normal-case tracking-normal">Use ?key= en la URL</p>
+          <p className="text-zinc-800 italic text-[9px] normal-case tracking-normal">Inicie sesión mediante el Protocolo Central</p>
         </div>
       </div>
     );
@@ -50,10 +50,10 @@ function AuthWrapper({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-[#050505] text-[#ececec]">
       <header className="border-b border-zinc-800 p-4 bg-black/60 backdrop-blur-xl sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center text-[#008ed6] font-mono text-xs font-bold">
-          <span>SENTINEL_v1.0 // JAIME FLORIAN</span>
+        <div className="max-w-7xl mx-auto flex justify-between items-center text-[#008ed6] font-mono text-xs font-bold uppercase">
+          <span>SENTINEL_v1.0 // Division 06</span>
           <div className="flex items-center gap-2">
-             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_10px_#10b981]" />
+             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
              <span className="text-zinc-500 text-[10px]">ACTIVE</span>
           </div>
         </div>
