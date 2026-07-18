@@ -4,6 +4,9 @@ import prisma from '@/lib/prisma';
 import { classifyDiscovery } from '@/lib/gemini';
 import Parser from 'rss-parser';
 
+// ESTA LÍNEA ES VITAL: Obliga a Vercel a no usar caché
+export const dynamic = 'force-dynamic';
+
 const parser = new Parser();
 
 const RSS_FEEDS = [
@@ -14,7 +17,7 @@ const RSS_FEEDS = [
 export async function GET() {
   try {
     const allResults = [];
-    console.log("SENTINEL_RADAR: Iniciando escaneo...");
+    console.log("SENTINEL_RADAR: Iniciando escaneo forzado...");
 
     for (const feed of RSS_FEEDS) {
       const data = await parser.parseURL(feed.url).catch(() => ({ items: [] }));
@@ -24,10 +27,13 @@ export async function GET() {
         const url = item.link || "";
         if (!url) continue;
 
+        // Verificar si ya existe
         const existing = await prisma.discoveryInbox.findUnique({ where: { raw_url: url } });
 
         if (!existing) {
+          // IA: Gemini analiza
           const analysis = await classifyDiscovery(item.title || "", item.contentSnippet || "");
+          
           const newItem = await prisma.discoveryInbox.create({
             data: {
               raw_title: item.title || "Sin Título",
@@ -45,13 +51,14 @@ export async function GET() {
     }
 
     return NextResponse.json({ 
-      status: "VERSION_TEST_3_OPERATIONAL", 
+      status: "RADAR_ONLINE_V4", 
       new_items_found: allResults.length,
       titles: allResults,
-      timestamp: new Date().toLocaleTimeString()
+      timestamp: new Date().toISOString()
     });
 
   } catch (error) {
+    console.error("SYNC_ERROR:", error);
     return NextResponse.json({ status: "ERROR", msg: "Fallo en el barrido" }, { status: 500 });
   }
 }
