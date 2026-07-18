@@ -7,19 +7,18 @@ export async function POST(request: Request) {
   try {
     const { id } = await request.json();
 
-    // 1. Buscar el ítem en la bandeja de entrada
     const item = await prisma.discoveryInbox.findUnique({
       where: { id }
     });
 
     if (!item) return NextResponse.json({ error: "ITEM_NOT_FOUND" }, { status: 404 });
 
-    // 2. Pedir a Gemini que lo analice
+    // Llamada a la IA
     const analysis = await classifyDiscovery(item.raw_title, item.raw_description || "");
 
-    if (!analysis) return NextResponse.json({ error: "AI_ANALYSIS_FAILED" }, { status: 500 });
+    if (!analysis) return NextResponse.json({ error: "AI_FAILED" }, { status: 500 });
 
-    // 3. Actualizar el ítem con el análisis
+    // Guardar el análisis en la base de datos
     const updated = await prisma.discoveryInbox.update({
       where: { id },
       data: {
