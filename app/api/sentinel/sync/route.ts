@@ -6,7 +6,6 @@ import Parser from 'rss-parser';
 
 const parser = new Parser();
 
-// FUENTES REALES DE ALTA FRECUENCIA
 const RSS_FEEDS = [
   { name: "Blu-ray_Releases", url: "https://www.blu-ray.com/rss/newreleasesfeed.xml" },
   { name: "CheapAssGamer_Deals", url: "https://www.cheapassgamer.com/forum/24-video-game-deals/index.rss" }
@@ -15,35 +14,20 @@ const RSS_FEEDS = [
 export async function GET() {
   try {
     const allResults = [];
-    console.log("SENTINEL_RADAR: Iniciando barrido...");
+    console.log("SENTINEL_RADAR: Iniciando escaneo...");
 
     for (const feed of RSS_FEEDS) {
-      // Intentamos leer la fuente
-      const data = await parser.parseURL(feed.url).catch(e => {
-        console.error(`Error en fuente ${feed.name}:`, e);
-        return { items: [] };
-      });
-      
-      // Procesamos los 5 más recientes de cada uno
+      const data = await parser.parseURL(feed.url).catch(() => ({ items: [] }));
       const latestItems = data.items.slice(0, 5);
 
       for (const item of latestItems) {
         const url = item.link || "";
         if (!url) continue;
 
-        // 1. Verificamos si ya lo conocemos
-        const existing = await prisma.discoveryInbox.findUnique({
-          where: { raw_url: url }
-        });
+        const existing = await prisma.discoveryInbox.findUnique({ where: { raw_url: url } });
 
         if (!existing) {
-          // 2. IA: Gemini analiza el activo
-          const analysis = await classifyDiscovery(
-            item.title || "", 
-            item.contentSnippet || item.content || ""
-          );
-
-          // 3. Registro en la base de datos
+          const analysis = await classifyDiscovery(item.title || "", item.contentSnippet || "");
           const newItem = await prisma.discoveryInbox.create({
             data: {
               raw_title: item.title || "Sin Título",
@@ -60,16 +44,14 @@ export async function GET() {
       }
     }
 
-    // RESPUESTA ACTUALIZADA PARA CONFIRMAR VERSIÓN
     return NextResponse.json({ 
-      status: "RADAR_OPERATIONAL", 
+      status: "VERSION_TEST_3_OPERATIONAL", 
       new_items_found: allResults.length,
       titles: allResults,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toLocaleTimeString()
     });
 
   } catch (error) {
-    console.error("CRITICAL_SYNC_ERROR:", error);
-    return NextResponse.json({ status: "ERROR", message: "Fallo en el barrido" }, { status: 500 });
+    return NextResponse.json({ status: "ERROR", msg: "Fallo en el barrido" }, { status: 500 });
   }
 }
