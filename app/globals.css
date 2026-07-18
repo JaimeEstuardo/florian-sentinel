@@ -2,33 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #050505;
-  --foreground: #ececec;
-}
-
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-feature-settings: "ss01", "ss03", "cv01", "cv11";
+html, body {
+  background-color: #050505 !important;
+  color: #ececec !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @layer base {
-  html {
-    @apply antialiased;
+  body {
+    @apply bg-[#050505] text-[#ececec] antialiased min-h-screen;
   }
-}
-
-/* Scrollbar técnica */
-::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-track {
-  background: #000;
-}
-::-webkit-scrollbar-thumb {
-  background: #1f1f1f;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #008ed6;
 }
