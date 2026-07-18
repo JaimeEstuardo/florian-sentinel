@@ -5,8 +5,8 @@ export const dynamic = 'force-dynamic';
 
 export async function GET() {
   return NextResponse.json({ 
-    message: "SONDA_DE_VIDA_EXITOSA", 
-    status: "SISTEMA_CONECTADO_CORRECTAMENTE",
+    status: "SENTINEL_PROBE_ACTIVE", 
+    message: "El sistema de rutas está operativo",
     timestamp: new Date().toISOString()
   });
 }

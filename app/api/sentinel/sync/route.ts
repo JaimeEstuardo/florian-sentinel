@@ -18,16 +18,12 @@ export async function GET() {
 
     for (const feed of RSS_FEEDS) {
       const data = await parser.parseURL(feed.url).catch(() => ({ items: [] }));
-      // Tomamos solo los 3 primeros para una prueba rápida y segura
       for (const item of data.items.slice(0, 3)) {
         const url = item.link || "";
-        
         const existing = await prisma.discoveryInbox.findUnique({ where: { raw_url: url } });
-        
         if (!existing) {
           const analysis = await classifyDiscovery(item.title || "", item.contentSnippet || "");
-          
-          const newItem = await prisma.discoveryInbox.create({
+          await prisma.discoveryInbox.create({
             data: {
               raw_title: item.title || "Untitled",
               raw_description: item.contentSnippet || "",
@@ -38,19 +34,19 @@ export async function GET() {
               gemini_analysis: analysis || {}
             }
           });
-          allResults.push(newItem.raw_title);
+          allResults.push(item.title);
         }
       }
     }
 
     return NextResponse.json({ 
-      status: "SENTINEL_V7_ONLINE", 
+      status: "SENTINEL_RADAR_V7_ONLINE", 
       new_items: allResults.length,
       timestamp: new Date().toISOString()
     });
 
   } catch (error) {
     console.error("SYNC_ERROR:", error);
-    return NextResponse.json({ status: "ERROR_V7", details: "Check Vercel Logs" }, { status: 500 });
+    return NextResponse.json({ status: "ERROR_V7", details: "Check Database/Gemini Key" }, { status: 500 });
   }
 }
