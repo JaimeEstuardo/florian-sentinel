@@ -18,12 +18,15 @@ export async function GET() {
 
     for (const feed of RSS_FEEDS) {
       const data = await parser.parseURL(feed.url).catch(() => ({ items: [] }));
+      // Tomamos solo los 3 primeros para una prueba rápida y segura
       for (const item of data.items.slice(0, 3)) {
         const url = item.link || "";
+        
         const existing = await prisma.discoveryInbox.findUnique({ where: { raw_url: url } });
         
         if (!existing) {
           const analysis = await classifyDiscovery(item.title || "", item.contentSnippet || "");
+          
           const newItem = await prisma.discoveryInbox.create({
             data: {
               raw_title: item.title || "Untitled",
@@ -47,6 +50,7 @@ export async function GET() {
     });
 
   } catch (error) {
-    return NextResponse.json({ status: "ERROR_V7", details: "Check Logs" }, { status: 500 });
+    console.error("SYNC_ERROR:", error);
+    return NextResponse.json({ status: "ERROR_V7", details: "Check Vercel Logs" }, { status: 500 });
   }
 }
