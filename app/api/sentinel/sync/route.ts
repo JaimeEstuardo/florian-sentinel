@@ -1,4 +1,5 @@
-// app/api/sentinel/sync/route.ts // VERSION_STAMP: 2025_02_04_v1
+// app/api/sentinel/sync/route.ts
+// VERSION_STAMP: 2025_02_04_v1
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { classifyDiscovery } from '@/lib/gemini';
@@ -15,7 +16,7 @@ const RSS_FEEDS = [
 export async function GET() {
   try {
     const allResults = [];
-    console.log("SENTINEL_RADAR_V4: Iniciando barrido...");
+    console.log("SENTINEL_RADAR_ACTIVE: Iniciando barrido...");
 
     for (const feed of RSS_FEEDS) {
       const data = await parser.parseURL(feed.url).catch(() => ({ items: [] }));
@@ -52,7 +53,6 @@ export async function GET() {
     });
 
   } catch (error) {
-    console.error("SYNC_ERROR:", error);
     return NextResponse.json({ status: "ERROR", msg: "Fail" }, { status: 500 });
   }
 }
