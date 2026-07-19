@@ -1,6 +1,4 @@
 // prisma/schema.prisma
-// PROTOCOLO_ESTRUCTURA_REPARADA_SENTINEL_V8
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -10,7 +8,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// 1. Bandeja de entrada (Descubrimientos de RSS/APIs)
 model DiscoveryInbox {
   id              String   @id @default(uuid())
   source_name     String?
@@ -27,21 +24,19 @@ model DiscoveryInbox {
   @@map("discovery_inbox")
 }
 
-// 2. El "Work" (La obra intelectual)
 model CatalogItem {
   id               String           @id @default(uuid())
   title            String
   creator          String?
   category         String?
   tags             String[]
-  status           String           @default("wishlist") // "wishlist" o "owned"
+  status           String           @default("wishlist") // wishlist | owned
   created_at       DateTime         @default(now())
   product_editions ProductEdition[]
 
   @@map("catalog_items")
 }
 
-// 3. La "Edición" (El producto físico)
 model ProductEdition {
   id             String         @id @default(uuid())
   work_id        String?
@@ -59,7 +54,6 @@ model ProductEdition {
   @@map("product_editions")
 }
 
-// 4. Listados en Tiendas
 model StoreListing {
   id            String          @id @default(uuid())
   edition_id    String?
@@ -73,7 +67,6 @@ model StoreListing {
   @@map("store_listings")
 }
 
-// 5. Historial de Precios
 model PriceHistory {
   id         String          @id @default(uuid())
   edition_id String?
