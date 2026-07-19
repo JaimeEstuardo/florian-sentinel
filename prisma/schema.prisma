@@ -34,6 +34,7 @@ model CatalogItem {
   creator          String?
   category         String?
   tags             String[]
+  status           String           @default("wishlist") // "wishlist" o "owned"
   created_at       DateTime         @default(now())
   product_editions ProductEdition[]
 
