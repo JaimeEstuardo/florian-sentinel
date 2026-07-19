@@ -4,28 +4,35 @@ import prisma from '@/lib/prisma';
 import Parser from 'rss-parser';
 
 export const dynamic = 'force-dynamic';
-const parser = new Parser();
+
+const parser = new Parser({
+  headers: {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+  },
+});
+
+const RSS_FEEDS = [
+  { name: "Blu-ray_Latest", url: "https://www.blu-ray.com/rss/newreleasesfeed.xml" },
+  { name: "CheapAssGamer", url: "https://www.cheapassgamer.com/forum/24-video-game-deals/index.rss" }
+];
 
 export async function GET() {
   try {
-    const RSS_FEEDS = [
-      { name: "Blu-ray_Latest", url: "https://www.blu-ray.com/rss/newreleasesfeed.xml" },
-      { name: "VideoGame_Deals", url: "https://www.cheapassgamer.com/forum/24-video-game-deals/index.rss" }
-    ];
-
     let newTotal = 0;
-    const detectedTitles: string[] = [];
+    const log = [];
 
     for (const feed of RSS_FEEDS) {
-      // Intentamos obtener los datos del RSS
-      const data = await parser.parseURL(feed.url).catch(() => ({ items: [] }));
-      
-      // Procesamos los 10 más recientes de cada fuente
+      console.log(`Buscando en: ${feed.name}`);
+      const data = await parser.parseURL(feed.url).catch((e) => {
+        console.error(`Error en ${feed.name}:`, e.message);
+        return { items: [] };
+      });
+
+      // Tomamos los 10 más recientes
       for (const item of data.items.slice(0, 10)) {
         const url = item.link || "";
         if (!url) continue;
 
-        // Verificamos si ya existe en la base de datos
         const existing = await prisma.discoveryInbox.findUnique({
           where: { raw_url: url }
         });
@@ -33,29 +40,28 @@ export async function GET() {
         if (!existing) {
           await prisma.discoveryInbox.create({
             data: {
-              raw_title: item.title || "Activo sin título",
-              raw_description: item.contentSnippet || item.content || "",
+              raw_title: item.title || "Untitled",
+              raw_description: item.contentSnippet || "",
               raw_url: url,
               source_name: feed.name,
               status: "pending",
-              category_hint: "Pendiente de IA",
+              category_hint: "PENDIENTE_IA",
               gemini_analysis: {}
             }
           });
           newTotal++;
-          detectedTitles.push(item.title || "Untitled");
+          log.push(item.title);
         }
       }
     }
 
     return NextResponse.json({ 
-      status: "SCAN_SUCCESSFUL", 
-      count: newTotal,
-      items: detectedTitles 
+      status: "SCAN_COMPLETE", 
+      new_items: newTotal,
+      titles: log 
     });
 
-  } catch (error) {
-    console.error("SYNC_CRITICAL_ERROR");
-    return NextResponse.json({ status: "SCAN_FAILED" }, { status: 500 });
+  } catch (error: any) {
+    return NextResponse.json({ status: "CRITICAL_ERROR", message: error.message }, { status: 500 });
   }
 }
