@@ -1,8 +1,6 @@
-@import "tailwindcss";
-
-@theme {
-  --color-sentinel: #008ed6;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #050505;
@@ -10,8 +8,8 @@
 }
 
 body {
-  background-color: #050505;
-  color: #ececec;
+  background-color: #050505 !important;
+  color: #ececec !important;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
