@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useState, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
+import { Home } from 'lucide-react';
 import "./globals.css";
 
 function AuthWrapper({ children }: { children: React.ReactNode }) {
   const [authorized, setAuthorized] = useState(false);
   const [mounted, setMounted] = useState(false);
   const searchParams = useSearchParams();
+  const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
@@ -41,7 +43,7 @@ function AuthWrapper({ children }: { children: React.ReactNode }) {
       <div className="bg-[#050505] text-zinc-600 flex flex-col items-center justify-center h-screen font-mono text-[10px] tracking-[0.3em] uppercase text-center">
         <div className="border border-zinc-900 p-10 bg-black/40 space-y-6 max-w-sm">
           <p>[ SYSTEM_LOCKED ]</p>
-          <p className="text-zinc-800 italic text-[9px] normal-case tracking-normal">Inicie sesión mediante el Protocolo Central</p>
+          <p className="text-zinc-800 italic text-[9px] normal-case tracking-normal">Inicie sesión mediante el Hub Central</p>
         </div>
       </div>
     );
@@ -51,10 +53,20 @@ function AuthWrapper({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen flex flex-col bg-[#050505] text-[#ececec]">
       <header className="border-b border-zinc-800 p-4 bg-black/60 backdrop-blur-xl sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-[#008ed6] font-mono text-xs font-bold uppercase">
-          <span>SENTINEL_v1.0 // Division 06</span>
-          <div className="flex items-center gap-2">
-             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-             <span className="text-zinc-500 text-[10px]">ACTIVE</span>
+          <div className="flex items-center gap-6">
+            {/* BOTÓN VOLVER AL HUB */}
+            <a href="https://www.jaimeflorian.com" className="text-zinc-500 hover:text-white transition-colors flex items-center gap-2">
+              <Home size={14} />
+              <span className="text-[10px] hidden md:inline">CENTRAL_HUB</span>
+            </a>
+            <div className="h-4 w-[1px] bg-zinc-800" />
+            <span className="cursor-pointer" onClick={() => router.push('/')}>SENTINEL_v1.0</span>
+          </div>
+          <div className="flex items-center gap-4">
+             <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
+                <span className="text-zinc-500 text-[10px]">ACTIVE_SIGNAL</span>
+             </div>
           </div>
         </div>
       </header>
