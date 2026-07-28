@@ -12,44 +12,38 @@ const parser = new Parser({
 });
 
 const RSS_FEEDS = [
-  { name: "Blu-ray_4K", url: "https://www.blu-ray.com/rss/newreleasesfeed.xml" },
+  { name: "Blu-ray_Latest", url: "https://www.blu-ray.com/rss/newreleasesfeed.xml" },
   { name: "Parka_Artbooks", url: "https://www.parkablogs.com/rss.xml" },
-  { name: "Anime_Manga_News", url: "https://www.animenewsnetwork.com/all/rss.xml" },
-  { name: "Game_Deals", url: "https://www.cheapassgamer.com/forum/24-video-game-deals/index.rss" }
+  { name: "VideoGame_Deals", url: "https://www.cheapassgamer.com/forum/24-video-game-deals/index.rss" }
 ];
 
 export async function GET() {
-  let report = {
-    status: "DIAGNOSTIC_MODE",
-    feeds_checked: 0,
-    total_items_parsed: 0,
-    skipped_duplicates: 0,
-    added_to_inbox: 0,
+  const report = {
+    status: "RADAR_REPORT",
+    total_parsed: 0,
+    added: 0,
+    skipped: 0,
     errors: [] as string[]
   };
 
   try {
     for (const feed of RSS_FEEDS) {
-      report.feeds_checked++;
       try {
         const data = await parser.parseURL(feed.url);
-        const latestItems = data.items.slice(0, 15);
-        report.total_items_parsed += latestItems.length;
+        const latest = data.items.slice(0, 10);
+        report.total_parsed += latest.length;
 
-        for (const item of latestItems) {
+        for (const item of latest) {
           const url = item.link || "";
           if (!url) continue;
 
-          // 1. Verificar duplicados
           const existing = await prisma.discoveryInbox.findUnique({ where: { raw_url: url } });
-
           if (existing) {
-            report.skipped_duplicates++;
+            report.skipped++;
             continue;
           }
 
-          // 2. IA: Intentamos clasificar pero NO bloqueamos si la IA dice que no es interesante
-          // En esta fase de rescate, queremos ver TODO.
+          // IA: Análisis suave
           const analysis = await classifyDiscovery(item.title || "", item.contentSnippet || "");
 
           await prisma.discoveryInbox.create({
@@ -59,17 +53,16 @@ export async function GET() {
               raw_url: url,
               source_name: feed.name,
               status: analysis ? "classified" : "pending",
-              category_hint: analysis?.category || "Pendiente de IA",
+              category_hint: analysis?.category || "Pendiente IA",
               gemini_analysis: analysis || {}
             }
           });
-          report.added_to_inbox++;
+          report.added++;
         }
       } catch (e: any) {
-        report.errors.push(`Error en ${feed.name}: ${e.message}`);
+        report.errors.push(`${feed.name}: ${e.message}`);
       }
     }
-
     return NextResponse.json(report);
   } catch (error: any) {
     return NextResponse.json({ status: "CRITICAL_ERROR", message: error.message }, { status: 500 });
