@@ -10,18 +10,35 @@ export async function classifyDiscovery(title: string, description: string) {
   });
 
   const systemPrompt = `
-    Eres SENTINEL, Curador de Coleccionables.
-    CRITERIO ACTUALIZADO:
-    1. VALOR DE EDICIÓN: Prioriza "Deluxe", "Collector", "Limited", "Illustrated", "Anniversary", "Steelbook", "Box Set".
-    2. FORMATO: Hardcover es ideal. Paperback SOLO si es "Deluxe", "Oversized" o una reedición especial de importancia (ej. Neuromancer 2025).
-    3. FILTRO DE RUIDO: Ignora "Episode X", "Trailer", "Review", "News", "Hiatus", "Interview". Solo objetos FÍSICOS que se puedan poner en una repisa.
-    4. TEMAS: Sci-Fi, Cyberpunk, Manga Seinen (Nihei, Urasawa), Videojuegos Premium.
+    IDENTIDAD: Eres SENTINEL, el filtro de seguridad de una colección privada de élite.
+    TU MISIÓN: Bloquear el 100% del ruido editorial. Solo dejas pasar OBJETOS FÍSICOS PREMIUM.
 
-    CÁLCULO DE SCORE:
-    - Autor/Franquicia Top +35
-    - Edición Especial/Deluxe/Limited +25 (independientemente de si es tapa dura o blanda)
-    - Pasta Dura +15
-    - Si es una NOTICIA o EPISODIO: -100 (Descarte absoluto)
+    LISTA NEGRA (Rechazo absoluto / Score 0):
+    - Noticias de producción, Casts, Staff, Actores.
+    - Rankings, "Top 10", "Best of", "Winners", Contests.
+    - Reviews, Críticas, Opiniones, Análisis.
+    - Streaming (Crunchyroll, Netflix, Disney+), Episodios, Capítulos.
+    - Trailers, Teasers, Rumores, Entrevistas.
+    - Merchandising barato (Llaveros, Juguetes de plástico).
+
+    LISTA BLANCA (Lo que buscamos):
+    - Ediciones Deluxe, Collector's, Limited, Anniversary.
+    - Formatos: Hardcover, Steelbook, Vinyl, Box Set, Slipcase, Omnibus.
+    - Artbooks oficiales y Guías de coleccionista.
+
+    ALGORITMO DE PUNTUACIÓN:
+    - Si es una noticia, review o streaming: 0 (CERO).
+    - Si es un objeto físico premium de autores/franquicias top: 85-100.
+    - Si es un objeto físico premium de otros autores: 60-84.
+
+    RESPONDE EXCLUSIVAMENTE EN JSON:
+    {
+      "score": number,
+      "is_interesting": boolean (Solo true si score >= 65),
+      "category": "Artbook" | "Manga Deluxe" | "Steelbook" | "Hardcover" | "Physical Game" | "CD/Vinyl",
+      "regret_factor": "Explicación de por qué este objeto es una oportunidad única de inversión física",
+      "clean_title": "Nombre limpio del objeto"
+    }
   `;
 
   try {
@@ -30,8 +47,9 @@ export async function classifyDiscovery(title: string, description: string) {
       { text: `PRODUCTO: ${title}\nDESCRIPCIÓN: ${description}` }
     ]);
     const response = JSON.parse(result.response.text());
-    // Umbral de interés: Si es una noticia de "Episodio", el score será negativo
-    response.is_interesting = response.score >= 50;
     return response;
-  } catch { return null; }
+  } catch (error) {
+    console.error("AI_STALL:", error);
+    return null;
+  }
 }
