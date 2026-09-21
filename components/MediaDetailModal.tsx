@@ -1,7 +1,6 @@
-"use client";
 import React, { useState } from 'react';
-import { MediaItem, WatchHistoryEntry } from '@/lib/types';
-import { Play, Plus, Edit2, Calendar, Disc, Volume2, Monitor, Star, Award, MapPin, X } from 'lucide-react';
+import { MediaItem, WatchHistoryEntry } from '../types';
+import { Play, Plus, Edit2, Calendar, Disc, Volume2, Monitor, Star, Award, MapPin, X, ExternalLink, HardDrive } from 'lucide-react';
 
 interface MediaDetailModalProps {
   item: MediaItem | null;
@@ -131,7 +130,7 @@ export const MediaDetailModal: React.FC<MediaDetailModalProps> = ({
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-[#111111]/20 font-mono text-[11px] font-bold uppercase">
+              <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-[#111111]/20 font-mono text-[11px] font-bold uppercase">
                 <button
                   onClick={() => {
                     onSelectForPlayback(item);
@@ -150,6 +149,26 @@ export const MediaDetailModal: React.FC<MediaDetailModalProps> = ({
                   <Plus className="w-3 h-3" />
                   <span>REGISTRAR SESIÓN HOY</span>
                 </button>
+
+                {/* Direct IMDb Link */}
+                <a
+                  href={item.imdbUrl || `https://www.imdb.com/find/?q=${encodeURIComponent(item.title + ' ' + item.year)}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1.5 bg-[#F5C518] hover:bg-[#e3b514] text-black px-3 py-1.5 border border-[#111111] cursor-pointer font-black"
+                  title="Abrir ficha oficial en IMDb"
+                >
+                  <span>IMDb</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+
+                {/* File size if recorded */}
+                {item.fileSize && (
+                  <span className="flex items-center gap-1 bg-[#FAF9F5] border border-neutral-300 text-neutral-700 px-2.5 py-1 text-[10px] font-mono">
+                    <HardDrive className="w-3 h-3 text-neutral-500" />
+                    <span>{item.fileSize}</span>
+                  </span>
+                )}
 
                 <button
                   onClick={() => {
