@@ -1,6 +1,5 @@
-"use client";
 import React from 'react';
-import { MediaItem } from '@/lib/types';
+import { MediaItem } from '../types';
 import { Play, PlusCircle, FileText, Edit2, Trash2, Star, Disc, CheckCircle } from 'lucide-react';
 
 interface MediaCardProps {
@@ -128,9 +127,17 @@ export const MediaCard: React.FC<MediaCardProps> = ({
               {/* Ratings Badges Bar */}
               <div className="flex flex-wrap items-center gap-1.5 mt-2 font-mono text-[9px] font-bold">
                 {item.ratings.imdb > 0 && (
-                  <span className="bg-[#F5C518] text-black px-1.5 py-0.2 border border-black/40">
-                    IMDb {item.ratings.imdb}
-                  </span>
+                  <a
+                    href={item.imdbUrl || `https://www.imdb.com/find/?q=${encodeURIComponent(item.title + ' ' + item.year)}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-[#F5C518] hover:bg-[#e3b514] text-black px-1.5 py-0.2 border border-black/40 cursor-pointer inline-flex items-center gap-0.5"
+                    title="Ver ficha en IMDb"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <span>IMDb {item.ratings.imdb}</span>
+                    <span className="text-[7px]">↗</span>
+                  </a>
                 )}
                 {item.ratings.rottenTomatoes > 0 && (
                   <span className="bg-[#FA320A] text-white px-1.5 py-0.2 border border-black/40">
