@@ -69,6 +69,8 @@ export interface MediaItem {
   location?: string;          // "Repisa Principal A1", "Servidor Local", etc.
   edition?: string;           // "Limited Collector's Edition", "Criterion #982", "The Final Cut"
   userReview?: string;        // Bitácora / Comentario técnico o personal de Jaime
+  imdbUrl?: string;           // Enlace oficial directo a IMDb (ej. https://www.imdb.com/title/tt...)
+  fileSize?: string;          // Tamaño digital o rip normalizado (ej. "4.65 GB", "25.9 GB")
   history: WatchHistoryEntry[];
   isFavorite: boolean;
   notionPageId?: string;
