@@ -1,4 +1,3 @@
-"use client";
 import React from 'react';
 import { Plus, Database, Radio, GitBranch, RefreshCw, Layers } from 'lucide-react';
 
@@ -76,6 +75,9 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           <div className="flex items-center gap-2 font-mono text-[11px] text-neutral-600 self-start md:self-end">
+            <span className="border-2 border-[#111111] px-2.5 py-0.5 bg-[#FF4D00] text-white font-mono font-bold tracking-wider">
+              {totalItems} TÍTULOS CURADOS
+            </span>
             <span className="border border-[#111111] px-2 py-0.5 bg-white font-bold text-[#111111]">
               CINE • SERIES • ANIME
             </span>
