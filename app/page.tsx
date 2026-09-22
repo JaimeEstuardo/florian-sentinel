@@ -17,7 +17,7 @@ import { QuickLogModal } from '@/components/QuickLogModal';
 import { NotionGithubSyncModal } from '@/components/NotionGithubSyncModal';
 import { Film } from 'lucide-react';
 
-const STORAGE_KEY = 'sentinel_catalog_v1';
+const STORAGE_KEY = 'sentinel_catalog_v2';
 const TRAY_STORAGE_KEY = 'sentinel_active_tray_v1';
 
 export default function Page() {
