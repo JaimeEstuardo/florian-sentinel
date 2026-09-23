@@ -1,10 +1,1245 @@
-// Curated Florian Sentinel Catalog - 412 titles with authoritative covers & specs
+// Curated Florian Sentinel Catalog - 424 titles with authoritative covers & specs
 import { MediaItem } from ./types;
 
 export const INITIAL_CATALOG: MediaItem[] = [
   {
-    "id": "sen-csv-1",
+    "id": "sen-001",
     "code": "SEN_001",
+    "title": "BLADE RUNNER 2049",
+    "originalTitle": "Blade Runner 2049",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 2017,
+    "decade": "2010s",
+    "director": "DENIS VILLENEUVE",
+    "studio": "WARNER BROS / SONY",
+    "genres": [
+      "Sci-Fi",
+      "Cyberpunk",
+      "Neo-Noir",
+      "Misterio"
+    ],
+    "runtime": "164 min",
+    "runtimeMinutes": 164,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Treinta años después de los eventos de la primera película, un nuevo blade runner, el oficial K del LAPD, descubre un secreto enterrado durante mucho tiempo que tiene el potencial de sumergir lo que queda de la sociedad en el caos.",
+    "ratings": {
+      "imdb": 8,
+      "rottenTomatoes": 88,
+      "rottenTomatoesAudience": 82,
+      "metacritic": 81,
+      "personal": 9.8
+    },
+    "lastWatched": "2026-09-12",
+    "watchCount": 7,
+    "audioSpecs": "Dolby Atmos 7.1.4 (TrueHD 48kHz / 24-bit)",
+    "videoSpecs": "4K Native HDR10+ / Dolby Vision (Aspect Ratio: 2.39:1 / 1.90:1 IMAX)",
+    "location": "Repisa A // Fila 1 - Sci-Fi Core",
+    "edition": "Titan of Pop Culture - 4K Ultra HD Steelbook Edition",
+    "userReview": "Masterpiece absoluta de la ciencia ficción contemporánea. La cinematografía de Roger Deakins combinada con el diseño sonoro en Atmos hace temblar la sala. El transfer 4K tiene niveles de negro impecables en las secuencias de Las Vegas.",
+    "imdbUrl": "https://www.imdb.com/title/tt1856101/",
+    "history": [
+      {
+        "id": "h-1",
+        "date": "2026-09-12",
+        "note": "Revisión nocturna en OLED con mezcla de volumen de referencia +0dB en Atmos.",
+        "rating": 9.8,
+        "formatWatched": "4K UHD Steelbook"
+      },
+      {
+        "id": "h-2",
+        "date": "2025-11-04",
+        "note": "Sesión de análisis visual de la secuencia en el casino abandonado.",
+        "rating": 9.7,
+        "formatWatched": "4K UHD Steelbook"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-01-15T00:00:00.000Z",
+    "updatedAt": "2026-09-12T22:30:00.000Z"
+  },
+  {
+    "id": "sen-002",
+    "code": "SEN_002",
+    "title": "AKIRA",
+    "originalTitle": "AKIRA (アキラ)",
+    "type": "anime",
+    "format": "4k_uhd",
+    "packaging": "BOXSET",
+    "status": "completed",
+    "year": 1988,
+    "decade": "1980s",
+    "director": "KATSUHIRO OTOMO",
+    "studio": "TOHO / TOKYO MOVIE SHINSHA",
+    "genres": [
+      "Anime",
+      "Cyberpunk",
+      "Sci-Fi",
+      "Acción",
+      "Culto"
+    ],
+    "runtime": "124 min",
+    "runtimeMinutes": 124,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNzlhZGRmZGEtM2ZjNC00MWRmLTk0MDctYzU1NzAzODIxYzEyXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "En el año 2019, treinta y un años después del inicio de la Tercera Guerra Mundial, Neo-Tokio es una metrópolis plagada de corrupción, protestas y guerra de pandillas. Kaneda, el líder de una banda de motociclistas adolescentes, intenta salvar a su amigo Tetsuo.",
+    "ratings": {
+      "imdb": 8,
+      "rottenTomatoes": 91,
+      "rottenTomatoesAudience": 90,
+      "metacritic": 88,
+      "personal": 9.9
+    },
+    "lastWatched": "2026-08-28",
+    "watchCount": 9,
+    "audioSpecs": "Dolby TrueHD 5.1 japonés 192kHz/24bit (Hypersonic Sound System)",
+    "videoSpecs": "4K HDR10 35mm Scan Nativo",
+    "location": "Repisa A // Fila 1 - Anime Legends",
+    "edition": "Collector’s Limited Edition 4K UHD 3-Disc Boxset",
+    "userReview": "La piedra angular de la animación mundial. La pista sonora a 192kHz del Geinoh Yamashirogumi es una experiencia física inigualable. El escaneo 4K rescata cada trazo manual de celuloide en las explosiones y el asfalto de Neo-Tokio.",
+    "imdbUrl": "https://www.imdb.com/title/tt0094625/",
+    "history": [
+      {
+        "id": "h-3",
+        "date": "2026-08-28",
+        "note": "Maratón conmemorativo de animación tradicional.",
+        "rating": 9.9,
+        "formatWatched": "4K UHD Boxset"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-01-20T00:00:00.000Z",
+    "updatedAt": "2026-08-28T21:15:00.000Z"
+  },
+  {
+    "id": "sen-003",
+    "code": "SEN_003",
+    "title": "SEVERANCE",
+    "originalTitle": "Severance",
+    "type": "series",
+    "format": "digital_4k",
+    "packaging": "DIGITAL",
+    "status": "in_progress",
+    "year": 2022,
+    "decade": "2020s",
+    "director": "DAN ERICKSON / BEN STILLER",
+    "studio": "APPLE TV+ / RED HOUR",
+    "genres": [
+      "Sci-Fi",
+      "Thriller Psicológico",
+      "Distopía",
+      "Misterio"
+    ],
+    "runtime": "2 Temporadas (19 eps)",
+    "runtimeMinutes": 980,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDI5YzJhODQtMzQyNy00YWNmLWIxMjUtNDBjNjA5YWRjMzExXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Mark Scout lidera un equipo en Lumon Industries, cuyos empleados se han sometido a un procedimiento quirúrgico de separación de memoria que divide quirúrgicamente sus recuerdos entre el trabajo y su vida personal.",
+    "ratings": {
+      "imdb": 8.7,
+      "rottenTomatoes": 97,
+      "rottenTomatoesAudience": 93,
+      "metacritic": 83,
+      "personal": 9.6
+    },
+    "lastWatched": "2026-09-20",
+    "watchCount": 2,
+    "audioSpecs": "Dolby Atmos (Dolby Digital Plus con JOC)",
+    "videoSpecs": "4K Dolby Vision Apple TV Master",
+    "location": "Servidor Digital / Apple TV",
+    "edition": "Digital Remux 4K Dolby Vision",
+    "userReview": "Una de las mejores series de ciencia ficción y paranoia corporativa de la década. La simetría visual de Ben Stiller y la banda sonora minimalista de Theodore Shapiro crean una atmósfera clínica asfixiante e hipnótica.",
+    "imdbUrl": "https://www.imdb.com/title/tt11280740/",
+    "history": [
+      {
+        "id": "h-4",
+        "date": "2026-09-20",
+        "note": "Episodio 7 y 8 de la T2 en progreso. Ritmo implacable.",
+        "rating": 9.6,
+        "formatWatched": "Digital 4K"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-03-01T00:00:00.000Z",
+    "updatedAt": "2026-09-20T23:10:00.000Z"
+  },
+  {
+    "id": "sen-004",
+    "code": "SEN_004",
+    "title": "DUNE: PART TWO",
+    "originalTitle": "Dune: Part Two",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 2024,
+    "decade": "2020s",
+    "director": "DENIS VILLENEUVE",
+    "studio": "LEGENDARY / WARNER BROS",
+    "genres": [
+      "Sci-Fi",
+      "Space Opera",
+      "Aventura",
+      "Drama Épico"
+    ],
+    "runtime": "166 min",
+    "runtimeMinutes": 166,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1473580044384-7ba9967a16a0?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Paul Atreides se une a Chani y a los Fremen mientras busca venganza contra los conspiradores que destruyeron a su familia.",
+    "ratings": {
+      "imdb": 8.5,
+      "rottenTomatoes": 92,
+      "rottenTomatoesAudience": 95,
+      "metacritic": 79,
+      "personal": 9.7
+    },
+    "lastWatched": "2026-08-15",
+    "watchCount": 4,
+    "audioSpecs": "Dolby Atmos 7.1.4 (Mastering Reference Level)",
+    "videoSpecs": "4K Native Dolby Vision / IMAX 1.90:1 Aspect Ratio",
+    "location": "Repisa A // Fila 1 - Sci-Fi Core",
+    "edition": "Limited Edition 4K UHD Steelbook Glow in Dark",
+    "userReview": "Cine de escala monumental. El diseño sonoro en la secuencia del gusano gigante y el ataque de los Harvester en Arrakis desafía los límites del subwoofer. Insuperable en 4K.",
+    "imdbUrl": "https://www.imdb.com/title/tt15239678/",
+    "history": [
+      {
+        "id": "h-5",
+        "date": "2026-08-15",
+        "note": "Sesión completa de domingo con invitados cinéfilos.",
+        "rating": 9.7,
+        "formatWatched": "4K UHD Steelbook"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-05-10T00:00:00.000Z",
+    "updatedAt": "2026-08-15T20:00:00.000Z"
+  },
+  {
+    "id": "sen-005",
+    "code": "SEN_005",
+    "title": "COWBOY BEBOP",
+    "originalTitle": "Cowboy Bebop (カウボーイビバップ)",
+    "type": "anime",
+    "format": "bluray",
+    "packaging": "BOXSET",
+    "status": "rewatch",
+    "year": 1998,
+    "decade": "1990s",
+    "director": "SHINICHIRO WATANABE",
+    "studio": "SUNRISE / BANDAI VISUAL",
+    "genres": [
+      "Anime",
+      "Space Western",
+      "Neo-Noir",
+      "Sci-Fi"
+    ],
+    "runtime": "26 Episodios",
+    "runtimeMinutes": 624,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTU3ZTdiOGQtYmYwYy00OGM5LThmNjMtZGJmNTVlZjk1ZmEyXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "En el año 2071, la tripulación de la nave espacial Bebop está formada por cazadores de recompensas que viajan por el sistema solar intentando atrapar a criminales peligrosos.",
+    "ratings": {
+      "imdb": 8.9,
+      "rottenTomatoes": 100,
+      "rottenTomatoesAudience": 98,
+      "metacritic": 90,
+      "personal": 10
+    },
+    "lastWatched": "2026-07-10",
+    "watchCount": 12,
+    "audioSpecs": "DTS-HD Master Audio 5.1 & 2.0 (Yoko Kanno Score)",
+    "videoSpecs": "1080p Original 4:3 Remastered Aspect Ratio",
+    "location": "Repisa A // Fila 2 - Vintage Anime",
+    "edition": "20th Anniversary Collector’s Vinyl-Size Box Set",
+    "userReview": "Perfección pura de ritmo, melancolía existencial y jazz. La música de Yoko Kanno y The Seatbelts es el alma de la serie.",
+    "imdbUrl": "https://www.imdb.com/title/tt0213338/",
+    "history": [
+      {
+        "id": "h-6",
+        "date": "2026-07-10",
+        "note": "Revisitando sesiones 5, 11 y el final. See you space cowboy...",
+        "rating": 10,
+        "formatWatched": "Blu-ray Boxset"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-01-10T00:00:00.000Z",
+    "updatedAt": "2026-07-10T19:40:00.000Z"
+  },
+  {
+    "id": "sen-006",
+    "code": "SEN_006",
+    "title": "THE THING",
+    "originalTitle": "The Thing",
+    "type": "movie",
+    "format": "criterion",
+    "packaging": "CRITERION",
+    "status": "completed",
+    "year": 1982,
+    "decade": "1980s",
+    "director": "JOHN CARPENTER",
+    "studio": "UNIVERSAL / ARROW VIDEO",
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Misterio",
+      "Claustrofobia"
+    ],
+    "runtime": "109 min",
+    "runtimeMinutes": 109,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTA3NDU5MWEtNTk4Yy00ZDNkLThmZTQtMjU3ZGVhYzAyMzU4XkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1517824806704-9040b037703b?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Un equipo de investigadores en la Antártida se ve acechado por un organismo extraterrestre cambiaformas que imita la apariencia y comportamiento de sus víctimas humanas.",
+    "ratings": {
+      "imdb": 8.2,
+      "rottenTomatoes": 85,
+      "rottenTomatoesAudience": 92,
+      "metacritic": 57,
+      "personal": 9.9
+    },
+    "lastWatched": "2026-06-22",
+    "watchCount": 8,
+    "audioSpecs": "DTS-HD MA 5.1 / Pista Mono Original Restaurada",
+    "videoSpecs": "4K Scan Arrow Films HDR10 (Panavision Anamorphic)",
+    "location": "Repisa B // Fila 1 - Cult Classics",
+    "edition": "Arrow Video 4K Deluxe Hardbox Edition",
+    "userReview": "El pináculo indiscutido del horror práctico. El trabajo de efectos de Rob Bottin en 4K revela texturas orgánicas escalofriantes.",
+    "imdbUrl": "https://www.imdb.com/title/tt0084787/",
+    "history": [
+      {
+        "id": "h-7",
+        "date": "2026-06-22",
+        "note": "Prueba de noche de invierno con audio mono restaurado.",
+        "rating": 9.9,
+        "formatWatched": "4K UHD Arrow"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-02-14T00:00:00.000Z",
+    "updatedAt": "2026-06-22T23:50:00.000Z"
+  },
+  {
+    "id": "sen-007",
+    "code": "SEN_007",
+    "title": "INTERSTELLAR",
+    "originalTitle": "Interstellar",
+    "type": "movie",
+    "format": "4k_uhd",
+    "packaging": "SLIPCOVER",
+    "status": "completed",
+    "year": 2014,
+    "decade": "2010s",
+    "director": "CHRISTOPHER NOLAN",
+    "studio": "PARAMOUNT / WARNER BROS",
+    "genres": [
+      "Sci-Fi",
+      "Aventura",
+      "Drama",
+      "Física Cuántica"
+    ],
+    "runtime": "169 min",
+    "runtimeMinutes": 169,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Cuando la Tierra se vuelve inhabitable debido a plagas y tormentas de polvo, un grupo de exploradores emprende la misión más importante de la historia.",
+    "ratings": {
+      "imdb": 8.7,
+      "rottenTomatoes": 73,
+      "rottenTomatoesAudience": 86,
+      "metacritic": 74,
+      "personal": 9.5
+    },
+    "lastWatched": "2026-05-04",
+    "watchCount": 5,
+    "audioSpecs": "DTS-HD Master Audio 5.1 (Dinámica IMAX sin compresión)",
+    "videoSpecs": "4K HDR10 Aspect Ratio Variable IMAX 1.78:1 / 2.39:1",
+    "location": "Repisa A // Fila 1 - Nolan Core",
+    "edition": "4K Ultra HD Ultimate Collector Slipcover",
+    "userReview": "La secuencia del acoplamiento giratorio con el órgano de tubos de Zimmer sigue siendo una de las mayores hazañas audiovisuales del cine del siglo XXI.",
+    "imdbUrl": "https://www.imdb.com/title/tt0816692/",
+    "history": [
+      {
+        "id": "h-8",
+        "date": "2026-05-04",
+        "note": "Revisión técnica de la pista de audio sinfónica.",
+        "rating": 9.5,
+        "formatWatched": "4K UHD Slipcover"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-01-05T00:00:00.000Z",
+    "updatedAt": "2026-05-04T18:30:00.000Z"
+  },
+  {
+    "id": "sen-008",
+    "code": "SEN_008",
+    "title": "NEON GENESIS EVANGELION",
+    "originalTitle": "Shin Seiki Evangelion (新世紀エヴァンゲリオン)",
+    "type": "anime",
+    "format": "boxset",
+    "packaging": "BOXSET",
+    "status": "completed",
+    "year": 1995,
+    "decade": "1990s",
+    "director": "HIDEAKI ANNO",
+    "studio": "GAINAX / KING RECORDS",
+    "genres": [
+      "Anime",
+      "Mecha",
+      "Psicológico",
+      "Filosófico",
+      "Deconstrucción"
+    ],
+    "runtime": "26 eps + The End of Evangelion",
+    "runtimeMinutes": 710,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BZjZjZGI3ZDQtODNmZC00NjE0LTlmYTUtOTljMWI2YjNmMTQ0XkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Shinji Ikari es convocado por su distante padre a Tokio-3 para pilotar el Evangelion Unidad 01.",
+    "ratings": {
+      "imdb": 8.5,
+      "rottenTomatoes": 100,
+      "rottenTomatoesAudience": 95,
+      "metacritic": 92,
+      "personal": 10
+    },
+    "lastWatched": "2026-04-12",
+    "watchCount": 6,
+    "audioSpecs": "Linear PCM 5.1 japonés & 2.0 Broadcast Original",
+    "videoSpecs": "1080p 16mm/35mm Archival Transfer 4:3",
+    "location": "Repisa A // Fila 2 - Vintage Anime",
+    "edition": "The Ultimate Edition Blu-ray Box Set (All the Anime / GKIDS)",
+    "userReview": "La obra más desgarradora y trascendental de la animación japonesa. The End of Evangelion es una erupción surrealista sin parangón.",
+    "imdbUrl": "https://www.imdb.com/title/tt0112159/",
+    "history": [
+      {
+        "id": "h-9",
+        "date": "2026-04-12",
+        "note": "Fin de revisión de la serie completa con The End of Evangelion.",
+        "rating": 10,
+        "formatWatched": "Blu-ray Ultimate Edition"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-01-08T00:00:00.000Z",
+    "updatedAt": "2026-04-12T22:10:00.000Z"
+  },
+  {
+    "id": "sen-009",
+    "code": "SEN_009",
+    "title": "CHILDREN OF MEN",
+    "originalTitle": "Children of Men",
+    "type": "movie",
+    "format": "criterion",
+    "packaging": "CRITERION",
+    "status": "completed",
+    "year": 2006,
+    "decade": "2000s",
+    "director": "ALFONSO CUARÓN",
+    "studio": "UNIVERSAL / STRIKE ENTERTAINMENT",
+    "genres": [
+      "Sci-Fi",
+      "Distopía",
+      "Thriller",
+      "Drama"
+    ],
+    "runtime": "109 min",
+    "runtimeMinutes": 109,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMDNkNmNiYzYtYWY0YS00NWEwLTgwMWUtYjM0M2E4Nzk3MzhmXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "En el año 2027, tras dos décadas de infertilidad humana total que han llevado al mundo al borde del colapso, un ex activista llamado Theo Faron acepta escoltar a una joven refugiada embarazada milagrosamente.",
+    "ratings": {
+      "imdb": 7.9,
+      "rottenTomatoes": 92,
+      "rottenTomatoesAudience": 85,
+      "metacritic": 84,
+      "personal": 9.7
+    },
+    "lastWatched": "2026-03-01",
+    "watchCount": 4,
+    "audioSpecs": "DTS-HD Master Audio 5.1",
+    "videoSpecs": "1080p Master Supervisor Cuarón / Lubezki",
+    "location": "Repisa B // Fila 2 - Cinema Prestige",
+    "edition": "Criterion Collection #734 Special Digipak",
+    "userReview": "Los planos secuencia de Emmanuel Lubezki siguen siendo un manual magistral de dirección y puesta en escena inmersiva.",
+    "imdbUrl": "https://www.imdb.com/title/tt0206634/",
+    "history": [
+      {
+        "id": "h-10",
+        "date": "2026-03-01",
+        "note": "Sesión dominical de directores latinoamericanos.",
+        "rating": 9.7,
+        "formatWatched": "Criterion Blu-ray"
+      }
+    ],
+    "isFavorite": false,
+    "createdAt": "2024-02-28T00:00:00.000Z",
+    "updatedAt": "2026-03-01T17:45:00.000Z"
+  },
+  {
+    "id": "sen-010",
+    "code": "SEN_010",
+    "title": "SOLARIS",
+    "originalTitle": "Solyaris (Солярис)",
+    "type": "movie",
+    "format": "criterion",
+    "packaging": "CRITERION",
+    "status": "backlog",
+    "year": 1972,
+    "decade": "1970s",
+    "director": "ANDREI TARKOVSKY",
+    "studio": "MOSFILM / CRITERION",
+    "genres": [
+      "Sci-Fi",
+      "Filosófico",
+      "Drama",
+      "Misterio"
+    ],
+    "runtime": "167 min",
+    "runtimeMinutes": 167,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTYyMjU4MjItYzZkNy00NmIyLTg1ZGEtYTY5ZTEyM2U2NDM2XkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "El psicólogo Kris Kelvin viaja a una estación espacial en órbita alrededor del misterioso planeta oceánico Solaris.",
+    "ratings": {
+      "imdb": 8,
+      "rottenTomatoes": 95,
+      "rottenTomatoesAudience": 88,
+      "metacritic": 90,
+      "personal": 9.2
+    },
+    "watchCount": 0,
+    "audioSpecs": "Uncompressed Russian Mono LPCM",
+    "videoSpecs": "1080p Mosfilm Restoration 2.35:1 SDR",
+    "location": "Repisa B // Fila 3 - Olvidados / Backlog",
+    "edition": "The Criterion Collection #164 Double-disc Blu-ray",
+    "userReview": "Pendiente de visionado detallado tras conseguir la copia física de Criterion. Adaptación de Stanislaw Lem.",
+    "imdbUrl": "https://www.imdb.com/title/tt0069293/",
+    "history": [],
+    "isFavorite": false,
+    "createdAt": "2024-04-01T00:00:00.000Z",
+    "updatedAt": "2024-04-01T00:00:00.000Z"
+  },
+  {
+    "id": "sen-011",
+    "code": "SEN_011",
+    "title": "GHOST IN THE SHELL",
+    "originalTitle": "Kōkaku Kidōtai (攻殻機動隊)",
+    "type": "anime",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 1995,
+    "decade": "1990s",
+    "director": "MAMORU OSHII",
+    "studio": "PRODUCTION I.G / BANDAI VISUAL",
+    "genres": [
+      "Anime",
+      "Cyberpunk",
+      "Filosofía",
+      "Acción",
+      "Sci-Fi"
+    ],
+    "runtime": "83 min",
+    "runtimeMinutes": 83,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNzljMjA3MTQtMjM1OS00OGJjLWJiYzctZDRiMTk1NWI5YzQ5XkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "En un futuro hiperconectado en 2029, la Mayor Motoko Kusanagi persigue a un hacker esquivo conocido como el Titiritero.",
+    "ratings": {
+      "imdb": 7.9,
+      "rottenTomatoes": 97,
+      "rottenTomatoesAudience": 89,
+      "metacritic": 76,
+      "personal": 9.8
+    },
+    "lastWatched": "2026-02-18",
+    "watchCount": 6,
+    "audioSpecs": "Dolby Atmos Japonés & Inglés 48kHz/24bit",
+    "videoSpecs": "4K Ultra HD Dolby Vision 1.85:1",
+    "location": "Repisa A // Fila 1 - Cyberpunk Classics",
+    "edition": "Lionsgate 4K UHD Limited Steelbook Mondo",
+    "userReview": "Kenji Kawai y su coro búlgaro define para siempre la melancolía del cuerpo cibernético frente a la conciencia.",
+    "imdbUrl": "https://www.imdb.com/title/tt0113568/",
+    "history": [
+      {
+        "id": "h-11",
+        "date": "2026-02-18",
+        "note": "Visionado en 4K Atmos con amigos entusiastas del género.",
+        "rating": 9.8,
+        "formatWatched": "4K UHD Steelbook"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-02-01T00:00:00.000Z",
+    "updatedAt": "2026-02-18T21:00:00.000Z"
+  },
+  {
+    "id": "sen-012",
+    "code": "SEN_012",
+    "title": "2001: A SPACE ODYSSEY",
+    "originalTitle": "2001: A Space Odyssey",
+    "type": "movie",
+    "format": "4k_uhd",
+    "packaging": "DIGIPAK",
+    "status": "completed",
+    "year": 1968,
+    "decade": "1960s",
+    "director": "STANLEY KUBRICK",
+    "studio": "METRO-GOLDWYN-MAYER (MGM)",
+    "genres": [
+      "Sci-Fi",
+      "Culto",
+      "Misterio",
+      "Evolución"
+    ],
+    "runtime": "149 min",
+    "runtimeMinutes": 149,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjU0NDFkMTQtZWY5OS00MmZhLTg3Y2QtZmJhMzMzMWYyYjc2XkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Tras el descubrimiento de un monolito negro enterrado en la Luna, una nave tripulada por los astronautas David Bowman y Frank Poole viaja hacia Júpiter junto con HAL 9000.",
+    "ratings": {
+      "imdb": 8.3,
+      "rottenTomatoes": 92,
+      "rottenTomatoesAudience": 89,
+      "metacritic": 84,
+      "personal": 10
+    },
+    "lastWatched": "2026-01-01",
+    "watchCount": 5,
+    "audioSpecs": "DTS-HD Master Audio 5.1 & Pista 1968 6-Track Restaurada",
+    "videoSpecs": "4K Transfer 65mm Original Negative HDR10 / Dolby Vision",
+    "location": "Repisa A // Fila 1 - Masterpieces",
+    "edition": "50th Anniversary 4K UHD Digipak 3-Disc Set",
+    "userReview": "El transfer en 4K a partir del negativo original de 65mm de Christopher Nolan y Ned Price es sobrecogedor.",
+    "imdbUrl": "https://www.imdb.com/title/tt0062622/",
+    "history": [
+      {
+        "id": "h-12",
+        "date": "2026-01-01",
+        "note": "Tradición de año nuevo viendo la suite de Júpiter y más allá del infinito.",
+        "rating": 10,
+        "formatWatched": "4K UHD Digipak"
+      }
+    ],
+    "isFavorite": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T15:30:00.000Z"
+  },
+  {
+    "id": "sen-013",
+    "code": "SEN_013",
+    "title": "JURASSIC PARK",
+    "originalTitle": "Jurassic Park",
+    "type": "movie",
+    "format": "4k_uhd",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 1993,
+    "decade": "1990s",
+    "director": "STEVEN SPIELBERG",
+    "studio": "UNIVERSAL PICTURES / AMBLIN",
+    "genres": [
+      "Aventura",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "runtime": "127 min",
+    "runtimeMinutes": 127,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Un pragmático paleontólogo visita un parque temático casi completo en una isla de Costa Rica y se ve encargado de proteger a un par de niños después de que una brecha de seguridad libera a los dinosaurios clonados.",
+    "ratings": {
+      "imdb": 8.2,
+      "rottenTomatoes": 91,
+      "rottenTomatoesAudience": 91,
+      "metacritic": 68,
+      "personal": 9.8
+    },
+    "lastWatched": "2026-07-04",
+    "watchCount": 11,
+    "audioSpecs": "DTS:X / DTS-HD Master Audio 7.1",
+    "videoSpecs": "4K Native HDR10 / Dolby Vision (Aspect Ratio 1.85:1)",
+    "location": "Repisa A // Fila 1 - Spielberg Classics",
+    "edition": "30th Anniversary 4K UHD Steelbook Edition",
+    "userReview": "Pionera del cine moderno y del diseño sonoro. El rugido del T-Rex y los efectos prácticos de Stan Winston son insuperables.",
+    "imdbUrl": "https://www.imdb.com/title/tt0107290/",
+    "history": [],
+    "isFavorite": true,
+    "createdAt": "2024-01-15T00:00:00.000Z",
+    "updatedAt": "2026-07-04T20:00:00.000Z"
+  },
+  {
+    "id": "sen-014",
+    "code": "SEN_014",
+    "title": "THE SHINING",
+    "originalTitle": "The Shining",
+    "type": "movie",
+    "format": "4k_uhd",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 1980,
+    "decade": "1980s",
+    "director": "STANLEY KUBRICK",
+    "studio": "WARNER BROS",
+    "genres": [
+      "Horror",
+      "Psicológico",
+      "Misterio"
+    ],
+    "runtime": "144 min",
+    "runtimeMinutes": 144,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNmM5ZThhY2ItOGRjOS00NzZiLWEwYTItNDgyMjFkOTgxMmRiXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Una familia se dirige a un hotel aislado durante el invierno donde una siniestra presencia influye al padre hacia la violencia.",
+    "ratings": {
+      "imdb": 8.4,
+      "rottenTomatoes": 83,
+      "rottenTomatoesAudience": 93,
+      "metacritic": 66,
+      "personal": 9.9
+    },
+    "lastWatched": "2026-08-30",
+    "watchCount": 7,
+    "audioSpecs": "DTS-HD Master Audio 5.1 & Pista Mono Original 1980",
+    "videoSpecs": "4K Native Transfer desde Negativo Original 35mm HDR10 / Dolby Vision",
+    "location": "Repisa A // Fila 1 - Masterpieces",
+    "edition": "4K UHD Titans of Cult Steelbook",
+    "userReview": "El escaneo 4K supervisado por el asistente personal de Kubrick revela toda la riqueza simétrica del Hotel Overlook.",
+    "imdbUrl": "https://www.imdb.com/title/tt0081505/",
+    "history": [],
+    "isFavorite": true,
+    "createdAt": "2024-02-10T00:00:00.000Z",
+    "updatedAt": "2026-08-30T22:00:00.000Z"
+  },
+  {
+    "id": "sen-015",
+    "code": "SEN_015",
+    "title": "THE MATRIX",
+    "originalTitle": "The Matrix",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 1999,
+    "decade": "1990s",
+    "director": "LANA & LILLY WACHOWSKI",
+    "studio": "WARNER BROS",
+    "genres": [
+      "Sci-Fi",
+      "Acción",
+      "Cyberpunk",
+      "Filosofía"
+    ],
+    "runtime": "136 min",
+    "runtimeMinutes": 136,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Cuando una hermosa extraña conduce al hacker informático Neo a un inframundo prohibitivo, descubre la impactante verdad: la vida que conoce es el engaño elaborado de una inteligencia cibernética maligna.",
+    "ratings": {
+      "imdb": 8.7,
+      "rottenTomatoes": 83,
+      "rottenTomatoesAudience": 85,
+      "metacritic": 73,
+      "personal": 10
+    },
+    "lastWatched": "2026-09-01",
+    "watchCount": 15,
+    "audioSpecs": "Dolby Atmos (TrueHD 7.1) / Pista Dolby Digital 5.1 original",
+    "videoSpecs": "4K Native Dolby Vision / HDR10 (Nuevo 4K Remaster con Bill Pope)",
+    "location": "Repisa A // Fila 1 - Cyberpunk Classics",
+    "edition": "20th Anniversary 4K UHD Steelbook Edition",
+    "userReview": "El color grading original corregido por Bill Pope en este transfer 4K restauró la pureza visual de 1999 sin el tinte verde excesivo del Blu-ray anterior. En Atmos el tiroteo del vestíbulo es pura gloria.",
+    "imdbUrl": "https://www.imdb.com/title/tt0133093/",
+    "history": [],
+    "isFavorite": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2026-09-01T21:40:00.000Z"
+  },
+  {
+    "id": "sen-016",
+    "code": "SEN_016",
+    "title": "THE DARK KNIGHT",
+    "originalTitle": "The Dark Knight",
+    "type": "movie",
+    "format": "4k_uhd",
+    "packaging": "SLIPCOVER",
+    "status": "completed",
+    "year": 2008,
+    "decade": "2000s",
+    "director": "CHRISTOPHER NOLAN",
+    "studio": "WARNER BROS",
+    "genres": [
+      "Acción",
+      "Crimen",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime": "152 min",
+    "runtimeMinutes": 152,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1473580044384-7ba9967a16a0?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Cuando el Joker desata el caos en Gotham City, Batman debe aceptar una de las mayores pruebas psicológicas y físicas de su capacidad para combatir la injusticia.",
+    "ratings": {
+      "imdb": 9,
+      "rottenTomatoes": 94,
+      "rottenTomatoesAudience": 94,
+      "metacritic": 84,
+      "personal": 9.9
+    },
+    "lastWatched": "2026-06-14",
+    "watchCount": 8,
+    "audioSpecs": "DTS-HD Master Audio 5.1 sin compresión (Full Dynamic Range)",
+    "videoSpecs": "4K Native HDR10 Aspect Ratio Variable IMAX 1.78:1 / 2.39:1",
+    "location": "Repisa A // Fila 1 - Nolan Core",
+    "edition": "The Dark Knight Trilogy 4K Ultra HD Ultimate Collector",
+    "userReview": "Las secuencias filmadas con cámaras IMAX de 70mm en 4K ofrecen una nitidez que quita el aliento.",
+    "imdbUrl": "https://www.imdb.com/title/tt0468569/",
+    "history": [],
+    "isFavorite": true,
+    "createdAt": "2024-01-10T00:00:00.000Z",
+    "updatedAt": "2026-06-14T20:30:00.000Z"
+  },
+  {
+    "id": "sen-017",
+    "code": "SEN_017",
+    "title": "THE FUGITIVE",
+    "originalTitle": "The Fugitive",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 1993,
+    "decade": "1990s",
+    "director": "ANDREW DAVIS",
+    "studio": "WARNER BROS",
+    "genres": [
+      "Acción",
+      "Crimen",
+      "Drama",
+      "Misterio"
+    ],
+    "runtime": "130 min",
+    "runtimeMinutes": 130,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BM2RjMjEwODUtYTE4OC00MzhkLThjMjItZjYyZjk3YzA4YWUxXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "El Dr. Richard Kimble, injustamente acusado del asesinato de su esposa, debe encontrar al verdadero asesino mientras es blanco de una implacable persecución nacional encabezada por un hábil Marshal de los EE. UU.",
+    "ratings": {
+      "imdb": 7.8,
+      "rottenTomatoes": 96,
+      "rottenTomatoesAudience": 89,
+      "metacritic": 87,
+      "personal": 9.4
+    },
+    "lastWatched": "2026-05-18",
+    "watchCount": 5,
+    "audioSpecs": "Dolby Atmos (TrueHD 7.1) / Original Dolby Stereo 2.0",
+    "videoSpecs": "4K Native HDR10 / Dolby Vision (30th Anniversary 4K Scan)",
+    "location": "Repisa A // Fila 2 - 90s Thrillers",
+    "edition": "30th Anniversary 4K UHD Steelbook Edition",
+    "userReview": "El nuevo escaneo a partir del negativo original de cámara de 35mm limpia todo el ruido del master antiguo de 1080p. Harrison Ford y Tommy Lee Jones en su mejor momento.",
+    "imdbUrl": "https://www.imdb.com/title/tt0106977/",
+    "history": [],
+    "isFavorite": false,
+    "createdAt": "2024-03-05T00:00:00.000Z",
+    "updatedAt": "2026-05-18T22:15:00.000Z"
+  },
+  {
+    "id": "sen-018",
+    "code": "SEN_018",
+    "title": "THE DEPARTED",
+    "originalTitle": "The Departed",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 2006,
+    "decade": "2000s",
+    "director": "MARTIN SCORSESE",
+    "studio": "WARNER BROS",
+    "genres": [
+      "Crimen",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime": "151 min",
+    "runtimeMinutes": 151,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Un policía encubierto y un topo en la policía intentan identificarse mutuamente mientras se infiltran en una banda irlandesa en el sur de Boston.",
+    "ratings": {
+      "imdb": 8.5,
+      "rottenTomatoes": 91,
+      "rottenTomatoesAudience": 94,
+      "metacritic": 85,
+      "personal": 9.6
+    },
+    "lastWatched": "2026-07-22",
+    "watchCount": 6,
+    "audioSpecs": "Dolby Atmos (TrueHD 7.1)",
+    "videoSpecs": "4K Native Dolby Vision / HDR10 (4K Scan supervised by Scorsese)",
+    "location": "Repisa A // Fila 2 - Scorsese Archive",
+    "edition": "4K UHD Limited Steelbook Edition",
+    "userReview": "Edición en 4K definitiva con una pista Atmos que resalta la intensidad de la banda sonora de Howard Shore y las canciones de Dropkick Murphys.",
+    "imdbUrl": "https://www.imdb.com/title/tt0407887/",
+    "history": [],
+    "isFavorite": true,
+    "createdAt": "2024-04-10T00:00:00.000Z",
+    "updatedAt": "2026-07-22T21:10:00.000Z"
+  },
+  {
+    "id": "sen-019",
+    "code": "SEN_019",
+    "title": "PROMETHEUS",
+    "originalTitle": "Prometheus",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 2012,
+    "decade": "2010s",
+    "director": "RIDLEY SCOTT",
+    "studio": "20TH CENTURY FOX",
+    "genres": [
+      "Sci-Fi",
+      "Aventura",
+      "Misterio"
+    ],
+    "runtime": "124 min",
+    "runtimeMinutes": 124,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTY3NzIyNTA2NV5BMl5BanBnXkFtZTcwNzE2NjI4Nw@@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Siguiendo pistas sobre el origen de la humanidad, un equipo descubre una estructura en una luna distante, pero pronto se dan cuenta de que no están solos.",
+    "ratings": {
+      "imdb": 7,
+      "rottenTomatoes": 73,
+      "rottenTomatoesAudience": 68,
+      "metacritic": 64,
+      "personal": 9.3
+    },
+    "lastWatched": "2026-08-01",
+    "watchCount": 4,
+    "audioSpecs": "DTS-HD Master Audio 7.1 / Dolby Atmos",
+    "videoSpecs": "4K Native HDR10 (Aspect Ratio 2.39:1)",
+    "location": "Repisa A // Fila 1 - Alien Universe",
+    "edition": "4K UHD Collector’s Steelbook Edition",
+    "userReview": "Visualmente de las películas de ciencia ficción más impactantes del siglo XXI gracias a la fotografía de Dariusz Wolski en Red Epic.",
+    "imdbUrl": "https://www.imdb.com/title/tt1446714/",
+    "history": [],
+    "isFavorite": false,
+    "createdAt": "2024-03-12T00:00:00.000Z",
+    "updatedAt": "2026-08-01T20:45:00.000Z"
+  },
+  {
+    "id": "sen-020",
+    "code": "SEN_020",
+    "title": "CASINO ROYALE",
+    "originalTitle": "Casino Royale",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 2006,
+    "decade": "2000s",
+    "director": "MARTIN CAMPBELL",
+    "studio": "MGM / SONY PICTURES",
+    "genres": [
+      "Acción",
+      "Aventura",
+      "Thriller",
+      "Espionaje"
+    ],
+    "runtime": "144 min",
+    "runtimeMinutes": 144,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMWQ1ZDM4NDktMWY0NC00MjcxLWJlMDMtNmE2MGVhYzRjMWQ0XkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Después de obtener el estatus de 00 y una licencia para matar, el agente secreto James Bond emprende su primera misión como 007 en un torneo de póquer de alto riesgo en Montenegro.",
+    "ratings": {
+      "imdb": 8,
+      "rottenTomatoes": 94,
+      "rottenTomatoesAudience": 90,
+      "metacritic": 80,
+      "personal": 9.7
+    },
+    "lastWatched": "2026-06-30",
+    "watchCount": 7,
+    "audioSpecs": "DTS-HD Master Audio 5.1 & TrueHD 7.1 Atmos",
+    "videoSpecs": "4K Native Dolby Vision / HDR10",
+    "location": "Repisa A // Fila 2 - Bond 007 Vault",
+    "edition": "The Daniel Craig Collection 4K UHD Steelbook",
+    "userReview": "El reinicio perfecto de la franquicia 007. La persecución de parkour en Madagascar y el drama en el Casino Royale tienen un ritmo sublime.",
+    "imdbUrl": "https://www.imdb.com/title/tt0381061/",
+    "history": [],
+    "isFavorite": true,
+    "createdAt": "2024-02-15T00:00:00.000Z",
+    "updatedAt": "2026-06-30T22:30:00.000Z"
+  },
+  {
+    "id": "sen-021",
+    "code": "SEN_021",
+    "title": "SKYFALL",
+    "originalTitle": "Skyfall",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 2012,
+    "decade": "2010s",
+    "director": "SAM MENDES",
+    "studio": "MGM / SONY PICTURES",
+    "genres": [
+      "Acción",
+      "Aventura",
+      "Thriller",
+      "Espionaje"
+    ],
+    "runtime": "143 min",
+    "runtimeMinutes": 143,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjAzMWNkODUtM2FlMi00NzgyLWJhMGUtMWEyNDYyZGFiN2RlXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1473580044384-7ba9967a16a0?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "La lealtad de James Bond hacia M se pone a prueba cuando su pasado regresa para perseguirla. Cuando el MI6 sufre un ataque, 007 debe localizar y destruir la amenaza.",
+    "ratings": {
+      "imdb": 7.8,
+      "rottenTomatoes": 92,
+      "rottenTomatoesAudience": 86,
+      "metacritic": 81,
+      "personal": 9.6
+    },
+    "lastWatched": "2026-07-15",
+    "watchCount": 5,
+    "audioSpecs": "DTS-HD Master Audio 5.1",
+    "videoSpecs": "4K Native Dolby Vision / HDR10 (Roger Deakins Master)",
+    "location": "Repisa A // Fila 2 - Bond 007 Vault",
+    "edition": "Skyfall 4K Ultra HD Steelbook Edition",
+    "userReview": "La cinematografía de Roger Deakins es de las más bellas de toda la saga Bond. Las tomas en Shanghái con luces de neón son arte en estado puro.",
+    "imdbUrl": "https://www.imdb.com/title/tt1074638/",
+    "history": [],
+    "isFavorite": false,
+    "createdAt": "2024-02-20T00:00:00.000Z",
+    "updatedAt": "2026-07-15T21:00:00.000Z"
+  },
+  {
+    "id": "sen-022",
+    "code": "SEN_022",
+    "title": "JASON BOURNE",
+    "originalTitle": "Jason Bourne",
+    "type": "movie",
+    "format": "4k_uhd",
+    "packaging": "STANDARD",
+    "status": "completed",
+    "year": 2016,
+    "decade": "2010s",
+    "director": "PAUL GREENGRASS",
+    "studio": "UNIVERSAL PICTURES",
+    "genres": [
+      "Acción",
+      "Misterio",
+      "Thriller"
+    ],
+    "runtime": "123 min",
+    "runtimeMinutes": 123,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzY3Y2Q3MmUtZmU3MC00OWMxLWIwNDMtNDA4MmViMTUxYjYxXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "El exagente más letal de la CIA sale de las sombras cuando surge una nueva red cibernética internacional.",
+    "ratings": {
+      "imdb": 6.6,
+      "rottenTomatoes": 55,
+      "rottenTomatoesAudience": 55,
+      "metacritic": 58,
+      "personal": 8.8
+    },
+    "lastWatched": "2026-06-05",
+    "watchCount": 3,
+    "audioSpecs": "DTS:X / DTS-HD Master Audio 7.1",
+    "videoSpecs": "4K Native HDR10 / Dolby Vision (Aspect Ratio 2.39:1)",
+    "location": "Repisa A // Fila 2 - Bourne Collection",
+    "edition": "Jason Bourne 4K UHD Standard Case",
+    "userReview": "Pistas de audio DTS:X con una energía arrolladora en la persecución del Strip de Las Vegas.",
+    "imdbUrl": "https://www.imdb.com/title/tt4196776/",
+    "history": [],
+    "isFavorite": false,
+    "createdAt": "2024-03-18T00:00:00.000Z",
+    "updatedAt": "2026-06-05T20:30:00.000Z"
+  },
+  {
+    "id": "sen-023",
+    "code": "SEN_023",
+    "title": "TAXI DRIVER",
+    "originalTitle": "Taxi Driver",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 1976,
+    "decade": "1970s",
+    "director": "MARTIN SCORSESE",
+    "studio": "COLUMBIA PICTURES / SONY",
+    "genres": [
+      "Crimen",
+      "Drama"
+    ],
+    "runtime": "114 min",
+    "runtimeMinutes": 114,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDNhMGYwM2UtMTdlZS00MGQ1LWI2YzAtODY5YWI1MjYyNzRmXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Un veterano deprimido que trabaja como taxista nocturno en la ciudad de Nueva York se vuelve cada vez más inestable mientras reflexiona sobre la decadencia moral que lo rodea.",
+    "ratings": {
+      "imdb": 8.2,
+      "rottenTomatoes": 96,
+      "rottenTomatoesAudience": 93,
+      "metacritic": 94,
+      "personal": 9.8
+    },
+    "lastWatched": "2026-05-25",
+    "watchCount": 7,
+    "audioSpecs": "DTS-HD Master Audio 5.1 & Original Mono LPCM",
+    "videoSpecs": "4K Native Dolby Vision / HDR10 (Columbia 4K Scan)",
+    "location": "Repisa A // Fila 2 - Scorsese Archive",
+    "edition": "Columbia Classics 4K UHD Steelbook",
+    "userReview": "Restauración legendaria en 4K del negativo original de 35mm. La partitura de Bernard Herrmann en PCM sin pérdida es inolvidable.",
+    "fileSize": "5.34 GB",
+    "imdbUrl": "https://www.imdb.com/title/tt0075314/",
+    "history": [],
+    "isFavorite": true,
+    "createdAt": "2024-02-05T00:00:00.000Z",
+    "updatedAt": "2026-05-25T21:40:00.000Z"
+  },
+  {
+    "id": "sen-024",
+    "code": "SEN_024",
+    "title": "HIGH-RISE",
+    "originalTitle": "High-Rise",
+    "type": "movie",
+    "format": "bluray",
+    "packaging": "STANDARD",
+    "status": "completed",
+    "year": 2015,
+    "decade": "2010s",
+    "director": "BEN WHEATLEY",
+    "studio": "STUDIOCANAL / MAGNET",
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Sátira"
+    ],
+    "runtime": "119 min",
+    "runtimeMinutes": 119,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjM3MjM4NzMwMl5BMl5BanBnXkFtZTgwMTQ4MjUzODE@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "La vida de los residentes de un rascacielos ultramoderno se desmorona a medida que las tensiones de clase provocan el colapso de la convivencia.",
+    "ratings": {
+      "imdb": 5.6,
+      "rottenTomatoes": 60,
+      "rottenTomatoesAudience": 36,
+      "metacritic": 65,
+      "personal": 8.5
+    },
+    "lastWatched": "2026-03-20",
+    "watchCount": 2,
+    "audioSpecs": "DTS-HD Master Audio 5.1",
+    "videoSpecs": "1080p 2.39:1 SDR (Rec.709)",
+    "location": "Repisa B // Fila 2 - British Cinema",
+    "edition": "Standard Blu-ray Release",
+    "userReview": "Adaptación brutal de la novela de J.G. Ballard.",
+    "fileSize": "4.65 GB",
+    "imdbUrl": "https://www.imdb.com/title/tt0462335/",
+    "history": [],
+    "isFavorite": false,
+    "createdAt": "2024-03-25T00:00:00.000Z",
+    "updatedAt": "2026-03-20T22:00:00.000Z"
+  },
+  {
+    "id": "sen-025",
+    "code": "SEN_025",
+    "title": "TOY STORY 4",
+    "originalTitle": "Toy Story 4",
+    "type": "movie",
+    "format": "steelbook",
+    "packaging": "STEELBOOK",
+    "status": "completed",
+    "year": 2019,
+    "decade": "2010s",
+    "director": "JOSH COOLEY",
+    "studio": "PIXAR / WALT DISNEY",
+    "genres": [
+      "Animación",
+      "Aventura",
+      "Comedia",
+      "Familiar"
+    ],
+    "runtime": "100 min",
+    "runtimeMinutes": 100,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Cuando un nuevo juguete llamado \"Forky\" se une a Woody y la pandilla, un viaje por carretera junto a viejos y nuevos amigos revela lo grande que puede ser el mundo para un juguete.",
+    "ratings": {
+      "imdb": 7.7,
+      "rottenTomatoes": 97,
+      "rottenTomatoesAudience": 94,
+      "metacritic": 84,
+      "personal": 9.3
+    },
+    "lastWatched": "2026-08-10",
+    "watchCount": 4,
+    "audioSpecs": "Dolby Atmos (TrueHD 7.1)",
+    "videoSpecs": "4K Upscaled HDR10 / Dolby Vision (Aspect Ratio 2.39:1)",
+    "location": "Repisa A // Fila 3 - Pixar & Family",
+    "edition": "Best Buy Exclusive 4K UHD Steelbook",
+    "userReview": "El renderizado del polvo, la porcelana de Bo Peep y la iluminación en la tienda de antigüedades es una maravilla técnica en HDR.",
+    "imdbUrl": "https://www.imdb.com/title/tt1979376/",
+    "history": [],
+    "isFavorite": false,
+    "createdAt": "2024-02-12T00:00:00.000Z",
+    "updatedAt": "2026-08-10T19:00:00.000Z"
+  },
+  {
+    "id": "sen-026",
+    "code": "SEN_026",
+    "title": "STARGATE",
+    "originalTitle": "Stargate",
+    "type": "movie",
+    "format": "bluray",
+    "packaging": "SLIPCOVER",
+    "status": "completed",
+    "year": 1994,
+    "decade": "1990s",
+    "director": "ROLAND EMMERICH",
+    "studio": "STUDIOCANAL / LIONSGATE",
+    "genres": [
+      "Sci-Fi",
+      "Aventura",
+      "Acción"
+    ],
+    "runtime": "128 min",
+    "runtimeMinutes": 128,
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGRmZmNhMTctZTBiMy00ZmJhLWE3MmMtMDNmZWRkZjczMGVkXkEyXkFqcGc@._V1_.jpg",
+    "backdropUrl": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=1600&auto=format&fit=crop",
+    "synopsis": "Un dispositivo de teletransportación interestelar, encontrado en Egipto, conduce a un planeta con humanos con rasgos del antiguo Egipto que adoran al dios Ra.",
+    "ratings": {
+      "imdb": 7,
+      "rottenTomatoes": 53,
+      "rottenTomatoesAudience": 73,
+      "metacritic": 42,
+      "personal": 9
+    },
+    "lastWatched": "2026-04-18",
+    "watchCount": 5,
+    "audioSpecs": "DTS-HD Master Audio 5.1",
+    "videoSpecs": "1080p 2.39:1 SDR Remastered",
+    "location": "Repisa A // Fila 2 - Sci-Fi Classics",
+    "edition": "15th Anniversary Edition Blu-ray Slipcover",
+    "userReview": "Kurt Russell y James Spader en una de las mejores aventuras de ciencia ficción de los noventa. Banda sonora clásica de David Arnold.",
+    "fileSize": "25.9 GB",
+    "imdbUrl": "https://www.imdb.com/title/tt0111282/",
+    "history": [],
+    "isFavorite": false,
+    "createdAt": "2024-03-01T00:00:00.000Z",
+    "updatedAt": "2026-04-18T21:30:00.000Z"
+  },
+  {
+    "id": "sen-027",
+    "code": "SEN_027",
     "title": "INCUBUS ALIVE AT RED ROCKS",
     "originalTitle": "INCUBUS ALIVE AT RED ROCKS",
     "type": "documentary",
@@ -43,8 +1278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.310Z"
   },
   {
-    "id": "sen-csv-2",
-    "code": "SEN_002",
+    "id": "sen-028",
+    "code": "SEN_028",
     "title": "ELYSIUM",
     "originalTitle": "ELYSIUM",
     "type": "movie",
@@ -83,8 +1318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.310Z"
   },
   {
-    "id": "sen-csv-3",
-    "code": "SEN_003",
+    "id": "sen-029",
+    "code": "SEN_029",
     "title": "BATMAN (2022)",
     "originalTitle": "BATMAN (2022)",
     "type": "movie",
@@ -123,8 +1358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.310Z"
   },
   {
-    "id": "sen-csv-4",
-    "code": "SEN_004",
+    "id": "sen-030",
+    "code": "SEN_030",
     "title": "AMERICAN PSYCHO",
     "originalTitle": "AMERICAN PSYCHO",
     "type": "movie",
@@ -163,8 +1398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.310Z"
   },
   {
-    "id": "sen-csv-5",
-    "code": "SEN_005",
+    "id": "sen-031",
+    "code": "SEN_031",
     "title": "DOGMA",
     "originalTitle": "DOGMA",
     "type": "movie",
@@ -203,8 +1438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.310Z"
   },
   {
-    "id": "sen-csv-6",
-    "code": "SEN_006",
+    "id": "sen-032",
+    "code": "SEN_032",
     "title": "THE LEGO BATMAN MOVIE",
     "originalTitle": "THE LEGO BATMAN MOVIE",
     "type": "movie",
@@ -243,8 +1478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.310Z"
   },
   {
-    "id": "sen-csv-7",
-    "code": "SEN_007",
+    "id": "sen-033",
+    "code": "SEN_033",
     "title": "HARRY POTTER 2 AND THE CHAMBER OF SECRETS",
     "originalTitle": "HARRY POTTER 2 AND THE CHAMBER OF SECRETS",
     "type": "movie",
@@ -283,48 +1518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.310Z"
   },
   {
-    "id": "sen-csv-8",
-    "code": "SEN_008",
-    "title": "JASON BOURNE",
-    "originalTitle": "JASON BOURNE",
-    "type": "movie",
-    "format": "4k_uhd",
-    "packaging": "STANDARD",
-    "status": "completed",
-    "year": 2016,
-    "decade": "2010s",
-    "director": "PAUL GREENGRASS",
-    "studio": "UNIVERSAL PICTURES",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "123 min",
-    "runtimeMinutes": 123,
-    "posterUrl": "https://images.static-bluray.com/movies/covers/166271_large.jpg",
-    "synopsis": "Ficha cinematográfica archivada de JASON BOURNE.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "DTS:X / DTS-HD Master Audio 7.1",
-    "videoSpecs": "4K Native HDR10 / Dolby Vision (Aspect Ratio 2.39:1)",
-    "location": "Repisa Principal // Colección",
-    "edition": "STANDARD Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/title/tt4196776/",
-    "fileSize": "3.11 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.306Z",
-    "updatedAt": "2026-09-22T23:50:43.310Z"
-  },
-  {
-    "id": "sen-csv-9",
-    "code": "SEN_009",
+    "id": "sen-034",
+    "code": "SEN_034",
     "title": "ARRIVAL",
     "originalTitle": "ARRIVAL",
     "type": "movie",
@@ -363,8 +1558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.310Z"
   },
   {
-    "id": "sen-csv-10",
-    "code": "SEN_010",
+    "id": "sen-035",
+    "code": "SEN_035",
     "title": "THOR",
     "originalTitle": "THOR",
     "type": "movie",
@@ -403,8 +1598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.310Z"
   },
   {
-    "id": "sen-csv-11",
-    "code": "SEN_011",
+    "id": "sen-036",
+    "code": "SEN_036",
     "title": "STAR WARS 5: THE EMPIRE STRIKES BACK",
     "originalTitle": "STAR WARS 5: THE EMPIRE STRIKES BACK",
     "type": "movie",
@@ -443,8 +1638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-12",
-    "code": "SEN_012",
+    "id": "sen-037",
+    "code": "SEN_037",
     "title": "STAR WARS 1: THE PHANTOM MENACE",
     "originalTitle": "STAR WARS 1: THE PHANTOM MENACE",
     "type": "movie",
@@ -483,8 +1678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-13",
-    "code": "SEN_013",
+    "id": "sen-038",
+    "code": "SEN_038",
     "title": "BACK TO THE FUTURE",
     "originalTitle": "BACK TO THE FUTURE",
     "type": "movie",
@@ -523,8 +1718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-14",
-    "code": "SEN_014",
+    "id": "sen-039",
+    "code": "SEN_039",
     "title": "ALIEN",
     "originalTitle": "ALIEN",
     "type": "movie",
@@ -563,8 +1758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-15",
-    "code": "SEN_015",
+    "id": "sen-040",
+    "code": "SEN_040",
     "title": "THOR 2: THE DARK WORLD",
     "originalTitle": "THOR 2: THE DARK WORLD",
     "type": "movie",
@@ -603,8 +1798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-16",
-    "code": "SEN_016",
+    "id": "sen-041",
+    "code": "SEN_041",
     "title": "BACK TO THE FUTURE PART III",
     "originalTitle": "BACK TO THE FUTURE PART III",
     "type": "movie",
@@ -643,8 +1838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-17",
-    "code": "SEN_017",
+    "id": "sen-042",
+    "code": "SEN_042",
     "title": "ALIEN 3",
     "originalTitle": "ALIEN 3",
     "type": "movie",
@@ -683,8 +1878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-18",
-    "code": "SEN_018",
+    "id": "sen-043",
+    "code": "SEN_043",
     "title": "NO COUNTRY FOR OLD MEN",
     "originalTitle": "NO COUNTRY FOR OLD MEN",
     "type": "movie",
@@ -723,48 +1918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-19",
-    "code": "SEN_019",
-    "title": "BLADE RUNNER 2049",
-    "originalTitle": "BLADE RUNNER 2049",
-    "type": "movie",
-    "format": "digital_4k",
-    "packaging": "DIGITAL",
-    "status": "completed",
-    "year": 2017,
-    "decade": "2010s",
-    "director": "DESCONOCIDO",
-    "studio": "",
-    "genres": [
-      "Cyberpunk"
-    ],
-    "runtime": "120 min",
-    "runtimeMinutes": 120,
-    "posterUrl": "https://images.static-bluray.com/movies/covers/189774_large.jpg",
-    "synopsis": "Ficha cinematográfica archivada de BLADE RUNNER 2049.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "Dolby TrueHD 7.1 Atmos",
-    "videoSpecs": "Native 4K HDR10",
-    "location": "Servidor Digital / Apple TV",
-    "edition": "DIGITAL Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/find/?q=BLADE%20RUNNER%202049%202017",
-    "fileSize": "19.2 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.307Z",
-    "updatedAt": "2026-09-22T23:50:43.311Z"
-  },
-  {
-    "id": "sen-csv-20",
-    "code": "SEN_020",
+    "id": "sen-044",
+    "code": "SEN_044",
     "title": "MAD MAX: FURY ROAD",
     "originalTitle": "MAD MAX: FURY ROAD",
     "type": "movie",
@@ -803,48 +1958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-306",
-    "code": "SEN_021",
-    "title": "THE FUGITIVE",
-    "originalTitle": "THE FUGITIVE",
-    "type": "movie",
-    "format": "4k_uhd",
-    "packaging": "STEELBOOK",
-    "status": "completed",
-    "year": 1993,
-    "decade": "1990s",
-    "director": "ANDREW DAVIS",
-    "studio": "WARNER BROS",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "130 min",
-    "runtimeMinutes": 130,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BM2RjMjEwODUtYTE4OC00MzhkLThjMjItZjYyZjk3YzA4YWUxXkEyXkFqcGc@._V1_SX300.jpg",
-    "synopsis": "Dr. Richard Kimble, unjustly accused of murdering his wife, must find the real killer while being the target of a nationwide manhunt led by a seasoned U.S. Marshal.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "Dolby Atmos (TrueHD 7.1)",
-    "videoSpecs": "4K Native HDR10 / Dolby Vision (30th Anniversary 4K)",
-    "location": "Repisa Principal // Colección",
-    "edition": "STEELBOOK Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/title/tt0106977/",
-    "fileSize": "5.42 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.309Z",
-    "updatedAt": "2026-09-22T23:50:43.312Z"
-  },
-  {
-    "id": "sen-csv-22",
-    "code": "SEN_022",
+    "id": "sen-045",
+    "code": "SEN_045",
     "title": "LOST",
     "originalTitle": "LOST",
     "type": "series",
@@ -883,8 +1998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-23",
-    "code": "SEN_023",
+    "id": "sen-046",
+    "code": "SEN_046",
     "title": "FLASHFORWARD",
     "originalTitle": "FLASHFORWARD",
     "type": "series",
@@ -923,8 +2038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-24",
-    "code": "SEN_024",
+    "id": "sen-047",
+    "code": "SEN_047",
     "title": "TENET",
     "originalTitle": "TENET",
     "type": "movie",
@@ -963,8 +2078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-25",
-    "code": "SEN_025",
+    "id": "sen-048",
+    "code": "SEN_048",
     "title": "ALIEN 7: ROMULUS",
     "originalTitle": "ALIEN 7: ROMULUS",
     "type": "movie",
@@ -1003,48 +2118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-26",
-    "code": "SEN_026",
-    "title": "STARGATE",
-    "originalTitle": "STARGATE",
-    "type": "movie",
-    "format": "bluray",
-    "packaging": "SLIPCOVER",
-    "status": "completed",
-    "year": 1994,
-    "decade": "1990s",
-    "director": "ROLAND EMMERICH",
-    "studio": "STUDIOCANAL / LIONSGATE",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "128 min",
-    "runtimeMinutes": 128,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGRmZmNhMTctZTBiMy00ZmJhLWE3MmMtMDNmZWRkZjczMGVkXkEyXkFqcGc@._V1_SX300.jpg",
-    "synopsis": "An interstellar teleportation device, found in Egypt, leads to a planet with humans resembling ancient Egyptians who worship the god Ra.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "DTS-HD Master Audio 5.1",
-    "videoSpecs": "1080p 2.39:1 SDR Remastered",
-    "location": "Repisa Principal // Colección",
-    "edition": "SLIPCOVER Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/title/tt0111282/",
-    "fileSize": "25.9 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.307Z",
-    "updatedAt": "2026-09-22T23:50:43.311Z"
-  },
-  {
-    "id": "sen-csv-27",
-    "code": "SEN_027",
+    "id": "sen-049",
+    "code": "SEN_049",
     "title": "STAR WARS 3: REVENGE OF THE SITH",
     "originalTitle": "STAR WARS 3: REVENGE OF THE SITH",
     "type": "movie",
@@ -1083,8 +2158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-28",
-    "code": "SEN_028",
+    "id": "sen-050",
+    "code": "SEN_050",
     "title": "X-MEN WOLVERINE 2 (THE)",
     "originalTitle": "X-MEN WOLVERINE 2 (THE)",
     "type": "movie",
@@ -1123,8 +2198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-29",
-    "code": "SEN_029",
+    "id": "sen-051",
+    "code": "SEN_051",
     "title": "X-MEN WOLVERINE 1 (ORIGINS)",
     "originalTitle": "X-MEN WOLVERINE 1 (ORIGINS)",
     "type": "movie",
@@ -1163,8 +2238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-30",
-    "code": "SEN_030",
+    "id": "sen-052",
+    "code": "SEN_052",
     "title": "REQUIEM FOR A DREAM",
     "originalTitle": "REQUIEM FOR A DREAM",
     "type": "movie",
@@ -1203,8 +2278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-31",
-    "code": "SEN_031",
+    "id": "sen-053",
+    "code": "SEN_053",
     "title": "DARK CITY",
     "originalTitle": "DARK CITY",
     "type": "movie",
@@ -1243,8 +2318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-32",
-    "code": "SEN_032",
+    "id": "sen-054",
+    "code": "SEN_054",
     "title": "AVENGERS 2: AGE OF ULTRON",
     "originalTitle": "AVENGERS 2: AGE OF ULTRON",
     "type": "movie",
@@ -1283,8 +2358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-33",
-    "code": "SEN_033",
+    "id": "sen-055",
+    "code": "SEN_055",
     "title": "AVENGERS",
     "originalTitle": "AVENGERS",
     "type": "movie",
@@ -1323,8 +2398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-34",
-    "code": "SEN_034",
+    "id": "sen-056",
+    "code": "SEN_056",
     "title": "PERSONS UNKNOWN",
     "originalTitle": "PERSONS UNKNOWN",
     "type": "series",
@@ -1363,8 +2438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-35",
-    "code": "SEN_035",
+    "id": "sen-057",
+    "code": "SEN_057",
     "title": "INCEPTION",
     "originalTitle": "INCEPTION",
     "type": "movie",
@@ -1403,8 +2478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-36",
-    "code": "SEN_036",
+    "id": "sen-058",
+    "code": "SEN_058",
     "title": "STAR WARS 7: THE FORCE AWAKENS",
     "originalTitle": "STAR WARS 7: THE FORCE AWAKENS",
     "type": "movie",
@@ -1443,8 +2518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-37",
-    "code": "SEN_037",
+    "id": "sen-059",
+    "code": "SEN_059",
     "title": "AVIATOR",
     "originalTitle": "AVIATOR",
     "type": "movie",
@@ -1483,8 +2558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-38",
-    "code": "SEN_038",
+    "id": "sen-060",
+    "code": "SEN_060",
     "title": "THEORY OF EVERYTHING",
     "originalTitle": "THEORY OF EVERYTHING",
     "type": "movie",
@@ -1523,8 +2598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-39",
-    "code": "SEN_039",
+    "id": "sen-061",
+    "code": "SEN_061",
     "title": "GLADIATOR",
     "originalTitle": "GLADIATOR",
     "type": "movie",
@@ -1563,8 +2638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-40",
-    "code": "SEN_040",
+    "id": "sen-062",
+    "code": "SEN_062",
     "title": "EDGE OF TOMORROW",
     "originalTitle": "EDGE OF TOMORROW",
     "type": "movie",
@@ -1603,8 +2678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-41",
-    "code": "SEN_041",
+    "id": "sen-063",
+    "code": "SEN_063",
     "title": "AIR FORCE ONE",
     "originalTitle": "AIR FORCE ONE",
     "type": "movie",
@@ -1643,8 +2718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-42",
-    "code": "SEN_042",
+    "id": "sen-064",
+    "code": "SEN_064",
     "title": "TRAINSPOTTING 2",
     "originalTitle": "TRAINSPOTTING 2",
     "type": "movie",
@@ -1683,8 +2758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-43",
-    "code": "SEN_043",
+    "id": "sen-065",
+    "code": "SEN_065",
     "title": "ALIEN 4: RESURRECTION",
     "originalTitle": "ALIEN 4: RESURRECTION",
     "type": "movie",
@@ -1723,8 +2798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-44",
-    "code": "SEN_044",
+    "id": "sen-066",
+    "code": "SEN_066",
     "title": "HUNGER GAMES 3: MOCKINGJAY PART 2",
     "originalTitle": "HUNGER GAMES 3: MOCKINGJAY PART 2",
     "type": "movie",
@@ -1763,8 +2838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-45",
-    "code": "SEN_045",
+    "id": "sen-067",
+    "code": "SEN_067",
     "title": "MATRIX REVOLUTIONS",
     "originalTitle": "MATRIX REVOLUTIONS",
     "type": "movie",
@@ -1803,8 +2878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-46",
-    "code": "SEN_046",
+    "id": "sen-068",
+    "code": "SEN_068",
     "title": "TEENAGE MUTANT NINJA TURTLES III: TURTLES IN TIME",
     "originalTitle": "TEENAGE MUTANT NINJA TURTLES III: TURTLES IN TIME",
     "type": "movie",
@@ -1843,8 +2918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-47",
-    "code": "SEN_047",
+    "id": "sen-069",
+    "code": "SEN_069",
     "title": "STAR IS BORN",
     "originalTitle": "STAR IS BORN",
     "type": "movie",
@@ -1883,8 +2958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-48",
-    "code": "SEN_048",
+    "id": "sen-070",
+    "code": "SEN_070",
     "title": "MISSION: IMPOSSIBLE 2",
     "originalTitle": "MISSION: IMPOSSIBLE 2",
     "type": "movie",
@@ -1923,8 +2998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-49",
-    "code": "SEN_049",
+    "id": "sen-071",
+    "code": "SEN_071",
     "title": "HUNGER GAMES 3: MOCKINGJAY PART 1",
     "originalTitle": "HUNGER GAMES 3: MOCKINGJAY PART 1",
     "type": "movie",
@@ -1963,48 +3038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-206",
-    "code": "SEN_050",
-    "title": "CASINO ROYALE",
-    "originalTitle": "CASINO ROYALE",
-    "type": "movie",
-    "format": "4k_uhd",
-    "packaging": "STEELBOOK",
-    "status": "completed",
-    "year": 2006,
-    "decade": "2000s",
-    "director": "MARTIN CAMPBELL",
-    "studio": "MGM / SONY PICTURES",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "144 min",
-    "runtimeMinutes": 144,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMWQ1ZDM4NDktMWY0NC00MjcxLWJlMDMtNmE2MGVhYzRjMWQ0XkEyXkFqcGc@._V1_SX300.jpg",
-    "synopsis": "After earning a licence to kill, secret agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a high-stakes game of poker at Casino Royale, in Montenegro.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "DTS-HD Master Audio 5.1 & TrueHD 7.1 Atmos",
-    "videoSpecs": "4K Native Dolby Vision / HDR10",
-    "location": "Repisa Principal // Colección",
-    "edition": "STEELBOOK Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/title/tt0381061/",
-    "fileSize": "",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.308Z",
-    "updatedAt": "2026-09-22T23:50:43.312Z"
-  },
-  {
-    "id": "sen-csv-51",
-    "code": "SEN_051",
+    "id": "sen-072",
+    "code": "SEN_072",
     "title": "DISTRICT 9",
     "originalTitle": "DISTRICT 9",
     "type": "movie",
@@ -2043,8 +3078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-52",
-    "code": "SEN_052",
+    "id": "sen-073",
+    "code": "SEN_073",
     "title": "MISSION: IMPOSSIBLE 4: GHOST PROTOCOL",
     "originalTitle": "MISSION: IMPOSSIBLE 4: GHOST PROTOCOL",
     "type": "movie",
@@ -2083,8 +3118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-53",
-    "code": "SEN_053",
+    "id": "sen-074",
+    "code": "SEN_074",
     "title": "BOURNE 3: ULTIMATUM",
     "originalTitle": "BOURNE 3: ULTIMATUM",
     "type": "movie",
@@ -2123,8 +3158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-54",
-    "code": "SEN_054",
+    "id": "sen-075",
+    "code": "SEN_075",
     "title": "WHO FRAMED ROGER RABBIT",
     "originalTitle": "WHO FRAMED ROGER RABBIT",
     "type": "movie",
@@ -2163,8 +3198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-55",
-    "code": "SEN_055",
+    "id": "sen-076",
+    "code": "SEN_076",
     "title": "WATCHMEN",
     "originalTitle": "WATCHMEN",
     "type": "movie",
@@ -2203,8 +3238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-56",
-    "code": "SEN_056",
+    "id": "sen-077",
+    "code": "SEN_077",
     "title": "VANILLA SKY",
     "originalTitle": "VANILLA SKY",
     "type": "movie",
@@ -2243,8 +3278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-57",
-    "code": "SEN_057",
+    "id": "sen-078",
+    "code": "SEN_078",
     "title": "APOLLO 13",
     "originalTitle": "APOLLO 13",
     "type": "movie",
@@ -2283,8 +3318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-58",
-    "code": "SEN_058",
+    "id": "sen-079",
+    "code": "SEN_079",
     "title": "VERTIGO",
     "originalTitle": "VERTIGO",
     "type": "movie",
@@ -2323,8 +3358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-59",
-    "code": "SEN_059",
+    "id": "sen-080",
+    "code": "SEN_080",
     "title": "ONCE UPON A TIME IN AMERICA",
     "originalTitle": "ONCE UPON A TIME IN AMERICA",
     "type": "movie",
@@ -2363,8 +3398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-60",
-    "code": "SEN_060",
+    "id": "sen-081",
+    "code": "SEN_081",
     "title": "THOR 3: RAGNAROK",
     "originalTitle": "THOR 3: RAGNAROK",
     "type": "movie",
@@ -2403,8 +3438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-61",
-    "code": "SEN_061",
+    "id": "sen-082",
+    "code": "SEN_082",
     "title": "INCREDIBLES",
     "originalTitle": "INCREDIBLES",
     "type": "anime",
@@ -2443,8 +3478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-62",
-    "code": "SEN_062",
+    "id": "sen-083",
+    "code": "SEN_083",
     "title": "SPOTLIGHT",
     "originalTitle": "SPOTLIGHT",
     "type": "movie",
@@ -2483,8 +3518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-63",
-    "code": "SEN_063",
+    "id": "sen-084",
+    "code": "SEN_084",
     "title": "DREDD",
     "originalTitle": "DREDD",
     "type": "movie",
@@ -2523,8 +3558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-64",
-    "code": "SEN_064",
+    "id": "sen-085",
+    "code": "SEN_085",
     "title": "TOP GUN: MAVERICK",
     "originalTitle": "TOP GUN: MAVERICK",
     "type": "movie",
@@ -2563,8 +3598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-65",
-    "code": "SEN_065",
+    "id": "sen-086",
+    "code": "SEN_086",
     "title": "BLADE RUNNER",
     "originalTitle": "BLADE RUNNER",
     "type": "movie",
@@ -2603,8 +3638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-66",
-    "code": "SEN_066",
+    "id": "sen-087",
+    "code": "SEN_087",
     "title": "AMERICAN HUSTLE",
     "originalTitle": "AMERICAN HUSTLE",
     "type": "movie",
@@ -2643,8 +3678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-67",
-    "code": "SEN_067",
+    "id": "sen-088",
+    "code": "SEN_088",
     "title": "AVENGERS 4: ENDGAME",
     "originalTitle": "AVENGERS 4: ENDGAME",
     "type": "movie",
@@ -2683,8 +3718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-68",
-    "code": "SEN_068",
+    "id": "sen-089",
+    "code": "SEN_089",
     "title": "BOILER ROOM",
     "originalTitle": "BOILER ROOM",
     "type": "movie",
@@ -2723,8 +3758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-69",
-    "code": "SEN_069",
+    "id": "sen-090",
+    "code": "SEN_090",
     "title": "FRINGE",
     "originalTitle": "FRINGE",
     "type": "series",
@@ -2763,8 +3798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-70",
-    "code": "SEN_070",
+    "id": "sen-091",
+    "code": "SEN_091",
     "title": "INSOMNIA",
     "originalTitle": "INSOMNIA",
     "type": "movie",
@@ -2803,8 +3838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-71",
-    "code": "SEN_071",
+    "id": "sen-092",
+    "code": "SEN_092",
     "title": "WORLD’S END (CORNETTO 3)",
     "originalTitle": "WORLD’S END (CORNETTO 3)",
     "type": "movie",
@@ -2843,8 +3878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-72",
-    "code": "SEN_072",
+    "id": "sen-093",
+    "code": "SEN_093",
     "title": "STAR WARS 2: ATTACK OF THE CLONES",
     "originalTitle": "STAR WARS 2: ATTACK OF THE CLONES",
     "type": "movie",
@@ -2883,8 +3918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-73",
-    "code": "SEN_073",
+    "id": "sen-094",
+    "code": "SEN_094",
     "title": "FIGHT CLUB",
     "originalTitle": "FIGHT CLUB",
     "type": "movie",
@@ -2923,8 +3958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-74",
-    "code": "SEN_074",
+    "id": "sen-095",
+    "code": "SEN_095",
     "title": "X-MEN WOLVERINE 3 (LOGAN)",
     "originalTitle": "X-MEN WOLVERINE 3 (LOGAN)",
     "type": "movie",
@@ -2963,8 +3998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-75",
-    "code": "SEN_075",
+    "id": "sen-096",
+    "code": "SEN_096",
     "title": "BOURNE 1: IDENTITY",
     "originalTitle": "BOURNE 1: IDENTITY",
     "type": "movie",
@@ -3003,8 +4038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-76",
-    "code": "SEN_076",
+    "id": "sen-097",
+    "code": "SEN_097",
     "title": "WONDER WOMAN",
     "originalTitle": "WONDER WOMAN",
     "type": "movie",
@@ -3043,8 +4078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-77",
-    "code": "SEN_077",
+    "id": "sen-098",
+    "code": "SEN_098",
     "title": "STAR WARS: SOLO",
     "originalTitle": "STAR WARS: SOLO",
     "type": "movie",
@@ -3083,8 +4118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-78",
-    "code": "SEN_078",
+    "id": "sen-099",
+    "code": "SEN_099",
     "title": "LORD OF THE RINGS 2: THE TWO TOWERS",
     "originalTitle": "LORD OF THE RINGS 2: THE TWO TOWERS",
     "type": "movie",
@@ -3123,8 +4158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-79",
-    "code": "SEN_079",
+    "id": "sen-100",
+    "code": "SEN_100",
     "title": "HUNGER GAMES 2: CATCHING FIRE",
     "originalTitle": "HUNGER GAMES 2: CATCHING FIRE",
     "type": "movie",
@@ -3163,8 +4198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-80",
-    "code": "SEN_080",
+    "id": "sen-101",
+    "code": "SEN_101",
     "title": "BATMAN: THE DARK KNIGHT RISES",
     "originalTitle": "BATMAN: THE DARK KNIGHT RISES",
     "type": "movie",
@@ -3203,8 +4238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-81",
-    "code": "SEN_081",
+    "id": "sen-102",
+    "code": "SEN_102",
     "title": "GHOSTBUSTERS 1",
     "originalTitle": "GHOSTBUSTERS 1",
     "type": "movie",
@@ -3243,48 +4278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-395",
-    "code": "SEN_082",
-    "title": "PROMETHEUS",
-    "originalTitle": "PROMETHEUS",
-    "type": "movie",
-    "format": "4k_uhd",
-    "packaging": "STEELBOOK",
-    "status": "completed",
-    "year": 2012,
-    "decade": "2010s",
-    "director": "RIDLEY SCOTT",
-    "studio": "20TH CENTURY FOX",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "124 min",
-    "runtimeMinutes": 124,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTY3NzIyNTA2NV5BMl5BanBnXkFtZTcwNzE2NjI4Nw@@._V1_SX300.jpg",
-    "synopsis": "Following clues to the origin of mankind, a team finds a structure on a distant moon, but they soon realize they are not alone.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "Dolby Atmos / DTS-HD Master Audio 7.1",
-    "videoSpecs": "4K Native HDR10 2.39:1",
-    "location": "Repisa Principal // Colección",
-    "edition": "STEELBOOK Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/title/tt1446714/",
-    "fileSize": "1.79 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.310Z",
-    "updatedAt": "2026-09-22T23:50:43.313Z"
-  },
-  {
-    "id": "sen-csv-83",
-    "code": "SEN_083",
+    "id": "sen-103",
+    "code": "SEN_103",
     "title": "GODFATHER: PART III",
     "originalTitle": "GODFATHER: PART III",
     "type": "movie",
@@ -3323,8 +4318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-84",
-    "code": "SEN_084",
+    "id": "sen-104",
+    "code": "SEN_104",
     "title": "HACKERS",
     "originalTitle": "HACKERS",
     "type": "movie",
@@ -3363,8 +4358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-85",
-    "code": "SEN_085",
+    "id": "sen-105",
+    "code": "SEN_105",
     "title": "ALIEN 6: COVENANT",
     "originalTitle": "ALIEN 6: COVENANT",
     "type": "movie",
@@ -3403,8 +4398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-86",
-    "code": "SEN_086",
+    "id": "sen-106",
+    "code": "SEN_106",
     "title": "AVENGERS 3: INFINITY WAR",
     "originalTitle": "AVENGERS 3: INFINITY WAR",
     "type": "movie",
@@ -3443,8 +4438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-87",
-    "code": "SEN_087",
+    "id": "sen-107",
+    "code": "SEN_107",
     "title": "BACK TO THE FUTURE PART II",
     "originalTitle": "BACK TO THE FUTURE PART II",
     "type": "movie",
@@ -3483,8 +4478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-88",
-    "code": "SEN_088",
+    "id": "sen-108",
+    "code": "SEN_108",
     "title": "WONDER WOMAN 1984",
     "originalTitle": "WONDER WOMAN 1984",
     "type": "movie",
@@ -3523,8 +4518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-89",
-    "code": "SEN_089",
+    "id": "sen-109",
+    "code": "SEN_109",
     "title": "MATRIX RELOADED",
     "originalTitle": "MATRIX RELOADED",
     "type": "movie",
@@ -3563,8 +4558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-90",
-    "code": "SEN_090",
+    "id": "sen-110",
+    "code": "SEN_110",
     "title": "GHOSTBUSTERS 2",
     "originalTitle": "GHOSTBUSTERS 2",
     "type": "movie",
@@ -3603,8 +4598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-91",
-    "code": "SEN_091",
+    "id": "sen-111",
+    "code": "SEN_111",
     "title": "MISSION: IMPOSSIBLE 3",
     "originalTitle": "MISSION: IMPOSSIBLE 3",
     "type": "movie",
@@ -3643,8 +4638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-92",
-    "code": "SEN_092",
+    "id": "sen-112",
+    "code": "SEN_112",
     "title": "X-MEN",
     "originalTitle": "X-MEN",
     "type": "movie",
@@ -3683,8 +4678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-93",
-    "code": "SEN_093",
+    "id": "sen-113",
+    "code": "SEN_113",
     "title": "GODFATHER: PART I",
     "originalTitle": "GODFATHER: PART I",
     "type": "movie",
@@ -3723,8 +4718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-94",
-    "code": "SEN_094",
+    "id": "sen-114",
+    "code": "SEN_114",
     "title": "HUNGER GAMES",
     "originalTitle": "HUNGER GAMES",
     "type": "movie",
@@ -3763,8 +4758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-95",
-    "code": "SEN_095",
+    "id": "sen-115",
+    "code": "SEN_115",
     "title": "FIFTH ELEMENT (SONY)",
     "originalTitle": "FIFTH ELEMENT (SONY)",
     "type": "movie",
@@ -3803,8 +4798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-96",
-    "code": "SEN_096",
+    "id": "sen-116",
+    "code": "SEN_116",
     "title": "MOON",
     "originalTitle": "MOON",
     "type": "movie",
@@ -3843,8 +4838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-97",
-    "code": "SEN_097",
+    "id": "sen-117",
+    "code": "SEN_117",
     "title": "LORD OF THE RINGS 1: THE FELLOWSHIP OF THE RING",
     "originalTitle": "LORD OF THE RINGS 1: THE FELLOWSHIP OF THE RING",
     "type": "movie",
@@ -3883,8 +4878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-98",
-    "code": "SEN_098",
+    "id": "sen-118",
+    "code": "SEN_118",
     "title": "EMPIRE RECORDS",
     "originalTitle": "EMPIRE RECORDS",
     "type": "movie",
@@ -3923,8 +4918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-99",
-    "code": "SEN_099",
+    "id": "sen-119",
+    "code": "SEN_119",
     "title": "STAR WARS: ROGUE ONE",
     "originalTitle": "STAR WARS: ROGUE ONE",
     "type": "movie",
@@ -3963,8 +4958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-100",
-    "code": "SEN_100",
+    "id": "sen-120",
+    "code": "SEN_120",
     "title": "EX MACHINA",
     "originalTitle": "EX MACHINA",
     "type": "movie",
@@ -4003,48 +4998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-381",
-    "code": "SEN_101",
-    "title": "THE DEPARTED",
-    "originalTitle": "THE DEPARTED",
-    "type": "movie",
-    "format": "4k_uhd",
-    "packaging": "STEELBOOK",
-    "status": "completed",
-    "year": 2006,
-    "decade": "2000s",
-    "director": "MARTIN SCORSESE",
-    "studio": "WARNER BROS",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "151 min",
-    "runtimeMinutes": 151,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_QL75_UY562_CR0,0,380,562_.jpg",
-    "synopsis": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "Dolby Atmos (TrueHD 7.1)",
-    "videoSpecs": "4K Native Dolby Vision / HDR10",
-    "location": "Repisa Principal // Colección",
-    "edition": "STEELBOOK Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/title/tt0407887/",
-    "fileSize": "1.99 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.310Z",
-    "updatedAt": "2026-09-22T23:50:43.313Z"
-  },
-  {
-    "id": "sen-csv-102",
-    "code": "SEN_102",
+    "id": "sen-121",
+    "code": "SEN_121",
     "title": "BIG FISH",
     "originalTitle": "BIG FISH",
     "type": "movie",
@@ -4083,8 +5038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-103",
-    "code": "SEN_103",
+    "id": "sen-122",
+    "code": "SEN_122",
     "title": "MISSION: IMPOSSIBLE 6: FALLOUT",
     "originalTitle": "MISSION: IMPOSSIBLE 6: FALLOUT",
     "type": "movie",
@@ -4123,8 +5078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-104",
-    "code": "SEN_104",
+    "id": "sen-123",
+    "code": "SEN_123",
     "title": "BOURNE 2: SUPREMACY",
     "originalTitle": "BOURNE 2: SUPREMACY",
     "type": "movie",
@@ -4163,8 +5118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-105",
-    "code": "SEN_105",
+    "id": "sen-124",
+    "code": "SEN_124",
     "title": "TINKER TAILOR SOLIDER SPY",
     "originalTitle": "TINKER TAILOR SOLIDER SPY",
     "type": "movie",
@@ -4203,8 +5158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-106",
-    "code": "SEN_106",
+    "id": "sen-125",
+    "code": "SEN_125",
     "title": "LOOPER",
     "originalTitle": "LOOPER",
     "type": "movie",
@@ -4243,8 +5198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-107",
-    "code": "SEN_107",
+    "id": "sen-126",
+    "code": "SEN_126",
     "title": "X-MEN 2",
     "originalTitle": "X-MEN 2",
     "type": "movie",
@@ -4283,8 +5238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-108",
-    "code": "SEN_108",
+    "id": "sen-127",
+    "code": "SEN_127",
     "title": "MISSION: IMPOSSIBLE",
     "originalTitle": "MISSION: IMPOSSIBLE",
     "type": "movie",
@@ -4323,8 +5278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-109",
-    "code": "SEN_109",
+    "id": "sen-128",
+    "code": "SEN_128",
     "title": "GANGS OF NEW YORK",
     "originalTitle": "GANGS OF NEW YORK",
     "type": "movie",
@@ -4363,8 +5318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-110",
-    "code": "SEN_110",
+    "id": "sen-129",
+    "code": "SEN_129",
     "title": "LORD OF THE RINGS 3: THE RETURN OF THE KING",
     "originalTitle": "LORD OF THE RINGS 3: THE RETURN OF THE KING",
     "type": "movie",
@@ -4403,8 +5358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-111",
-    "code": "SEN_111",
+    "id": "sen-130",
+    "code": "SEN_130",
     "title": "STAR WARS 6: RETURN OF THE JEDI",
     "originalTitle": "STAR WARS 6: RETURN OF THE JEDI",
     "type": "movie",
@@ -4443,8 +5398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-112",
-    "code": "SEN_112",
+    "id": "sen-131",
+    "code": "SEN_131",
     "title": "DEVIL’S ADVOCATE",
     "originalTitle": "DEVIL’S ADVOCATE",
     "type": "movie",
@@ -4483,8 +5438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-113",
-    "code": "SEN_113",
+    "id": "sen-132",
+    "code": "SEN_132",
     "title": "STAR WARS 8: THE LAST JEDI",
     "originalTitle": "STAR WARS 8: THE LAST JEDI",
     "type": "movie",
@@ -4523,8 +5478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-114",
-    "code": "SEN_114",
+    "id": "sen-133",
+    "code": "SEN_133",
     "title": "HARRY POTTER 7 AND THE DEATHLY HALLOWS PART 1",
     "originalTitle": "HARRY POTTER 7 AND THE DEATHLY HALLOWS PART 1",
     "type": "movie",
@@ -4563,8 +5518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-115",
-    "code": "SEN_115",
+    "id": "sen-134",
+    "code": "SEN_134",
     "title": "HARRY POTTER 3 AND THE PRISONER OF AZKABAN",
     "originalTitle": "HARRY POTTER 3 AND THE PRISONER OF AZKABAN",
     "type": "movie",
@@ -4603,8 +5558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-116",
-    "code": "SEN_116",
+    "id": "sen-135",
+    "code": "SEN_135",
     "title": "X-MEN: FIRST CLASS",
     "originalTitle": "X-MEN: FIRST CLASS",
     "type": "movie",
@@ -4643,8 +5598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-117",
-    "code": "SEN_117",
+    "id": "sen-136",
+    "code": "SEN_136",
     "title": "X-MEN 3: THE LAST STAND",
     "originalTitle": "X-MEN 3: THE LAST STAND",
     "type": "movie",
@@ -4683,8 +5638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-118",
-    "code": "SEN_118",
+    "id": "sen-137",
+    "code": "SEN_137",
     "title": "CAPTAIN AMERICA 3: CIVIL WAR",
     "originalTitle": "CAPTAIN AMERICA 3: CIVIL WAR",
     "type": "movie",
@@ -4723,8 +5678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-119",
-    "code": "SEN_119",
+    "id": "sen-138",
+    "code": "SEN_138",
     "title": "EVENT HORIZON",
     "originalTitle": "EVENT HORIZON",
     "type": "movie",
@@ -4763,8 +5718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-120",
-    "code": "SEN_120",
+    "id": "sen-139",
+    "code": "SEN_139",
     "title": "BOURNE 4: LEGACY",
     "originalTitle": "BOURNE 4: LEGACY",
     "type": "movie",
@@ -4803,8 +5758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-121",
-    "code": "SEN_121",
+    "id": "sen-140",
+    "code": "SEN_140",
     "title": "WHIPLASH",
     "originalTitle": "WHIPLASH",
     "type": "movie",
@@ -4843,8 +5798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-122",
-    "code": "SEN_122",
+    "id": "sen-141",
+    "code": "SEN_141",
     "title": "CAPTAIN AMERICA 2: THE WINTER SOLDIER",
     "originalTitle": "CAPTAIN AMERICA 2: THE WINTER SOLDIER",
     "type": "movie",
@@ -4883,8 +5838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-123",
-    "code": "SEN_123",
+    "id": "sen-142",
+    "code": "SEN_142",
     "title": "CONSTANTINE",
     "originalTitle": "CONSTANTINE",
     "type": "movie",
@@ -4923,8 +5878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-124",
-    "code": "SEN_124",
+    "id": "sen-143",
+    "code": "SEN_143",
     "title": "TRON: LEGACY",
     "originalTitle": "TRON: LEGACY",
     "type": "movie",
@@ -4963,8 +5918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-125",
-    "code": "SEN_125",
+    "id": "sen-144",
+    "code": "SEN_144",
     "title": "ALIEN 2",
     "originalTitle": "ALIEN 2",
     "type": "movie",
@@ -5003,8 +5958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-126",
-    "code": "SEN_126",
+    "id": "sen-145",
+    "code": "SEN_145",
     "title": "GODFATHER: PART II",
     "originalTitle": "GODFATHER: PART II",
     "type": "movie",
@@ -5043,8 +5998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-127",
-    "code": "SEN_127",
+    "id": "sen-146",
+    "code": "SEN_146",
     "title": "ATOMIC BLONDE",
     "originalTitle": "ATOMIC BLONDE",
     "type": "movie",
@@ -5083,8 +6038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-128",
-    "code": "SEN_128",
+    "id": "sen-147",
+    "code": "SEN_147",
     "title": "HARRY POTTER 4 AND THE GOBLET OF FIRE",
     "originalTitle": "HARRY POTTER 4 AND THE GOBLET OF FIRE",
     "type": "movie",
@@ -5123,8 +6078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-129",
-    "code": "SEN_129",
+    "id": "sen-148",
+    "code": "SEN_148",
     "title": "INDIANA JONES 1: RAIDERS OF THE LOST ARK",
     "originalTitle": "INDIANA JONES 1: RAIDERS OF THE LOST ARK",
     "type": "movie",
@@ -5163,8 +6118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-130",
-    "code": "SEN_130",
+    "id": "sen-149",
+    "code": "SEN_149",
     "title": "WONDERFUL LIFE",
     "originalTitle": "WONDERFUL LIFE",
     "type": "movie",
@@ -5203,8 +6158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-131",
-    "code": "SEN_131",
+    "id": "sen-150",
+    "code": "SEN_150",
     "title": "E.T.",
     "originalTitle": "E.T.",
     "type": "movie",
@@ -5243,8 +6198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-132",
-    "code": "SEN_132",
+    "id": "sen-151",
+    "code": "SEN_151",
     "title": "HARRY POTTER 1 AND THE SORCERER’S STONE",
     "originalTitle": "HARRY POTTER 1 AND THE SORCERER’S STONE",
     "type": "movie",
@@ -5283,8 +6238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-133",
-    "code": "SEN_133",
+    "id": "sen-152",
+    "code": "SEN_152",
     "title": "MISSION: IMPOSSIBLE 5: ROGUE NATION",
     "originalTitle": "MISSION: IMPOSSIBLE 5: ROGUE NATION",
     "type": "movie",
@@ -5323,8 +6278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-134",
-    "code": "SEN_134",
+    "id": "sen-153",
+    "code": "SEN_153",
     "title": "STAR WARS 9: THE RISE OF SKYWALKER",
     "originalTitle": "STAR WARS 9: THE RISE OF SKYWALKER",
     "type": "movie",
@@ -5363,8 +6318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-135",
-    "code": "SEN_135",
+    "id": "sen-154",
+    "code": "SEN_154",
     "title": "MEMENTO",
     "originalTitle": "MEMENTO",
     "type": "movie",
@@ -5403,8 +6358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-136",
-    "code": "SEN_136",
+    "id": "sen-155",
+    "code": "SEN_155",
     "title": "VENOM",
     "originalTitle": "VENOM",
     "type": "movie",
@@ -5443,48 +6398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-251",
-    "code": "SEN_137",
-    "title": "TAXI DRIVER",
-    "originalTitle": "TAXI DRIVER",
-    "type": "movie",
-    "format": "4k_uhd",
-    "packaging": "STEELBOOK",
-    "status": "completed",
-    "year": 1976,
-    "decade": "1970s",
-    "director": "MARTIN SCORSESE",
-    "studio": "COLUMBIA PICTURES / SONY",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "114 min",
-    "runtimeMinutes": 114,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDNhMGYwM2UtMTdlZS00MGQ1LWI2YzAtODY5YWI1MjYyNzRmXkEyXkFqcGc@._V1_QL75_UX380_CR0,7,380,562_.jpg",
-    "synopsis": "A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "DTS-HD Master Audio 5.1 & Original Mono LPCM",
-    "videoSpecs": "4K Native Dolby Vision / HDR10 (Columbia 4K Scan)",
-    "location": "Repisa Principal // Colección",
-    "edition": "STEELBOOK Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/title/tt0075314/",
-    "fileSize": "5.34 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.309Z",
-    "updatedAt": "2026-09-22T23:50:43.312Z"
-  },
-  {
-    "id": "sen-csv-138",
-    "code": "SEN_138",
+    "id": "sen-156",
+    "code": "SEN_156",
     "title": "TOP GUN",
     "originalTitle": "TOP GUN",
     "type": "movie",
@@ -5523,8 +6438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-139",
-    "code": "SEN_139",
+    "id": "sen-157",
+    "code": "SEN_157",
     "title": "TEENAGE MUTANT NINJA TURTLES II: THE SECRET OF THE OOZE",
     "originalTitle": "TEENAGE MUTANT NINJA TURTLES II: THE SECRET OF THE OOZE",
     "type": "movie",
@@ -5563,8 +6478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-140",
-    "code": "SEN_140",
+    "id": "sen-158",
+    "code": "SEN_158",
     "title": "BATMAN BEGINS",
     "originalTitle": "BATMAN BEGINS",
     "type": "movie",
@@ -5603,8 +6518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-141",
-    "code": "SEN_141",
+    "id": "sen-159",
+    "code": "SEN_159",
     "title": "HARRY POTTER 8 AND THE DEATHLY HALLOWS PART 2",
     "originalTitle": "HARRY POTTER 8 AND THE DEATHLY HALLOWS PART 2",
     "type": "movie",
@@ -5643,8 +6558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-142",
-    "code": "SEN_142",
+    "id": "sen-160",
+    "code": "SEN_160",
     "title": "HARRY POTTER 5 AND THE ORDER OF THE PHOENIX",
     "originalTitle": "HARRY POTTER 5 AND THE ORDER OF THE PHOENIX",
     "type": "movie",
@@ -5683,8 +6598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-143",
-    "code": "SEN_143",
+    "id": "sen-161",
+    "code": "SEN_161",
     "title": "CHAPPIE",
     "originalTitle": "CHAPPIE",
     "type": "movie",
@@ -5723,8 +6638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-144",
-    "code": "SEN_144",
+    "id": "sen-162",
+    "code": "SEN_162",
     "title": "STAR WARS 4: A NEW HOPE",
     "originalTitle": "STAR WARS 4: A NEW HOPE",
     "type": "movie",
@@ -5763,8 +6678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-145",
-    "code": "SEN_145",
+    "id": "sen-163",
+    "code": "SEN_163",
     "title": "28 DAYS LATER",
     "originalTitle": "28 DAYS LATER",
     "type": "movie",
@@ -5803,8 +6718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-146",
-    "code": "SEN_146",
+    "id": "sen-164",
+    "code": "SEN_164",
     "title": "GOODFELLAS",
     "originalTitle": "GOODFELLAS",
     "type": "movie",
@@ -5843,8 +6758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-147",
-    "code": "SEN_147",
+    "id": "sen-165",
+    "code": "SEN_165",
     "title": "JAMES BOND 23: SKYFALL",
     "originalTitle": "JAMES BOND 23: SKYFALL",
     "type": "movie",
@@ -5883,8 +6798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-148",
-    "code": "SEN_148",
+    "id": "sen-166",
+    "code": "SEN_166",
     "title": "BATMAN: THE DARK KNIGHT",
     "originalTitle": "BATMAN: THE DARK KNIGHT",
     "type": "movie",
@@ -5923,8 +6838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-149",
-    "code": "SEN_149",
+    "id": "sen-167",
+    "code": "SEN_167",
     "title": "STAR TREK BEYOND",
     "originalTitle": "STAR TREK BEYOND",
     "type": "movie",
@@ -5963,8 +6878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-150",
-    "code": "SEN_150",
+    "id": "sen-168",
+    "code": "SEN_168",
     "title": "TEENAGE MUTANT NINJA TURTLES",
     "originalTitle": "TEENAGE MUTANT NINJA TURTLES",
     "type": "movie",
@@ -6003,8 +6918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-151",
-    "code": "SEN_151",
+    "id": "sen-169",
+    "code": "SEN_169",
     "title": "SE7EN",
     "originalTitle": "SE7EN",
     "type": "movie",
@@ -6043,8 +6958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-152",
-    "code": "SEN_152",
+    "id": "sen-170",
+    "code": "SEN_170",
     "title": "HARRY POTTER 6 AND THE HALF-BLOOD PRINCE",
     "originalTitle": "HARRY POTTER 6 AND THE HALF-BLOOD PRINCE",
     "type": "movie",
@@ -6083,8 +6998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-153",
-    "code": "SEN_153",
+    "id": "sen-171",
+    "code": "SEN_171",
     "title": "MATRIX",
     "originalTitle": "MATRIX",
     "type": "movie",
@@ -6123,8 +7038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-154",
-    "code": "SEN_154",
+    "id": "sen-172",
+    "code": "SEN_172",
     "title": "HER",
     "originalTitle": "HER",
     "type": "movie",
@@ -6163,48 +7078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-155",
-    "code": "SEN_155",
-    "title": "INTERSTELLAR",
-    "originalTitle": "INTERSTELLAR",
-    "type": "movie",
-    "format": "digital_4k",
-    "packaging": "DIGITAL",
-    "status": "completed",
-    "year": 2014,
-    "decade": "2010s",
-    "director": "DESCONOCIDO",
-    "studio": "",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "120 min",
-    "runtimeMinutes": 120,
-    "posterUrl": "https://images.static-bluray.com/movies/covers/187908_large.jpg",
-    "synopsis": "Ficha cinematográfica archivada de INTERSTELLAR.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "DTS-HD MA 5.1",
-    "videoSpecs": "Native 4K HDR10",
-    "location": "Servidor Digital / Apple TV",
-    "edition": "DIGITAL Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/find/?q=INTERSTELLAR%202014",
-    "fileSize": "33.48 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.308Z",
-    "updatedAt": "2026-09-22T23:50:43.311Z"
-  },
-  {
-    "id": "sen-csv-156",
-    "code": "SEN_156",
+    "id": "sen-173",
+    "code": "SEN_173",
     "title": "MEN IN BLACK",
     "originalTitle": "MEN IN BLACK",
     "type": "movie",
@@ -6243,8 +7118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-157",
-    "code": "SEN_157",
+    "id": "sen-174",
+    "code": "SEN_174",
     "title": "CAPTAIN AMERICA 1: THE FIRST AVENGER",
     "originalTitle": "CAPTAIN AMERICA 1: THE FIRST AVENGER",
     "type": "movie",
@@ -6283,8 +7158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-158",
-    "code": "SEN_158",
+    "id": "sen-175",
+    "code": "SEN_175",
     "title": "DIVERGENT",
     "originalTitle": "DIVERGENT",
     "type": "movie",
@@ -6323,8 +7198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-159",
-    "code": "SEN_159",
+    "id": "sen-176",
+    "code": "SEN_176",
     "title": "OCEAN’S TWELVE",
     "originalTitle": "OCEAN’S TWELVE",
     "type": "movie",
@@ -6363,8 +7238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-160",
-    "code": "SEN_160",
+    "id": "sen-177",
+    "code": "SEN_177",
     "title": "OCEAN’S ELEVEN",
     "originalTitle": "OCEAN’S ELEVEN",
     "type": "movie",
@@ -6403,8 +7278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-161",
-    "code": "SEN_161",
+    "id": "sen-178",
+    "code": "SEN_178",
     "title": "MONEYBALL",
     "originalTitle": "MONEYBALL",
     "type": "movie",
@@ -6443,8 +7318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-162",
-    "code": "SEN_162",
+    "id": "sen-179",
+    "code": "SEN_179",
     "title": "ENDER’S GAME",
     "originalTitle": "ENDER’S GAME",
     "type": "movie",
@@ -6483,8 +7358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-163",
-    "code": "SEN_163",
+    "id": "sen-180",
+    "code": "SEN_180",
     "title": "MINORITY REPORT",
     "originalTitle": "MINORITY REPORT",
     "type": "movie",
@@ -6523,8 +7398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-164",
-    "code": "SEN_164",
+    "id": "sen-181",
+    "code": "SEN_181",
     "title": "ASTRO BOY",
     "originalTitle": "ASTRO BOY",
     "type": "anime",
@@ -6563,8 +7438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-165",
-    "code": "SEN_165",
+    "id": "sen-182",
+    "code": "SEN_182",
     "title": "PLANES",
     "originalTitle": "PLANES",
     "type": "anime",
@@ -6603,8 +7478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-166",
-    "code": "SEN_166",
+    "id": "sen-183",
+    "code": "SEN_183",
     "title": "SHREK 2",
     "originalTitle": "SHREK 2",
     "type": "anime",
@@ -6643,8 +7518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-167",
-    "code": "SEN_167",
+    "id": "sen-184",
+    "code": "SEN_184",
     "title": "THE CROODS A NEW AGE",
     "originalTitle": "THE CROODS A NEW AGE",
     "type": "anime",
@@ -6683,8 +7558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-168",
-    "code": "SEN_168",
+    "id": "sen-185",
+    "code": "SEN_185",
     "title": "HOTEL TRANSYLVANIA 2",
     "originalTitle": "HOTEL TRANSYLVANIA 2",
     "type": "anime",
@@ -6723,8 +7598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-169",
-    "code": "SEN_169",
+    "id": "sen-186",
+    "code": "SEN_186",
     "title": "THE CROODS",
     "originalTitle": "THE CROODS",
     "type": "anime",
@@ -6763,8 +7638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-170",
-    "code": "SEN_170",
+    "id": "sen-187",
+    "code": "SEN_187",
     "title": "FROZEN",
     "originalTitle": "FROZEN",
     "type": "anime",
@@ -6803,8 +7678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-171",
-    "code": "SEN_171",
+    "id": "sen-188",
+    "code": "SEN_188",
     "title": "ZOOTOPIA",
     "originalTitle": "ZOOTOPIA",
     "type": "anime",
@@ -6843,8 +7718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-172",
-    "code": "SEN_172",
+    "id": "sen-189",
+    "code": "SEN_189",
     "title": "ALVIN AND THE CHIPMUNKS THE ROAD CHIP",
     "originalTitle": "ALVIN AND THE CHIPMUNKS THE ROAD CHIP",
     "type": "anime",
@@ -6883,8 +7758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-173",
-    "code": "SEN_173",
+    "id": "sen-190",
+    "code": "SEN_190",
     "title": "ROBOTS",
     "originalTitle": "ROBOTS",
     "type": "anime",
@@ -6923,8 +7798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.311Z"
   },
   {
-    "id": "sen-csv-174",
-    "code": "SEN_174",
+    "id": "sen-191",
+    "code": "SEN_191",
     "title": "INCUBUS THE MORNING VIEW SESSIONES",
     "originalTitle": "INCUBUS THE MORNING VIEW SESSIONES",
     "type": "documentary",
@@ -6963,8 +7838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-175",
-    "code": "SEN_175",
+    "id": "sen-192",
+    "code": "SEN_192",
     "title": "KYLIE MINOGUE: KISS ME ONCE - LIVE AT THE SSE HYDRO",
     "originalTitle": "KYLIE MINOGUE: KISS ME ONCE - LIVE AT THE SSE HYDRO",
     "type": "documentary",
@@ -7003,8 +7878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-176",
-    "code": "SEN_176",
+    "id": "sen-193",
+    "code": "SEN_193",
     "title": "WAR DOGS",
     "originalTitle": "WAR DOGS",
     "type": "movie",
@@ -7043,8 +7918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-177",
-    "code": "SEN_177",
+    "id": "sen-194",
+    "code": "SEN_194",
     "title": "MARY POPPINS",
     "originalTitle": "MARY POPPINS",
     "type": "movie",
@@ -7083,8 +7958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-178",
-    "code": "SEN_178",
+    "id": "sen-195",
+    "code": "SEN_195",
     "title": "THE DAY AFTER TOMORROW",
     "originalTitle": "THE DAY AFTER TOMORROW",
     "type": "movie",
@@ -7123,8 +7998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-179",
-    "code": "SEN_179",
+    "id": "sen-196",
+    "code": "SEN_196",
     "title": "THE LAST OF MOHICANS",
     "originalTitle": "THE LAST OF MOHICANS",
     "type": "movie",
@@ -7163,8 +8038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-180",
-    "code": "SEN_180",
+    "id": "sen-197",
+    "code": "SEN_197",
     "title": "THE HURT LOCKER",
     "originalTitle": "THE HURT LOCKER",
     "type": "movie",
@@ -7203,8 +8078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-181",
-    "code": "SEN_181",
+    "id": "sen-198",
+    "code": "SEN_198",
     "title": "THE MAGNIFICENT SEVEN",
     "originalTitle": "THE MAGNIFICENT SEVEN",
     "type": "movie",
@@ -7243,8 +8118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-182",
-    "code": "SEN_182",
+    "id": "sen-199",
+    "code": "SEN_199",
     "title": "JUNO",
     "originalTitle": "JUNO",
     "type": "movie",
@@ -7283,8 +8158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-183",
-    "code": "SEN_183",
+    "id": "sen-200",
+    "code": "SEN_200",
     "title": "THE POLAR EXPRESS",
     "originalTitle": "THE POLAR EXPRESS",
     "type": "movie",
@@ -7323,8 +8198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-184",
-    "code": "SEN_184",
+    "id": "sen-201",
+    "code": "SEN_201",
     "title": "ENTRAPMENT",
     "originalTitle": "ENTRAPMENT",
     "type": "movie",
@@ -7363,8 +8238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-185",
-    "code": "SEN_185",
+    "id": "sen-202",
+    "code": "SEN_202",
     "title": "CRASH",
     "originalTitle": "CRASH",
     "type": "movie",
@@ -7403,8 +8278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-186",
-    "code": "SEN_186",
+    "id": "sen-203",
+    "code": "SEN_203",
     "title": "TAKEN",
     "originalTitle": "TAKEN",
     "type": "movie",
@@ -7443,8 +8318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-187",
-    "code": "SEN_187",
+    "id": "sen-204",
+    "code": "SEN_204",
     "title": "THE PURSUIT OF HAPPYNESS",
     "originalTitle": "THE PURSUIT OF HAPPYNESS",
     "type": "movie",
@@ -7483,8 +8358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-188",
-    "code": "SEN_188",
+    "id": "sen-205",
+    "code": "SEN_205",
     "title": "A BEAUTIFUL MIND",
     "originalTitle": "A BEAUTIFUL MIND",
     "type": "movie",
@@ -7523,8 +8398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-189",
-    "code": "SEN_189",
+    "id": "sen-206",
+    "code": "SEN_206",
     "title": "SCREAM 3",
     "originalTitle": "SCREAM 3",
     "type": "movie",
@@ -7563,8 +8438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-190",
-    "code": "SEN_190",
+    "id": "sen-207",
+    "code": "SEN_207",
     "title": "THE CABLE GUY",
     "originalTitle": "THE CABLE GUY",
     "type": "movie",
@@ -7603,8 +8478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-191",
-    "code": "SEN_191",
+    "id": "sen-208",
+    "code": "SEN_208",
     "title": "HEREAFTER",
     "originalTitle": "HEREAFTER",
     "type": "movie",
@@ -7643,8 +8518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-192",
-    "code": "SEN_192",
+    "id": "sen-209",
+    "code": "SEN_209",
     "title": "THE ENGLISH PATIENT",
     "originalTitle": "THE ENGLISH PATIENT",
     "type": "movie",
@@ -7683,8 +8558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-193",
-    "code": "SEN_193",
+    "id": "sen-210",
+    "code": "SEN_210",
     "title": "DOLPHIN TALE",
     "originalTitle": "DOLPHIN TALE",
     "type": "movie",
@@ -7723,8 +8598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-194",
-    "code": "SEN_194",
+    "id": "sen-211",
+    "code": "SEN_211",
     "title": "TRANSPORTER 3",
     "originalTitle": "TRANSPORTER 3",
     "type": "movie",
@@ -7763,8 +8638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-195",
-    "code": "SEN_195",
+    "id": "sen-212",
+    "code": "SEN_212",
     "title": "HANNIBAL",
     "originalTitle": "HANNIBAL",
     "type": "movie",
@@ -7803,8 +8678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-196",
-    "code": "SEN_196",
+    "id": "sen-213",
+    "code": "SEN_213",
     "title": "X-MEN THE NEW MUTANTS",
     "originalTitle": "X-MEN THE NEW MUTANTS",
     "type": "movie",
@@ -7843,8 +8718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-197",
-    "code": "SEN_197",
+    "id": "sen-214",
+    "code": "SEN_214",
     "title": "X-MEN DAR PHOENIX",
     "originalTitle": "X-MEN DAR PHOENIX",
     "type": "movie",
@@ -7883,8 +8758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-198",
-    "code": "SEN_198",
+    "id": "sen-215",
+    "code": "SEN_215",
     "title": "X-MEN APOCALYPSE",
     "originalTitle": "X-MEN APOCALYPSE",
     "type": "movie",
@@ -7923,8 +8798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-199",
-    "code": "SEN_199",
+    "id": "sen-216",
+    "code": "SEN_216",
     "title": "DEADPOOL",
     "originalTitle": "DEADPOOL",
     "type": "movie",
@@ -7963,8 +8838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-200",
-    "code": "SEN_200",
+    "id": "sen-217",
+    "code": "SEN_217",
     "title": "DEADPOOL 2",
     "originalTitle": "DEADPOOL 2",
     "type": "movie",
@@ -8003,8 +8878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-201",
-    "code": "SEN_201",
+    "id": "sen-218",
+    "code": "SEN_218",
     "title": "ROBINHOOD",
     "originalTitle": "ROBINHOOD",
     "type": "movie",
@@ -8043,8 +8918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-202",
-    "code": "SEN_202",
+    "id": "sen-219",
+    "code": "SEN_219",
     "title": "CAREER OPORTUNITIES",
     "originalTitle": "CAREER OPORTUNITIES",
     "type": "movie",
@@ -8083,8 +8958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-203",
-    "code": "SEN_203",
+    "id": "sen-220",
+    "code": "SEN_220",
     "title": "GET SHORTY",
     "originalTitle": "GET SHORTY",
     "type": "movie",
@@ -8123,8 +8998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-204",
-    "code": "SEN_204",
+    "id": "sen-221",
+    "code": "SEN_221",
     "title": "THE SECRET LIFE OF WALTER MITTY",
     "originalTitle": "THE SECRET LIFE OF WALTER MITTY",
     "type": "movie",
@@ -8163,8 +9038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-205",
-    "code": "SEN_205",
+    "id": "sen-222",
+    "code": "SEN_222",
     "title": "G.I. JOE: THE RISE OF COBRA",
     "originalTitle": "G.I. JOE: THE RISE OF COBRA",
     "type": "movie",
@@ -8203,8 +9078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-207",
-    "code": "SEN_206",
+    "id": "sen-223",
+    "code": "SEN_223",
     "title": "WAR OF THE WORLDS",
     "originalTitle": "WAR OF THE WORLDS",
     "type": "movie",
@@ -8243,8 +9118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-208",
-    "code": "SEN_207",
+    "id": "sen-224",
+    "code": "SEN_224",
     "title": "ROCKO’S MODERN LIFE | THE COMPLETE SERIES",
     "originalTitle": "ROCKO’S MODERN LIFE | THE COMPLETE SERIES",
     "type": "anime",
@@ -8283,8 +9158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-209",
-    "code": "SEN_208",
+    "id": "sen-225",
+    "code": "SEN_225",
     "title": "STARSHIP TROOPERS",
     "originalTitle": "STARSHIP TROOPERS",
     "type": "movie",
@@ -8323,8 +9198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-210",
-    "code": "SEN_209",
+    "id": "sen-226",
+    "code": "SEN_226",
     "title": "IN HER SHOES",
     "originalTitle": "IN HER SHOES",
     "type": "movie",
@@ -8363,8 +9238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-211",
-    "code": "SEN_210",
+    "id": "sen-227",
+    "code": "SEN_227",
     "title": "MAD MAX",
     "originalTitle": "MAD MAX",
     "type": "movie",
@@ -8403,8 +9278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-212",
-    "code": "SEN_211",
+    "id": "sen-228",
+    "code": "SEN_228",
     "title": "MAD MAX 2",
     "originalTitle": "MAD MAX 2",
     "type": "movie",
@@ -8443,8 +9318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-213",
-    "code": "SEN_212",
+    "id": "sen-229",
+    "code": "SEN_229",
     "title": "MAD MAX: BEYOND THUNDERDOME",
     "originalTitle": "MAD MAX: BEYOND THUNDERDOME",
     "type": "movie",
@@ -8483,8 +9358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-214",
-    "code": "SEN_213",
+    "id": "sen-230",
+    "code": "SEN_230",
     "title": "MISSION: IMPOSSIBLE 7: DEAD RECKONING PART ONE",
     "originalTitle": "MISSION: IMPOSSIBLE 7: DEAD RECKONING PART ONE",
     "type": "movie",
@@ -8523,8 +9398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-215",
-    "code": "SEN_214",
+    "id": "sen-231",
+    "code": "SEN_231",
     "title": "COLOR OUT OF SPACE",
     "originalTitle": "COLOR OUT OF SPACE",
     "type": "movie",
@@ -8563,8 +9438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-216",
-    "code": "SEN_215",
+    "id": "sen-232",
+    "code": "SEN_232",
     "title": "MIDSOMMAR",
     "originalTitle": "MIDSOMMAR",
     "type": "movie",
@@ -8603,8 +9478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-217",
-    "code": "SEN_216",
+    "id": "sen-233",
+    "code": "SEN_233",
     "title": "LITTLE MONSTERS",
     "originalTitle": "LITTLE MONSTERS",
     "type": "movie",
@@ -8643,8 +9518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-218",
-    "code": "SEN_217",
+    "id": "sen-234",
+    "code": "SEN_234",
     "title": "ANIARA",
     "originalTitle": "ANIARA",
     "type": "movie",
@@ -8683,8 +9558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-219",
-    "code": "SEN_218",
+    "id": "sen-235",
+    "code": "SEN_235",
     "title": "1917",
     "originalTitle": "1917",
     "type": "movie",
@@ -8723,8 +9598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-220",
-    "code": "SEN_219",
+    "id": "sen-236",
+    "code": "SEN_236",
     "title": "SOUTHBOUND",
     "originalTitle": "SOUTHBOUND",
     "type": "movie",
@@ -8763,8 +9638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-221",
-    "code": "SEN_220",
+    "id": "sen-237",
+    "code": "SEN_237",
     "title": "PIXELS",
     "originalTitle": "PIXELS",
     "type": "movie",
@@ -8803,48 +9678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-222",
-    "code": "SEN_221",
-    "title": "HIGH-RISE",
-    "originalTitle": "HIGH-RISE",
-    "type": "movie",
-    "format": "bluray",
-    "packaging": "STANDARD",
-    "status": "completed",
-    "year": 2015,
-    "decade": "2010s",
-    "director": "BEN WHEATLEY",
-    "studio": "STUDIOCANAL / MAGNET",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "119 min",
-    "runtimeMinutes": 119,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjM3MjM4NzMwMl5BMl5BanBnXkFtZTgwMTQ4MjUzODE@._V1_SX300.jpg",
-    "synopsis": "Life for the residents of a tower block begins to run out of control.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "DTS-HD Master Audio 5.1",
-    "videoSpecs": "1080p 2.39:1 SDR",
-    "location": "Repisa Principal // Colección",
-    "edition": "STANDARD Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/title/tt0462335/",
-    "fileSize": "4.65 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.309Z",
-    "updatedAt": "2026-09-22T23:50:43.312Z"
-  },
-  {
-    "id": "sen-csv-223",
-    "code": "SEN_222",
+    "id": "sen-238",
+    "code": "SEN_238",
     "title": "MARDOCK SCRAMBLE TRILOGY",
     "originalTitle": "MARDOCK SCRAMBLE TRILOGY",
     "type": "movie",
@@ -8883,8 +9718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-224",
-    "code": "SEN_223",
+    "id": "sen-239",
+    "code": "SEN_239",
     "title": "PERSON OF INTEREST",
     "originalTitle": "PERSON OF INTEREST",
     "type": "series",
@@ -8923,8 +9758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-225",
-    "code": "SEN_224",
+    "id": "sen-240",
+    "code": "SEN_240",
     "title": "THE LAST SHIP",
     "originalTitle": "THE LAST SHIP",
     "type": "series",
@@ -8963,8 +9798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-226",
-    "code": "SEN_225",
+    "id": "sen-241",
+    "code": "SEN_241",
     "title": "ELECTRIC DREAMS",
     "originalTitle": "ELECTRIC DREAMS",
     "type": "series",
@@ -9003,8 +9838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-227",
-    "code": "SEN_226",
+    "id": "sen-242",
+    "code": "SEN_242",
     "title": "FROM",
     "originalTitle": "FROM",
     "type": "series",
@@ -9043,8 +9878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-228",
-    "code": "SEN_227",
+    "id": "sen-243",
+    "code": "SEN_243",
     "title": "BATTLE OF THE PLANETS",
     "originalTitle": "BATTLE OF THE PLANETS",
     "type": "anime",
@@ -9083,8 +9918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-229",
-    "code": "SEN_228",
+    "id": "sen-244",
+    "code": "SEN_244",
     "title": "UP",
     "originalTitle": "UP",
     "type": "movie",
@@ -9123,8 +9958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-230",
-    "code": "SEN_229",
+    "id": "sen-245",
+    "code": "SEN_245",
     "title": "FIST OF THE NORTH",
     "originalTitle": "FIST OF THE NORTH",
     "type": "anime",
@@ -9163,48 +9998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-231",
-    "code": "SEN_230",
-    "title": "TOY STORY 4",
-    "originalTitle": "TOY STORY 4",
-    "type": "movie",
-    "format": "4k_uhd",
-    "packaging": "STEELBOOK",
-    "status": "completed",
-    "year": 2019,
-    "decade": "2010s",
-    "director": "JOSH COOLEY",
-    "studio": "PIXAR / WALT DISNEY",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "100 min",
-    "runtimeMinutes": 100,
-    "posterUrl": "https://images.static-bluray.com/movies/covers/241710_large.jpg",
-    "synopsis": "Ficha cinematográfica archivada de TOY STORY 4.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "Dolby Atmos (TrueHD 7.1)",
-    "videoSpecs": "4K Upscaled HDR10 / Dolby Vision",
-    "location": "Repisa Principal // Colección",
-    "edition": "STEELBOOK Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/title/tt1979376/",
-    "fileSize": "",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.309Z",
-    "updatedAt": "2026-09-22T23:50:43.312Z"
-  },
-  {
-    "id": "sen-csv-232",
-    "code": "SEN_231",
+    "id": "sen-246",
+    "code": "SEN_246",
     "title": "SILVERHAWKS",
     "originalTitle": "SILVERHAWKS",
     "type": "anime",
@@ -9243,8 +10038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-233",
-    "code": "SEN_232",
+    "id": "sen-247",
+    "code": "SEN_247",
     "title": "BUBBLEGUM CRISIS",
     "originalTitle": "BUBBLEGUM CRISIS",
     "type": "anime",
@@ -9283,8 +10078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-234",
-    "code": "SEN_233",
+    "id": "sen-248",
+    "code": "SEN_248",
     "title": "BEVERLY HILLS 90210",
     "originalTitle": "BEVERLY HILLS 90210",
     "type": "series",
@@ -9323,8 +10118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-235",
-    "code": "SEN_234",
+    "id": "sen-249",
+    "code": "SEN_249",
     "title": "WESTWORLD",
     "originalTitle": "WESTWORLD",
     "type": "series",
@@ -9363,8 +10158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-237",
-    "code": "SEN_235",
+    "id": "sen-250",
+    "code": "SEN_250",
     "title": "LEON THE PROFESSIONAL",
     "originalTitle": "LEON THE PROFESSIONAL",
     "type": "movie",
@@ -9403,8 +10198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-238",
-    "code": "SEN_236",
+    "id": "sen-251",
+    "code": "SEN_251",
     "title": "DISCLOSURE",
     "originalTitle": "DISCLOSURE",
     "type": "movie",
@@ -9443,8 +10238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-239",
-    "code": "SEN_237",
+    "id": "sen-252",
+    "code": "SEN_252",
     "title": "AEON FLUX",
     "originalTitle": "AEON FLUX",
     "type": "anime",
@@ -9483,8 +10278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-240",
-    "code": "SEN_238",
+    "id": "sen-253",
+    "code": "SEN_253",
     "title": "CYBER CITY OEDO 808",
     "originalTitle": "CYBER CITY OEDO 808",
     "type": "anime",
@@ -9523,8 +10318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-241",
-    "code": "SEN_239",
+    "id": "sen-254",
+    "code": "SEN_254",
     "title": "THE NEW ADVENTURES OF HE-MAN",
     "originalTitle": "THE NEW ADVENTURES OF HE-MAN",
     "type": "anime",
@@ -9563,8 +10358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-242",
-    "code": "SEN_240",
+    "id": "sen-255",
+    "code": "SEN_255",
     "title": "CELEBRITY DEATHMATCH",
     "originalTitle": "CELEBRITY DEATHMATCH",
     "type": "anime",
@@ -9603,8 +10398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-243",
-    "code": "SEN_241",
+    "id": "sen-256",
+    "code": "SEN_256",
     "title": "SERIAL EXPERIMENTS LAIN",
     "originalTitle": "SERIAL EXPERIMENTS LAIN",
     "type": "anime",
@@ -9643,8 +10438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-244",
-    "code": "SEN_242",
+    "id": "sen-257",
+    "code": "SEN_257",
     "title": "HEY ARNOLD",
     "originalTitle": "HEY ARNOLD",
     "type": "anime",
@@ -9683,8 +10478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-245",
-    "code": "SEN_243",
+    "id": "sen-258",
+    "code": "SEN_258",
     "title": "BLUE GENDER",
     "originalTitle": "BLUE GENDER",
     "type": "anime",
@@ -9723,48 +10518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-246",
-    "code": "SEN_244",
-    "title": "2001: A SPACE ODYSSEY",
-    "originalTitle": "2001: A SPACE ODYSSEY",
-    "type": "movie",
-    "format": "digital_4k",
-    "packaging": "DIGITAL",
-    "status": "completed",
-    "year": 1968,
-    "decade": "1960s",
-    "director": "STANLEY KUBRICK",
-    "studio": "",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "120 min",
-    "runtimeMinutes": 120,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjU0NDFkMTQtZWY5OS00MmZhLTg3Y2QtZmJhMzMzMWYyYjc2XkEyXkFqcGc@._V1_SX300.jpg",
-    "synopsis": "When a mysterious artifact is uncovered on the Moon, a spacecraft manned by two humans and one supercomputer is sent to Jupiter to find its origins.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "Dolby Digital+ 5.1",
-    "videoSpecs": "Upscaled 4K HDR10",
-    "location": "Servidor Digital / Apple TV",
-    "edition": "DIGITAL Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/find/?q=2001%3A%20A%20SPACE%20ODYSSEY%201968",
-    "fileSize": "2.38 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.309Z",
-    "updatedAt": "2026-09-22T23:50:43.312Z"
-  },
-  {
-    "id": "sen-csv-247",
-    "code": "SEN_245",
+    "id": "sen-259",
+    "code": "SEN_259",
     "title": "A CLOCKWORK ORANGE",
     "originalTitle": "A CLOCKWORK ORANGE",
     "type": "movie",
@@ -9803,8 +10558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-248",
-    "code": "SEN_246",
+    "id": "sen-260",
+    "code": "SEN_260",
     "title": "DIRTY HARRY",
     "originalTitle": "DIRTY HARRY",
     "type": "movie",
@@ -9843,8 +10598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-249",
-    "code": "SEN_247",
+    "id": "sen-261",
+    "code": "SEN_261",
     "title": "FANTASTIC PLANET",
     "originalTitle": "FANTASTIC PLANET",
     "type": "movie",
@@ -9883,8 +10638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-250",
-    "code": "SEN_248",
+    "id": "sen-262",
+    "code": "SEN_262",
     "title": "JAWS",
     "originalTitle": "JAWS",
     "type": "movie",
@@ -9923,8 +10678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-252",
-    "code": "SEN_249",
+    "id": "sen-263",
+    "code": "SEN_263",
     "title": "HALLOWEEN",
     "originalTitle": "HALLOWEEN",
     "type": "movie",
@@ -9963,8 +10718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-253",
-    "code": "SEN_250",
+    "id": "sen-264",
+    "code": "SEN_264",
     "title": "APOCALYPSE NOW",
     "originalTitle": "APOCALYPSE NOW",
     "type": "movie",
@@ -10003,48 +10758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-254",
-    "code": "SEN_251",
-    "title": "THE SHINING",
-    "originalTitle": "THE SHINING",
-    "type": "movie",
-    "format": "digital_4k",
-    "packaging": "DIGITAL",
-    "status": "completed",
-    "year": 1980,
-    "decade": "1980s",
-    "director": "STANLEY KUBRICK",
-    "studio": "",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "120 min",
-    "runtimeMinutes": 120,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BNmM5ZThhY2ItOGRjOS00NzZiLWEwYTItNDgyMjFkOTgxMmRiXkEyXkFqcGc@._V1_SX300.jpg",
-    "synopsis": "A family heads to an isolated hotel for the winter, where a sinister presence influences the father into violence. At the same time, his psychic son sees horrifying forebodings from both the past and the future.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "Dolby Digital+ 5.1",
-    "videoSpecs": "1080p HDR10",
-    "location": "Servidor Digital / Apple TV",
-    "edition": "DIGITAL Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/find/?q=THE%20SHINING%201980",
-    "fileSize": "0.6 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.309Z",
-    "updatedAt": "2026-09-22T23:50:43.312Z"
-  },
-  {
-    "id": "sen-csv-255",
-    "code": "SEN_252",
+    "id": "sen-265",
+    "code": "SEN_265",
     "title": "THE BLUE LAGOON",
     "originalTitle": "THE BLUE LAGOON",
     "type": "movie",
@@ -10083,8 +10798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-256",
-    "code": "SEN_253",
+    "id": "sen-266",
+    "code": "SEN_266",
     "title": "BLOW OUT",
     "originalTitle": "BLOW OUT",
     "type": "movie",
@@ -10123,8 +10838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-257",
-    "code": "SEN_254",
+    "id": "sen-267",
+    "code": "SEN_267",
     "title": "TIME BANDITS",
     "originalTitle": "TIME BANDITS",
     "type": "movie",
@@ -10163,8 +10878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-258",
-    "code": "SEN_255",
+    "id": "sen-268",
+    "code": "SEN_268",
     "title": "CONAN THE BARBARIAN",
     "originalTitle": "CONAN THE BARBARIAN",
     "type": "movie",
@@ -10203,8 +10918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-259",
-    "code": "SEN_256",
+    "id": "sen-269",
+    "code": "SEN_269",
     "title": "THE MASTERS OF TIME",
     "originalTitle": "THE MASTERS OF TIME",
     "type": "movie",
@@ -10243,48 +10958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-260",
-    "code": "SEN_257",
-    "title": "THE THING",
-    "originalTitle": "THE THING",
-    "type": "movie",
-    "format": "digital_4k",
-    "packaging": "DIGITAL",
-    "status": "completed",
-    "year": 1982,
-    "decade": "1980s",
-    "director": "JOHN CARPENTER",
-    "studio": "",
-    "genres": [
-      "Cine"
-    ],
-    "runtime": "120 min",
-    "runtimeMinutes": 120,
-    "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTA3NDU5MWEtNTk4Yy00ZDNkLThmZTQtMjU3ZGVhYzAyMzU4XkEyXkFqcGc@._V1_SX300.jpg",
-    "synopsis": "A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.",
-    "ratings": {
-      "imdb": 8,
-      "rottenTomatoes": 85,
-      "metacritic": 80,
-      "personal": 9
-    },
-    "lastWatched": "2026-09-22",
-    "watchCount": 1,
-    "audioSpecs": "Dolby Digital+ 5.1",
-    "videoSpecs": "Upscaled 4K HDR10",
-    "location": "Servidor Digital / Apple TV",
-    "edition": "DIGITAL Collector Release",
-    "userReview": "",
-    "imdbUrl": "https://www.imdb.com/find/?q=THE%20THING%201982",
-    "fileSize": "18.2 GB",
-    "history": [],
-    "isFavorite": false,
-    "createdAt": "2026-09-22T23:50:43.309Z",
-    "updatedAt": "2026-09-22T23:50:43.312Z"
-  },
-  {
-    "id": "sen-csv-261",
-    "code": "SEN_258",
+    "id": "sen-270",
+    "code": "SEN_270",
     "title": "TRON",
     "originalTitle": "TRON",
     "type": "movie",
@@ -10323,8 +10998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-262",
-    "code": "SEN_259",
+    "id": "sen-271",
+    "code": "SEN_271",
     "title": "WARGAMES",
     "originalTitle": "WARGAMES",
     "type": "movie",
@@ -10363,8 +11038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-263",
-    "code": "SEN_260",
+    "id": "sen-272",
+    "code": "SEN_272",
     "title": "RISKY BUSINESS",
     "originalTitle": "RISKY BUSINESS",
     "type": "movie",
@@ -10403,8 +11078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-264",
-    "code": "SEN_261",
+    "id": "sen-273",
+    "code": "SEN_273",
     "title": "GREMLINS",
     "originalTitle": "GREMLINS",
     "type": "movie",
@@ -10443,8 +11118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-265",
-    "code": "SEN_262",
+    "id": "sen-274",
+    "code": "SEN_274",
     "title": "THE ICE PIRATES",
     "originalTitle": "THE ICE PIRATES",
     "type": "movie",
@@ -10483,8 +11158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-266",
-    "code": "SEN_263",
+    "id": "sen-275",
+    "code": "SEN_275",
     "title": "THE LAST STARFIGHTER",
     "originalTitle": "THE LAST STARFIGHTER",
     "type": "movie",
@@ -10523,8 +11198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-267",
-    "code": "SEN_264",
+    "id": "sen-276",
+    "code": "SEN_276",
     "title": "THE TERMINATOR",
     "originalTitle": "THE TERMINATOR",
     "type": "movie",
@@ -10563,8 +11238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-268",
-    "code": "SEN_265",
+    "id": "sen-277",
+    "code": "SEN_277",
     "title": "THE NEVERENDING STORY",
     "originalTitle": "THE NEVERENDING STORY",
     "type": "movie",
@@ -10603,8 +11278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-269",
-    "code": "SEN_266",
+    "id": "sen-278",
+    "code": "SEN_278",
     "title": "BRAZIL",
     "originalTitle": "BRAZIL",
     "type": "movie",
@@ -10643,8 +11318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-270",
-    "code": "SEN_267",
+    "id": "sen-279",
+    "code": "SEN_279",
     "title": "COMMANDO",
     "originalTitle": "COMMANDO",
     "type": "movie",
@@ -10683,8 +11358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-271",
-    "code": "SEN_268",
+    "id": "sen-280",
+    "code": "SEN_280",
     "title": "THE GOONIES",
     "originalTitle": "THE GOONIES",
     "type": "movie",
@@ -10723,8 +11398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-272",
-    "code": "SEN_269",
+    "id": "sen-281",
+    "code": "SEN_281",
     "title": "THE SURE THING",
     "originalTitle": "THE SURE THING",
     "type": "movie",
@@ -10763,8 +11438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-273",
-    "code": "SEN_270",
+    "id": "sen-282",
+    "code": "SEN_282",
     "title": "AFTER HOURS",
     "originalTitle": "AFTER HOURS",
     "type": "movie",
@@ -10803,8 +11478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-274",
-    "code": "SEN_271",
+    "id": "sen-283",
+    "code": "SEN_283",
     "title": "LABYRINTH",
     "originalTitle": "LABYRINTH",
     "type": "movie",
@@ -10843,8 +11518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-275",
-    "code": "SEN_272",
+    "id": "sen-284",
+    "code": "SEN_284",
     "title": "LITTLE SHOP OF HORRORS",
     "originalTitle": "LITTLE SHOP OF HORRORS",
     "type": "movie",
@@ -10883,8 +11558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-276",
-    "code": "SEN_273",
+    "id": "sen-285",
+    "code": "SEN_285",
     "title": "ONE CRAZY SUMMER",
     "originalTitle": "ONE CRAZY SUMMER",
     "type": "movie",
@@ -10923,8 +11598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-277",
-    "code": "SEN_274",
+    "id": "sen-286",
+    "code": "SEN_286",
     "title": "FATAL ATTRACTION",
     "originalTitle": "FATAL ATTRACTION",
     "type": "movie",
@@ -10963,8 +11638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-278",
-    "code": "SEN_275",
+    "id": "sen-287",
+    "code": "SEN_287",
     "title": "FULL METAL JACKET",
     "originalTitle": "FULL METAL JACKET",
     "type": "movie",
@@ -11003,8 +11678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-279",
-    "code": "SEN_276",
+    "id": "sen-288",
+    "code": "SEN_288",
     "title": "ROBOCOP",
     "originalTitle": "ROBOCOP",
     "type": "movie",
@@ -11043,8 +11718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-280",
-    "code": "SEN_277",
+    "id": "sen-289",
+    "code": "SEN_289",
     "title": "SPACEBALLS",
     "originalTitle": "SPACEBALLS",
     "type": "movie",
@@ -11083,8 +11758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-281",
-    "code": "SEN_278",
+    "id": "sen-290",
+    "code": "SEN_290",
     "title": "THE LOST BOYS",
     "originalTitle": "THE LOST BOYS",
     "type": "movie",
@@ -11123,8 +11798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-282",
-    "code": "SEN_279",
+    "id": "sen-291",
+    "code": "SEN_291",
     "title": "SCROOGED",
     "originalTitle": "SCROOGED",
     "type": "movie",
@@ -11163,8 +11838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-283",
-    "code": "SEN_280",
+    "id": "sen-292",
+    "code": "SEN_292",
     "title": "ANGEL COP",
     "originalTitle": "ANGEL COP",
     "type": "anime",
@@ -11203,8 +11878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-284",
-    "code": "SEN_281",
+    "id": "sen-293",
+    "code": "SEN_293",
     "title": "ROADHOUSE",
     "originalTitle": "ROADHOUSE",
     "type": "movie",
@@ -11243,8 +11918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-285",
-    "code": "SEN_282",
+    "id": "sen-294",
+    "code": "SEN_294",
     "title": "ROBOCOP 2",
     "originalTitle": "ROBOCOP 2",
     "type": "movie",
@@ -11283,8 +11958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-286",
-    "code": "SEN_283",
+    "id": "sen-295",
+    "code": "SEN_295",
     "title": "THE NEVERENDING STORY 2",
     "originalTitle": "THE NEVERENDING STORY 2",
     "type": "movie",
@@ -11323,8 +11998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-287",
-    "code": "SEN_284",
+    "id": "sen-296",
+    "code": "SEN_296",
     "title": "TOTAL RECALL",
     "originalTitle": "TOTAL RECALL",
     "type": "movie",
@@ -11363,8 +12038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-288",
-    "code": "SEN_285",
+    "id": "sen-297",
+    "code": "SEN_297",
     "title": "THE TERMINATOR 2: JUDGMENT DAY",
     "originalTitle": "THE TERMINATOR 2: JUDGMENT DAY",
     "type": "movie",
@@ -11403,8 +12078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-289",
-    "code": "SEN_286",
+    "id": "sen-298",
+    "code": "SEN_298",
     "title": "THE ROCKETEER",
     "originalTitle": "THE ROCKETEER",
     "type": "movie",
@@ -11443,8 +12118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-290",
-    "code": "SEN_287",
+    "id": "sen-299",
+    "code": "SEN_299",
     "title": "THE FISHER KING",
     "originalTitle": "THE FISHER KING",
     "type": "movie",
@@ -11483,8 +12158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-291",
-    "code": "SEN_288",
+    "id": "sen-300",
+    "code": "SEN_300",
     "title": "A FEW GOOD MEN",
     "originalTitle": "A FEW GOOD MEN",
     "type": "movie",
@@ -11523,8 +12198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-292",
-    "code": "SEN_289",
+    "id": "sen-301",
+    "code": "SEN_301",
     "title": "BASIC INSTINCT",
     "originalTitle": "BASIC INSTINCT",
     "type": "movie",
@@ -11563,8 +12238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-293",
-    "code": "SEN_290",
+    "id": "sen-302",
+    "code": "SEN_302",
     "title": "GLENGARY GLEN ROSS",
     "originalTitle": "GLENGARY GLEN ROSS",
     "type": "movie",
@@ -11603,8 +12278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-294",
-    "code": "SEN_291",
+    "id": "sen-303",
+    "code": "SEN_303",
     "title": "THE PLAYER",
     "originalTitle": "THE PLAYER",
     "type": "movie",
@@ -11643,8 +12318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-295",
-    "code": "SEN_292",
+    "id": "sen-304",
+    "code": "SEN_304",
     "title": "TOYS",
     "originalTitle": "TOYS",
     "type": "movie",
@@ -11683,8 +12358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-296",
-    "code": "SEN_293",
+    "id": "sen-305",
+    "code": "SEN_305",
     "title": "UNIVERSAL SOLDIER",
     "originalTitle": "UNIVERSAL SOLDIER",
     "type": "movie",
@@ -11723,8 +12398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-297",
-    "code": "SEN_294",
+    "id": "sen-306",
+    "code": "SEN_306",
     "title": "BRAN STOKERS DRACULA",
     "originalTitle": "BRAN STOKERS DRACULA",
     "type": "movie",
@@ -11763,8 +12438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-298",
-    "code": "SEN_295",
+    "id": "sen-307",
+    "code": "SEN_307",
     "title": "FALLING DOWN",
     "originalTitle": "FALLING DOWN",
     "type": "movie",
@@ -11803,8 +12478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-299",
-    "code": "SEN_296",
+    "id": "sen-308",
+    "code": "SEN_308",
     "title": "GENOCYBER",
     "originalTitle": "GENOCYBER",
     "type": "anime",
@@ -11843,8 +12518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-300",
-    "code": "SEN_297",
+    "id": "sen-309",
+    "code": "SEN_309",
     "title": "GROUNDHOG",
     "originalTitle": "GROUNDHOG",
     "type": "movie",
@@ -11883,8 +12558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-301",
-    "code": "SEN_298",
+    "id": "sen-310",
+    "code": "SEN_310",
     "title": "INDECENT PROPOSAL",
     "originalTitle": "INDECENT PROPOSAL",
     "type": "movie",
@@ -11923,8 +12598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-302",
-    "code": "SEN_299",
+    "id": "sen-311",
+    "code": "SEN_311",
     "title": "MATINEE",
     "originalTitle": "MATINEE",
     "type": "movie",
@@ -11963,8 +12638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-303",
-    "code": "SEN_300",
+    "id": "sen-312",
+    "code": "SEN_312",
     "title": "PATLABOR THE MOVIE 2",
     "originalTitle": "PATLABOR THE MOVIE 2",
     "type": "anime",
@@ -12003,8 +12678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-304",
-    "code": "SEN_301",
+    "id": "sen-313",
+    "code": "SEN_313",
     "title": "ROBOCOP 3",
     "originalTitle": "ROBOCOP 3",
     "type": "movie",
@@ -12043,8 +12718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-305",
-    "code": "SEN_302",
+    "id": "sen-314",
+    "code": "SEN_314",
     "title": "THE NIGHTMARE BEFORE CHRISTMAS",
     "originalTitle": "THE NIGHTMARE BEFORE CHRISTMAS",
     "type": "anime",
@@ -12083,8 +12758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-307",
-    "code": "SEN_303",
+    "id": "sen-315",
+    "code": "SEN_315",
     "title": "BRAVEHEART",
     "originalTitle": "BRAVEHEART",
     "type": "movie",
@@ -12123,8 +12798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-308",
-    "code": "SEN_304",
+    "id": "sen-316",
+    "code": "SEN_316",
     "title": "CASINO",
     "originalTitle": "CASINO",
     "type": "movie",
@@ -12163,8 +12838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-309",
-    "code": "SEN_305",
+    "id": "sen-317",
+    "code": "SEN_317",
     "title": "JOHNNY MNEMONIC",
     "originalTitle": "JOHNNY MNEMONIC",
     "type": "movie",
@@ -12203,8 +12878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-310",
-    "code": "SEN_306",
+    "id": "sen-318",
+    "code": "SEN_318",
     "title": "JUDGE DREDD",
     "originalTitle": "JUDGE DREDD",
     "type": "movie",
@@ -12243,8 +12918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-311",
-    "code": "SEN_307",
+    "id": "sen-319",
+    "code": "SEN_319",
     "title": "MEMORIES",
     "originalTitle": "MEMORIES",
     "type": "movie",
@@ -12283,8 +12958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-312",
-    "code": "SEN_308",
+    "id": "sen-320",
+    "code": "SEN_320",
     "title": "THE USUAL SUSPECTS",
     "originalTitle": "THE USUAL SUSPECTS",
     "type": "movie",
@@ -12323,8 +12998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-313",
-    "code": "SEN_309",
+    "id": "sen-321",
+    "code": "SEN_321",
     "title": "WATERWORLD",
     "originalTitle": "WATERWORLD",
     "type": "movie",
@@ -12363,8 +13038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-314",
-    "code": "SEN_310",
+    "id": "sen-322",
+    "code": "SEN_322",
     "title": "HEAT",
     "originalTitle": "HEAT",
     "type": "movie",
@@ -12403,8 +13078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-315",
-    "code": "SEN_311",
+    "id": "sen-323",
+    "code": "SEN_323",
     "title": "INDEPENDENCE DAY",
     "originalTitle": "INDEPENDENCE DAY",
     "type": "movie",
@@ -12443,8 +13118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-316",
-    "code": "SEN_312",
+    "id": "sen-324",
+    "code": "SEN_324",
     "title": "PRIMAL FEAR",
     "originalTitle": "PRIMAL FEAR",
     "type": "movie",
@@ -12483,8 +13158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-317",
-    "code": "SEN_313",
+    "id": "sen-325",
+    "code": "SEN_325",
     "title": "SHE IS THE ONE",
     "originalTitle": "SHE IS THE ONE",
     "type": "movie",
@@ -12523,8 +13198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-318",
-    "code": "SEN_314",
+    "id": "sen-326",
+    "code": "SEN_326",
     "title": "FACE OFF",
     "originalTitle": "FACE OFF",
     "type": "movie",
@@ -12563,8 +13238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-319",
-    "code": "SEN_315",
+    "id": "sen-327",
+    "code": "SEN_327",
     "title": "FUNNY GAMES",
     "originalTitle": "FUNNY GAMES",
     "type": "movie",
@@ -12603,8 +13278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-320",
-    "code": "SEN_316",
+    "id": "sen-328",
+    "code": "SEN_328",
     "title": "GATTACA",
     "originalTitle": "GATTACA",
     "type": "movie",
@@ -12643,8 +13318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-321",
-    "code": "SEN_317",
+    "id": "sen-329",
+    "code": "SEN_329",
     "title": "LOLITA",
     "originalTitle": "LOLITA",
     "type": "movie",
@@ -12683,8 +13358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-322",
-    "code": "SEN_318",
+    "id": "sen-330",
+    "code": "SEN_330",
     "title": "PERFECT BLUE",
     "originalTitle": "PERFECT BLUE",
     "type": "anime",
@@ -12723,8 +13398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-323",
-    "code": "SEN_319",
+    "id": "sen-331",
+    "code": "SEN_331",
     "title": "THE DEVILS ADVOCATE",
     "originalTitle": "THE DEVILS ADVOCATE",
     "type": "movie",
@@ -12763,8 +13438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-324",
-    "code": "SEN_320",
+    "id": "sen-332",
+    "code": "SEN_332",
     "title": "THE FIFTH ELEMENT",
     "originalTitle": "THE FIFTH ELEMENT",
     "type": "movie",
@@ -12803,8 +13478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-325",
-    "code": "SEN_321",
+    "id": "sen-333",
+    "code": "SEN_333",
     "title": "TITANIC",
     "originalTitle": "TITANIC",
     "type": "movie",
@@ -12843,8 +13518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-326",
-    "code": "SEN_322",
+    "id": "sen-334",
+    "code": "SEN_334",
     "title": "A BUG’S LIFE",
     "originalTitle": "A BUG’S LIFE",
     "type": "anime",
@@ -12883,8 +13558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-327",
-    "code": "SEN_323",
+    "id": "sen-335",
+    "code": "SEN_335",
     "title": "ARMAGEDDON",
     "originalTitle": "ARMAGEDDON",
     "type": "movie",
@@ -12923,8 +13598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-328",
-    "code": "SEN_324",
+    "id": "sen-336",
+    "code": "SEN_336",
     "title": "BUFFALO ‘66",
     "originalTitle": "BUFFALO ‘66",
     "type": "movie",
@@ -12963,8 +13638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-329",
-    "code": "SEN_325",
+    "id": "sen-337",
+    "code": "SEN_337",
     "title": "DEEP IMPACT",
     "originalTitle": "DEEP IMPACT",
     "type": "movie",
@@ -13003,8 +13678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-330",
-    "code": "SEN_326",
+    "id": "sen-338",
+    "code": "SEN_338",
     "title": "DISTURBING BEHAVIOR",
     "originalTitle": "DISTURBING BEHAVIOR",
     "type": "movie",
@@ -13043,8 +13718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-331",
-    "code": "SEN_327",
+    "id": "sen-339",
+    "code": "SEN_339",
     "title": "ENEMY OF THE STATE",
     "originalTitle": "ENEMY OF THE STATE",
     "type": "movie",
@@ -13083,8 +13758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-332",
-    "code": "SEN_328",
+    "id": "sen-340",
+    "code": "SEN_340",
     "title": "FEAR AND LOATHING IN LAS VEGAS",
     "originalTitle": "FEAR AND LOATHING IN LAS VEGAS",
     "type": "movie",
@@ -13123,8 +13798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-333",
-    "code": "SEN_329",
+    "id": "sen-341",
+    "code": "SEN_341",
     "title": "GODZILLA",
     "originalTitle": "GODZILLA",
     "type": "movie",
@@ -13163,8 +13838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-334",
-    "code": "SEN_330",
+    "id": "sen-342",
+    "code": "SEN_342",
     "title": "OVERNIGHT DELIVERY",
     "originalTitle": "OVERNIGHT DELIVERY",
     "type": "movie",
@@ -13203,8 +13878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-335",
-    "code": "SEN_331",
+    "id": "sen-343",
+    "code": "SEN_343",
     "title": "SMALL SOLDIERS",
     "originalTitle": "SMALL SOLDIERS",
     "type": "movie",
@@ -13243,8 +13918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-336",
-    "code": "SEN_332",
+    "id": "sen-344",
+    "code": "SEN_344",
     "title": "THE FACULTY",
     "originalTitle": "THE FACULTY",
     "type": "movie",
@@ -13283,8 +13958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-337",
-    "code": "SEN_333",
+    "id": "sen-345",
+    "code": "SEN_345",
     "title": "THE ENDLESS",
     "originalTitle": "THE ENDLESS",
     "type": "movie",
@@ -13323,8 +13998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-338",
-    "code": "SEN_334",
+    "id": "sen-346",
+    "code": "SEN_346",
     "title": "THE NEGOTIATOR",
     "originalTitle": "THE NEGOTIATOR",
     "type": "movie",
@@ -13363,8 +14038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-339",
-    "code": "SEN_335",
+    "id": "sen-347",
+    "code": "SEN_347",
     "title": "THE TRUMAN SHOW",
     "originalTitle": "THE TRUMAN SHOW",
     "type": "movie",
@@ -13403,8 +14078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-340",
-    "code": "SEN_336",
+    "id": "sen-348",
+    "code": "SEN_348",
     "title": "THE BIG LEBOWSKI",
     "originalTitle": "THE BIG LEBOWSKI",
     "type": "movie",
@@ -13443,8 +14118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-341",
-    "code": "SEN_337",
+    "id": "sen-349",
+    "code": "SEN_349",
     "title": "THERES SOMETHING ABOUT MARY",
     "originalTitle": "THERES SOMETHING ABOUT MARY",
     "type": "movie",
@@ -13483,8 +14158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-342",
-    "code": "SEN_338",
+    "id": "sen-350",
+    "code": "SEN_350",
     "title": "WILD THINGS",
     "originalTitle": "WILD THINGS",
     "type": "movie",
@@ -13523,8 +14198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-343",
-    "code": "SEN_339",
+    "id": "sen-351",
+    "code": "SEN_351",
     "title": "THE WEDDING SINGER",
     "originalTitle": "THE WEDDING SINGER",
     "type": "movie",
@@ -13563,8 +14238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-344",
-    "code": "SEN_340",
+    "id": "sen-352",
+    "code": "SEN_352",
     "title": "10 THINGS I HATE ABOUT YOU",
     "originalTitle": "10 THINGS I HATE ABOUT YOU",
     "type": "movie",
@@ -13603,8 +14278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-345",
-    "code": "SEN_341",
+    "id": "sen-353",
+    "code": "SEN_353",
     "title": "AMERICAN BEAUTY",
     "originalTitle": "AMERICAN BEAUTY",
     "type": "movie",
@@ -13643,8 +14318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-346",
-    "code": "SEN_342",
+    "id": "sen-354",
+    "code": "SEN_354",
     "title": "AMERICAN PIE (COLECCIÓN)",
     "originalTitle": "AMERICAN PIE (COLECCIÓN)",
     "type": "movie",
@@ -13683,8 +14358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-347",
-    "code": "SEN_343",
+    "id": "sen-355",
+    "code": "SEN_355",
     "title": "EXISTENZ",
     "originalTitle": "EXISTENZ",
     "type": "movie",
@@ -13723,8 +14398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-348",
-    "code": "SEN_344",
+    "id": "sen-356",
+    "code": "SEN_356",
     "title": "EYES WIDE SHUT",
     "originalTitle": "EYES WIDE SHUT",
     "type": "movie",
@@ -13763,8 +14438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-349",
-    "code": "SEN_345",
+    "id": "sen-357",
+    "code": "SEN_357",
     "title": "JIN-ROH - THE WOLF BRIGADE",
     "originalTitle": "JIN-ROH - THE WOLF BRIGADE",
     "type": "movie",
@@ -13803,8 +14478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.312Z"
   },
   {
-    "id": "sen-csv-350",
-    "code": "SEN_346",
+    "id": "sen-358",
+    "code": "SEN_358",
     "title": "THE SUBURBANS",
     "originalTitle": "THE SUBURBANS",
     "type": "movie",
@@ -13843,8 +14518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-351",
-    "code": "SEN_347",
+    "id": "sen-359",
+    "code": "SEN_359",
     "title": "THE THIRTEENTH FLOOR",
     "originalTitle": "THE THIRTEENTH FLOOR",
     "type": "movie",
@@ -13883,8 +14558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-352",
-    "code": "SEN_348",
+    "id": "sen-360",
+    "code": "SEN_360",
     "title": "THE TALENTED MR. RIPLEY",
     "originalTitle": "THE TALENTED MR. RIPLEY",
     "type": "movie",
@@ -13923,8 +14598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-353",
-    "code": "SEN_349",
+    "id": "sen-361",
+    "code": "SEN_361",
     "title": "BATTLE ROYALE",
     "originalTitle": "BATTLE ROYALE",
     "type": "movie",
@@ -13963,8 +14638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-354",
-    "code": "SEN_350",
+    "id": "sen-362",
+    "code": "SEN_362",
     "title": "BRING IT ON",
     "originalTitle": "BRING IT ON",
     "type": "movie",
@@ -14003,8 +14678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-355",
-    "code": "SEN_351",
+    "id": "sen-363",
+    "code": "SEN_363",
     "title": "GET OVER IT",
     "originalTitle": "GET OVER IT",
     "type": "movie",
@@ -14043,8 +14718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-356",
-    "code": "SEN_352",
+    "id": "sen-364",
+    "code": "SEN_364",
     "title": "JOSIE AND THE PUSSYCATS",
     "originalTitle": "JOSIE AND THE PUSSYCATS",
     "type": "movie",
@@ -14083,8 +14758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-357",
-    "code": "SEN_353",
+    "id": "sen-365",
+    "code": "SEN_365",
     "title": "MULHOLLAND DRIVE",
     "originalTitle": "MULHOLLAND DRIVE",
     "type": "movie",
@@ -14123,8 +14798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-358",
-    "code": "SEN_354",
+    "id": "sen-366",
+    "code": "SEN_366",
     "title": "NOT ANOTHER TEEN MOVIE",
     "originalTitle": "NOT ANOTHER TEEN MOVIE",
     "type": "movie",
@@ -14163,8 +14838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-359",
-    "code": "SEN_355",
+    "id": "sen-367",
+    "code": "SEN_367",
     "title": "CONFESSIONS OF A DANGEROUS MIND",
     "originalTitle": "CONFESSIONS OF A DANGEROUS MIND",
     "type": "movie",
@@ -14203,8 +14878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-360",
-    "code": "SEN_356",
+    "id": "sen-368",
+    "code": "SEN_368",
     "title": "EQUILIBRIUM",
     "originalTitle": "EQUILIBRIUM",
     "type": "movie",
@@ -14243,8 +14918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-361",
-    "code": "SEN_357",
+    "id": "sen-369",
+    "code": "SEN_369",
     "title": "MEN IN BLACK 2",
     "originalTitle": "MEN IN BLACK 2",
     "type": "movie",
@@ -14283,8 +14958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-362",
-    "code": "SEN_358",
+    "id": "sen-370",
+    "code": "SEN_370",
     "title": "ONE HOUR PHOTO",
     "originalTitle": "ONE HOUR PHOTO",
     "type": "movie",
@@ -14323,8 +14998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-363",
-    "code": "SEN_359",
+    "id": "sen-371",
+    "code": "SEN_371",
     "title": "THE RULES OF ATTRACTION",
     "originalTitle": "THE RULES OF ATTRACTION",
     "type": "movie",
@@ -14363,8 +15038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-364",
-    "code": "SEN_360",
+    "id": "sen-372",
+    "code": "SEN_372",
     "title": "THE SWEETEST THING",
     "originalTitle": "THE SWEETEST THING",
     "type": "movie",
@@ -14403,8 +15078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-365",
-    "code": "SEN_361",
+    "id": "sen-373",
+    "code": "SEN_373",
     "title": "FREAKY FRIDAY",
     "originalTitle": "FREAKY FRIDAY",
     "type": "movie",
@@ -14443,8 +15118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-366",
-    "code": "SEN_362",
+    "id": "sen-374",
+    "code": "SEN_374",
     "title": "THE TERMINATOR 3: RISE OF THE MACHINES",
     "originalTitle": "THE TERMINATOR 3: RISE OF THE MACHINES",
     "type": "movie",
@@ -14483,8 +15158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-367",
-    "code": "SEN_363",
+    "id": "sen-375",
+    "code": "SEN_375",
     "title": "TOKYO GODFATHERS",
     "originalTitle": "TOKYO GODFATHERS",
     "type": "anime",
@@ -14523,8 +15198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-368",
-    "code": "SEN_364",
+    "id": "sen-376",
+    "code": "SEN_376",
     "title": "BLADE TRINITY",
     "originalTitle": "BLADE TRINITY",
     "type": "movie",
@@ -14563,8 +15238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-369",
-    "code": "SEN_365",
+    "id": "sen-377",
+    "code": "SEN_377",
     "title": "COLLATERAL",
     "originalTitle": "COLLATERAL",
     "type": "movie",
@@ -14603,8 +15278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-370",
-    "code": "SEN_366",
+    "id": "sen-378",
+    "code": "SEN_378",
     "title": "DAWN OF THE DEAD",
     "originalTitle": "DAWN OF THE DEAD",
     "type": "movie",
@@ -14643,8 +15318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-371",
-    "code": "SEN_367",
+    "id": "sen-379",
+    "code": "SEN_379",
     "title": "MEAN GIRLS",
     "originalTitle": "MEAN GIRLS",
     "type": "movie",
@@ -14683,8 +15358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-372",
-    "code": "SEN_368",
+    "id": "sen-380",
+    "code": "SEN_380",
     "title": "PRIMER",
     "originalTitle": "PRIMER",
     "type": "movie",
@@ -14723,8 +15398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-373",
-    "code": "SEN_369",
+    "id": "sen-381",
+    "code": "SEN_381",
     "title": "SAVED",
     "originalTitle": "SAVED",
     "type": "movie",
@@ -14763,8 +15438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-374",
-    "code": "SEN_370",
+    "id": "sen-382",
+    "code": "SEN_382",
     "title": "BRICK",
     "originalTitle": "BRICK",
     "type": "movie",
@@ -14803,8 +15478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-375",
-    "code": "SEN_371",
+    "id": "sen-383",
+    "code": "SEN_383",
     "title": "KINGDOM OF HEAVEN",
     "originalTitle": "KINGDOM OF HEAVEN",
     "type": "movie",
@@ -14843,8 +15518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-376",
-    "code": "SEN_372",
+    "id": "sen-384",
+    "code": "SEN_384",
     "title": "THE ISLAND",
     "originalTitle": "THE ISLAND",
     "type": "movie",
@@ -14883,8 +15558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-377",
-    "code": "SEN_373",
+    "id": "sen-385",
+    "code": "SEN_385",
     "title": "300",
     "originalTitle": "300",
     "type": "movie",
@@ -14923,8 +15598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-378",
-    "code": "SEN_374",
+    "id": "sen-386",
+    "code": "SEN_386",
     "title": "A SCANNER DARKLY",
     "originalTitle": "A SCANNER DARKLY",
     "type": "movie",
@@ -14963,8 +15638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-379",
-    "code": "SEN_375",
+    "id": "sen-387",
+    "code": "SEN_387",
     "title": "AQUAMARINE",
     "originalTitle": "AQUAMARINE",
     "type": "movie",
@@ -15003,8 +15678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-380",
-    "code": "SEN_376",
+    "id": "sen-388",
+    "code": "SEN_388",
     "title": "STRANGER THAN FICTION",
     "originalTitle": "STRANGER THAN FICTION",
     "type": "movie",
@@ -15043,8 +15718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-382",
-    "code": "SEN_377",
+    "id": "sen-389",
+    "code": "SEN_389",
     "title": "EASTERN PROMISES",
     "originalTitle": "EASTERN PROMISES",
     "type": "movie",
@@ -15083,8 +15758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-383",
-    "code": "SEN_378",
+    "id": "sen-390",
+    "code": "SEN_390",
     "title": "SUNSHINE",
     "originalTitle": "SUNSHINE",
     "type": "movie",
@@ -15123,8 +15798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-384",
-    "code": "SEN_379",
+    "id": "sen-391",
+    "code": "SEN_391",
     "title": "SUPERBAD",
     "originalTitle": "SUPERBAD",
     "type": "movie",
@@ -15163,8 +15838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-385",
-    "code": "SEN_380",
+    "id": "sen-392",
+    "code": "SEN_392",
     "title": "THE NUMBER 23",
     "originalTitle": "THE NUMBER 23",
     "type": "movie",
@@ -15203,8 +15878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-386",
-    "code": "SEN_381",
+    "id": "sen-393",
+    "code": "SEN_393",
     "title": "ZODIAC",
     "originalTitle": "ZODIAC",
     "type": "movie",
@@ -15243,8 +15918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-387",
-    "code": "SEN_382",
+    "id": "sen-394",
+    "code": "SEN_394",
     "title": "SYNECDOCHE NEW YORK",
     "originalTitle": "SYNECDOCHE NEW YORK",
     "type": "movie",
@@ -15283,8 +15958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-388",
-    "code": "SEN_383",
+    "id": "sen-395",
+    "code": "SEN_395",
     "title": "HES JUST NOT THAT INTO YOU",
     "originalTitle": "HES JUST NOT THAT INTO YOU",
     "type": "movie",
@@ -15323,8 +15998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-389",
-    "code": "SEN_384",
+    "id": "sen-396",
+    "code": "SEN_396",
     "title": "SURROGATES",
     "originalTitle": "SURROGATES",
     "type": "movie",
@@ -15363,8 +16038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-390",
-    "code": "SEN_385",
+    "id": "sen-397",
+    "code": "SEN_397",
     "title": "TECHNOTISE",
     "originalTitle": "TECHNOTISE",
     "type": "movie",
@@ -15403,8 +16078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-391",
-    "code": "SEN_386",
+    "id": "sen-398",
+    "code": "SEN_398",
     "title": "SHUTTER ISLAND",
     "originalTitle": "SHUTTER ISLAND",
     "type": "movie",
@@ -15443,8 +16118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-392",
-    "code": "SEN_387",
+    "id": "sen-399",
+    "code": "SEN_399",
     "title": "THE TOWN",
     "originalTitle": "THE TOWN",
     "type": "movie",
@@ -15483,8 +16158,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-393",
-    "code": "SEN_388",
+    "id": "sen-400",
+    "code": "SEN_400",
     "title": "CAPTAIN AMERICA THE FIRST AVENGER",
     "originalTitle": "CAPTAIN AMERICA THE FIRST AVENGER",
     "type": "movie",
@@ -15523,8 +16198,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-394",
-    "code": "SEN_389",
+    "id": "sen-401",
+    "code": "SEN_401",
     "title": "DRIVE",
     "originalTitle": "DRIVE",
     "type": "movie",
@@ -15563,8 +16238,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-396",
-    "code": "SEN_390",
+    "id": "sen-402",
+    "code": "SEN_402",
     "title": "THE AMAZING SPIDER-MAN",
     "originalTitle": "THE AMAZING SPIDER-MAN",
     "type": "movie",
@@ -15603,8 +16278,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-397",
-    "code": "SEN_391",
+    "id": "sen-403",
+    "code": "SEN_403",
     "title": "COHERENCE",
     "originalTitle": "COHERENCE",
     "type": "movie",
@@ -15643,8 +16318,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-398",
-    "code": "SEN_392",
+    "id": "sen-404",
+    "code": "SEN_404",
     "title": "OBLIVION",
     "originalTitle": "OBLIVION",
     "type": "movie",
@@ -15683,8 +16358,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-399",
-    "code": "SEN_393",
+    "id": "sen-405",
+    "code": "SEN_405",
     "title": "THE DOUBLE",
     "originalTitle": "THE DOUBLE",
     "type": "movie",
@@ -15723,8 +16398,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-400",
-    "code": "SEN_394",
+    "id": "sen-406",
+    "code": "SEN_406",
     "title": "UPSTREAM COLOR",
     "originalTitle": "UPSTREAM COLOR",
     "type": "movie",
@@ -15763,8 +16438,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-401",
-    "code": "SEN_395",
+    "id": "sen-407",
+    "code": "SEN_407",
     "title": "ROBOCOP 4",
     "originalTitle": "ROBOCOP 4",
     "type": "movie",
@@ -15803,8 +16478,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-402",
-    "code": "SEN_396",
+    "id": "sen-408",
+    "code": "SEN_408",
     "title": "THE MAZE RUNNER",
     "originalTitle": "THE MAZE RUNNER",
     "type": "movie",
@@ -15843,8 +16518,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-403",
-    "code": "SEN_397",
+    "id": "sen-409",
+    "code": "SEN_409",
     "title": "SILENCE",
     "originalTitle": "SILENCE",
     "type": "movie",
@@ -15883,8 +16558,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-404",
-    "code": "SEN_398",
+    "id": "sen-410",
+    "code": "SEN_410",
     "title": "HIGH LIFE",
     "originalTitle": "HIGH LIFE",
     "type": "movie",
@@ -15923,8 +16598,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-405",
-    "code": "SEN_399",
+    "id": "sen-411",
+    "code": "SEN_411",
     "title": "THE GRINCH",
     "originalTitle": "THE GRINCH",
     "type": "movie",
@@ -15963,8 +16638,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-406",
-    "code": "SEN_400",
+    "id": "sen-412",
+    "code": "SEN_412",
     "title": "THE HOUSE THAT JACK BUILT",
     "originalTitle": "THE HOUSE THAT JACK BUILT",
     "type": "movie",
@@ -16003,8 +16678,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-407",
-    "code": "SEN_401",
+    "id": "sen-413",
+    "code": "SEN_413",
     "title": "NO TIME TO DIE",
     "originalTitle": "NO TIME TO DIE",
     "type": "movie",
@@ -16043,8 +16718,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-408",
-    "code": "SEN_402",
+    "id": "sen-414",
+    "code": "SEN_414",
     "title": "SPIDER-MAN: NO WAY HOME",
     "originalTitle": "SPIDER-MAN: NO WAY HOME",
     "type": "movie",
@@ -16083,8 +16758,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-409",
-    "code": "SEN_403",
+    "id": "sen-415",
+    "code": "SEN_415",
     "title": "THE LAST AIRBENDER",
     "originalTitle": "THE LAST AIRBENDER",
     "type": "movie",
@@ -16123,8 +16798,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-410",
-    "code": "SEN_404",
+    "id": "sen-416",
+    "code": "SEN_416",
     "title": "BEAVIS AND BUTTHEAD: DO THE UNIVERSE",
     "originalTitle": "BEAVIS AND BUTTHEAD: DO THE UNIVERSE",
     "type": "movie",
@@ -16163,8 +16838,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-411",
-    "code": "SEN_405",
+    "id": "sen-417",
+    "code": "SEN_417",
     "title": "MARS EXPRESS",
     "originalTitle": "MARS EXPRESS",
     "type": "movie",
@@ -16203,8 +16878,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-412",
-    "code": "SEN_406",
+    "id": "sen-418",
+    "code": "SEN_418",
     "title": "A MINECRAFT MOVIE",
     "originalTitle": "A MINECRAFT MOVIE",
     "type": "movie",
@@ -16243,8 +16918,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-413",
-    "code": "SEN_407",
+    "id": "sen-419",
+    "code": "SEN_419",
     "title": "COVERFIELD",
     "originalTitle": "COVERFIELD",
     "type": "movie",
@@ -16283,8 +16958,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-414",
-    "code": "SEN_408",
+    "id": "sen-420",
+    "code": "SEN_420",
     "title": "FINAL DESTINATION BLOODLINES",
     "originalTitle": "FINAL DESTINATION BLOODLINES",
     "type": "movie",
@@ -16323,8 +16998,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-415",
-    "code": "SEN_409",
+    "id": "sen-421",
+    "code": "SEN_421",
     "title": "PANDORUM",
     "originalTitle": "PANDORUM",
     "type": "movie",
@@ -16363,8 +17038,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-416",
-    "code": "SEN_410",
+    "id": "sen-422",
+    "code": "SEN_422",
     "title": "MICKEY 17",
     "originalTitle": "MICKEY 17",
     "type": "movie",
@@ -16403,8 +17078,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-417",
-    "code": "SEN_411",
+    "id": "sen-423",
+    "code": "SEN_423",
     "title": "SINNERS",
     "originalTitle": "SINNERS",
     "type": "movie",
@@ -16443,8 +17118,8 @@ export const INITIAL_CATALOG: MediaItem[] = [
     "updatedAt": "2026-09-22T23:50:43.313Z"
   },
   {
-    "id": "sen-csv-418",
-    "code": "SEN_412",
+    "id": "sen-424",
+    "code": "SEN_424",
     "title": "THE AMATEUR",
     "originalTitle": "THE AMATEUR",
     "type": "movie",
